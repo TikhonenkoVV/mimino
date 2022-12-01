@@ -40,6 +40,7 @@
 
 .custom-select__current:focus {
 }
+
 .custom-select__current::after {
   content: '';
   transition: all 0.25s ease;
@@ -69,8 +70,9 @@
   opacity: 0;
   visibility: hiden;
   pointer-events: none;
-  transition: all 0.25s ease;
+  transition: all $baseTransition;
 }
+
 .custom-select__item {
   padding: 15px;
   cursor: pointer;
