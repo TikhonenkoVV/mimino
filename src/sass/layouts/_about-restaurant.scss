@@ -1,0 +1,111 @@
+.about
+{
+    background-color: $colorBackgroundPrimary;
+    padding: 15px;
+}
+
+.section__title-hidden
+{
+    visibility: hidden;
+    display: none;
+}
+
+.section__title
+{
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: left;
+    color: $colorTextLightGray;
+
+    margin-bottom: 12px;
+}
+
+.about__restaurant-logo
+{
+    font-family: $fontFamilyLogo;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: left;
+    letter-spacing: 0.3em;
+    color: $colorDarkGray;
+
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.about__restaurant-text
+{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: $colorTextPrimary;
+
+    width: 258px;
+}
+
+.restaurant__img-right, 
+.restaurant__img-left,
+.restaurant__img
+{
+    box-shadow: 2px 2px 60px $colorBoxShadow;
+}
+
+.about__restaurant-box
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+}
+
+.about__restaurant-post
+{
+    margin: 32px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant__post-text
+{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+
+    width: 163px;
+    margin-left: 20px;
+}
+
+.restaurant__post-color
+{
+    color: $colorAccentBrown;
+}
+
+.restaurant__img-right
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.restaurant__flipper-img
+{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.restaurant__flipper-btn
+{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 24px;
+}

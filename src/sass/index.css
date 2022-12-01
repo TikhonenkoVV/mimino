@@ -1,0 +1,230 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.modal-open {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #5f5f5f;
+  background-color: #fffdee;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Times New Roman Cyr";
+  src: url("../fonts/TimesNRCyrMT.woff2") format("woff2"), url("../fonts/TimesNRCyrMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Times New Roman Cyr";
+  src: url("../fonts/TimesNRCyrMT-Bold.woff2") format("woff2"), url("../fonts/TimesNRCyrMT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Film P3";
+  src: url("../fonts/FilmP3Bold.eot");
+  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  padding: 0 15px;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 47px;
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 85px;
+    width: 1280px;
+  }
+}
+
+.about {
+  background-color: #fffdee;
+  padding: 15px;
+}
+
+.section__title-hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: left;
+  color: #b4b4b4;
+  margin-bottom: 12px;
+}
+
+.about__restaurant-logo {
+  font-family: "Film P3", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: left;
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.about__restaurant-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+  width: 258px;
+}
+
+.restaurant__img-right,
+.restaurant__img-left,
+.restaurant__img {
+  box-shadow: 2px 2px 60px rgba(0, 0, 0, 0.25);
+}
+
+.about__restaurant-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+.about__restaurant-post {
+  margin: 32px 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.restaurant__post-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #5F5F5F;
+  width: 163px;
+  margin-left: 20px;
+}
+
+.restaurant__post-color {
+  color: #c79002;
+}
+
+.restaurant__img-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.restaurant__flipper-img {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.restaurant__flipper-btn {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 24px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,6 +1,9 @@
 @import './utils/variables';
-@import './common';
 @import './utils/mixins';
 @import './utils/modal-open';
 @import './utils/vh';
-@import '';
+@import './base/base';
+@import './base/fonts';
+@import './common';
+@import './layouts/container';
+@import './layouts/about-restaurant';
