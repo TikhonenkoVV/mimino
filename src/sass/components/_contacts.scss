@@ -1,4 +1,5 @@
 .contacts-section {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 36px;
 
@@ -181,7 +182,7 @@
     90deg,
     transparent 0 calc((100% - var(--lines-number) * 1px) / var(--total-count)),
     $colorVerticalLine 0
-      calc((100% - var(--lines-number) * 1px) / var(--total-count) + 1px)
+      calc((100% - var(--lines-number) * 0.5px) / var(--total-count) + 0.5px)
   );
 
   filter: blur(0.5px);
