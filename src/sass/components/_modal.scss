@@ -2,6 +2,49 @@
   position: relative;
   padding: 60px 15px;
   background-color: $colorBackgroundPrimary;
+  margin-top: 15px;
+
+  @include for-size(mobile) {
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 712px;
+    margin-top: 0;
+    padding: 60px 60px;
+  }
+}
+
+.modal__box {
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 16px;
+
+    &--norawgap {
+      gap: 0px 16px;
+    }
+  }
+}
+
+.modal__field {
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+  &--flex {
+    @include for-size(tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+  }
 }
 
 .modal__close-button {
@@ -83,6 +126,10 @@
   &--biggerfont {
     font-size: 16px;
   }
+
+  @include for-size(tablet) {
+    margin-bottom: 0px;
+  }
 }
 
 .modal__button {
@@ -107,5 +154,9 @@
   &:focus {
     background-color: $colorAccentYellow;
     color: $colorWhite;
+  }
+
+  @include for-size(tablet) {
+    margin-top: 40px;
   }
 }

@@ -2,6 +2,10 @@ $(document).ready(function () {
   $('#phone-input').inputmask('+38 (999) 999-99-99');
 });
 
+$(document).ready(function () {
+  $('#client-phone').inputmask('+38 (999) 999-99-99');
+});
+
 $('.custom-select').each(function () {
   var classes = $(this).attr('class'),
     id = $(this).attr('id'),
@@ -61,8 +65,47 @@ $('.custom-option').on('click', function () {
     .text($(this).text());
 });
 
-$('#number-nights').keyup(function () {
-  var number = parseFloat($('#number-nights').val());
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-room-open]'),
+    closeModalBtn: document.querySelector('[data-modal-room-close]'),
+    modal: document.querySelector('[data-modal-room]'),
+  };
 
-  $('#total-price').val(number * 1000);
-});
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-table-open]'),
+    closeModalBtn: document.querySelector('[data-modal-table-close]'),
+    modal: document.querySelector('[data-modal-table]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-price-open]'),
+    closeModalBtn: document.querySelector('[data-modal-price-close]'),
+    modal: document.querySelector('[data-modal-price]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
