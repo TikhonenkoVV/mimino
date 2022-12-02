@@ -1,5 +1,5 @@
 .hero {
-    position: relative;
+    // position: relative;
     background-color: $colorBackgroundDark;
     margin: 0 auto;
 
@@ -68,31 +68,31 @@
         background-image: $LinearGradientHeader, url('../images/hero_images/kitchen@2x.jpg');
     }   
 }
-.hero--room {
+.hero--hotel {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: $LinearGradientHeader, url('../images/hero_images/room-iphone@1x.jpg');
+    background-image: $LinearGradientHeader, url('../images/hero_images/hotel-iphone@1x.jpg');
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-iphone@2x.jpg');
+        background-image: $LinearGradientHeader, url('../images/hero_images/hotel-iphone@2x.jpg');
     }
     @media screen and (min-width: 1024px) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-ipad@1x.jpg');
+        background-image: $LinearGradientHeader, url('../images/hero_images/hotel-ipad@1x.jpg');
     }
     @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
     (min-width: 1024px) and (min-resolution: 192dpi),
     (min-width: 1024px) and (min-resolution: 2dppx) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-ipad@2x.jpg');
+        background-image: $LinearGradientHeader, url('../images/hero_images/hotel-ipad@2x.jpg');
     }
     @media screen and (min-width: 1280px) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room@1x.jpg');
+        background-image: $LinearGradientHeader, url('../images/hero_images/hotel@1x.jpg');
     }
     @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
     (min-width: 1280px) and (min-resolution: 192dpi),
     (min-width: 1280px) and (min-resolution: 2dppx) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room@2x.jpg');
+        background-image: $LinearGradientHeader, url('../images/hero_images/hotel@2x.jpg');
     }
 }
 
