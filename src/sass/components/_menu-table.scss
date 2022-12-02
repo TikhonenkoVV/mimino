@@ -1,0 +1,70 @@
+.menu {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.menu__category {
+  font-family: $fontFamilyTNRoman;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: $colorBlack;
+  // text-align: left;
+  margin-bottom: 16px;
+}
+
+.menu__caption {
+  width: 200px;
+  font-family: $fontFamilyMain;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  padding-bottom: 4px;
+}
+
+.menu__ingredients {
+  font-family: $fontFamilyMain;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  padding-bottom: 8px;
+}
+
+.menu__portion {
+  font-family: $fontFamilyMain;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  padding: 4px 0 4px 28px;
+}
+
+.menu__price {
+  font-family: $fontFamilyMain;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $colorBlack;
+  padding: 4px 0 4px 16px;
+}
+
+.book-table {
+  cursor: pointer;
+  font-family: $fontFamilyMain;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $colorAccentYellow;
+  background-color: $colorBlack;
+  border: 2px solid $colorBackgroundSecondary;
+  border-radius: 25px;
+  padding: 15px 24px;
+}
