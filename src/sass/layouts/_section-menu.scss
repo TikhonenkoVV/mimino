@@ -2,3 +2,14 @@
   padding: 32px 0;
   background-color: $colorBackgroundPrimary;
 }
+
+.section__title {
+  font-family: $fontFamilyTNRoman;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  color: $colorBlack;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}

@@ -139,6 +139,17 @@ textarea {
   background-color: #fffdee;
 }
 
+.section__title {
+  font-family: "Times New Roman Cyr", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
 .menu {
   text-align: left;
   margin-bottom: 16px;
@@ -150,6 +161,7 @@ textarea {
   font-size: 20px;
   line-height: 23px;
   color: #000000;
+  text-align: left;
   margin-bottom: 16px;
 }
 
