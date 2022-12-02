@@ -4,12 +4,13 @@
   left: 0;
   width: 100%;
   padding-top: 16px;
+  padding-bottom: 12px;
   @include for-size(tablet) {
     padding-top: 24px;
+    padding-bottom: 30px;
   }
 
   &__container {
-    background-color: brown;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -101,7 +102,7 @@
     );
   }
 
-  &__socials {
+  &__network {
     display: none;
     @include for-size(desktop) {
       margin-left: auto;
@@ -110,7 +111,7 @@
     }
   }
 
-  &__socials-icon {
+  &__network-icon {
     @include for-size(desktop) {
       fill: $colorBorderAdress;
     }
