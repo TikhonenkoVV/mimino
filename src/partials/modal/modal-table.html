@@ -39,10 +39,15 @@
         />
         <label class="modal__label" for="phone-input"> Номер телефону</label>
       </div>
-      <div class="select-wrap">
-        <select name="select" id="number-clients" class="select">
+      <div>
+        <select
+          class="custom-select"
+          id="number-clients"
+          name="select-table"
+          placeholder="2"
+        >
           <option value="1">1</option>
-          <option value="2" selected>2</option>
+          <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
@@ -54,13 +59,19 @@
           Столик на яку кількість осіб?
         </label>
       </div>
-      <div class="select-wrap">
-        <select name="select" id="number-clients" class="select">
-          <option value="1">Сьогодні</option>
-          <option value="2">Завтра</option>
-          <option value="3">Післязавтра</option>
+      <div>
+        <select
+          class="custom-select"
+          id="choose-date"
+          name="select"
+          placeholder="Сьогодні"
+        >
+          <option value="Сьогодні">Сьогодні</option>
+          <option value="Завтра">Завтра</option>
+          <option value="Післязавтра">Післязавтра</option>
+          <option value="Інший день">Інший день</option>
         </select>
-        <label class="modal__label" for="number-clients">
+        <label class="modal__label" for="choose-date">
           На яку дату бронювати?
         </label>
       </div>

@@ -1,94 +1,62 @@
-const selects = document.querySelectorAll('.select');
-for (let i = 0; i < selects.length; i++) {
-  const select = selects[i];
-  const options = select.querySelectorAll('option');
-  const cSelect = document.createElement('div');
-  const cSelectList = document.createElement('div');
-  const cSelectCurrent = document.createElement('div');
-  cSelect.className = 'custom-select';
-  cSelectList.className = 'custom-select__list custom-scrollbar';
-  cSelectCurrent.className = 'custom-select__current';
-
-  cSelect.append(cSelectCurrent, cSelectList);
-
-  select.after(cSelect);
-
-  const createCustomDom = (x, y) => {
-    let selectItems = '';
-    for (var i = 0; i < options.length; i++) {
-      selectItems +=
-        '<div class="custom-select__item" data-value="' +
-        options[i].value +
-        '">' +
-        options[i].text +
-        '</div>';
-    }
-    cSelectList.innerHTML = selectItems;
-    x(), y();
-  };
-
-  const toggleClass = () => {
-    cSelect.classList.toggle('custom-select--show');
-  };
-
-  const currentTextValue = () =>
-    (cSelectCurrent.textContent = cSelectList.children[0].textContent);
-
-  const currentValue = () => {
-    const items = cSelectList.children;
-    for (var el = 0; el < items.length; el++) {
-      let selectValue = items[el].getAttribute('data-value');
-      let selectText = items[el].textContent;
-      items[el].addEventListener('click', () => {
-        cSelect.classList.remove('custom-select--show');
-        cSelectCurrent.textContent = selectText;
-        select.value = selectValue;
-      });
-    }
-  };
-
-  const desctopFn = () => {
-    cSelectCurrent.addEventListener('click', toggleClass);
-  };
-
-  const mobileFn = () => {
-    for (let j = 0; j < selects.length; j++) {
-      let mobileSelect = selects[j];
-      mobileSelect.addEventListener('change', () => {
-        mobileSelect.nextElementSibling.querySelector(
-          '.custom-select__current'
-        ).textContent = mobileSelect.value;
-      });
-    }
-  };
-
-  createCustomDom(currentTextValue, currentValue);
-
-  document.addEventListener('mouseup', e => {
-    if (!cSelect.contains(e.target))
-      cSelect.classList.remove('custom-select--show');
-  });
-
-  detectmob(mobileFn, desctopFn);
-
-  function detectmob(x, y) {
-    if (
-      navigator.userAgent.match(/Android/i) ||
-      navigator.userAgent.match(/webOS/i) ||
-      navigator.userAgent.match(/iPhone/i) ||
-      navigator.userAgent.match(/iPad/i) ||
-      navigator.userAgent.match(/iPod/i) ||
-      navigator.userAgent.match(/BlackBerry/i) ||
-      navigator.userAgent.match(/Windows Phone/i)
-    ) {
-      x();
-      console.log('mobile');
-    } else {
-      y();
-      console.log('desktop');
-    }
-  }
-}
 $(document).ready(function () {
   $('#phone-input').inputmask('+38 (999) 999-99-99');
+});
+
+$('.custom-select').each(function () {
+  var classes = $(this).attr('class'),
+    id = $(this).attr('id'),
+    name = $(this).attr('name');
+  var template = '<div class="' + classes + '">';
+  template +=
+    '<span class="custom-select-trigger">' +
+    $(this).attr('placeholder') +
+    '</span>';
+  template += '<div class="custom-options">';
+  $(this)
+    .find('option')
+    .each(function () {
+      template +=
+        '<span class="custom-option' +
+        '"data-value="' +
+        $(this).attr('value') +
+        '">' +
+        $(this).html() +
+        '</span>';
+    });
+  template += '</div></div>';
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$('.custom-option:first-of-type').hover(
+  function () {
+    $(this).parents('.custom-options').addClass('option-hover');
+  },
+  function () {
+    $(this).parents('.custom-options').removeClass('option-hover');
+  }
+);
+$('.custom-select-trigger').on('click', function () {
+  $('html').one('click', function () {
+    $('.custom-select').removeClass('opened');
+  });
+  $(this).parents('.custom-select').toggleClass('opened');
+  event.stopPropagation();
+});
+$('.custom-option').on('click', function () {
+  $(this)
+    .parents('.custom-select-wrapper')
+    .find('select')
+    .val($(this).data('value'));
+  $(this)
+    .parents('.custom-options')
+    .find('.custom-option')
+    .removeClass('selection');
+  $(this).addClass('selection');
+  $(this).parents('.custom-select').removeClass('opened');
+  $(this)
+    .parents('.custom-select')
+    .find('.custom-select-trigger')
+    .text($(this).text());
 });
