@@ -23,6 +23,11 @@
       margin-bottom: 8px;
       @include font(700, 64px, calc(69 / 64), 0.3em);
     }
+
+    @include for-size(desktop) {
+      margin-bottom: 16px;
+      color: $colorLightGray;
+    }
   }
 
   &__subtitle {
@@ -31,6 +36,11 @@
 
     @include for-size(tablet) {
       margin-bottom: 52px;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 40px;
+      @include font(600, 20px, calc(24 / 20), 0.02em);
     }
   }
 
@@ -85,6 +95,10 @@
     @include for-size(tablet) {
       margin-bottom: 24px;
     }
+
+    @include for-size(desktop) {
+      color: $colorLightGray;
+    }
   }
 
   &__address {
@@ -96,6 +110,10 @@
       padding: 8px 8px 8px 10px;
       margin-bottom: 0;
       max-width: 285px;
+    }
+
+    @include for-size(desktop) {
+      color: $colorLightGray;
     }
   }
 
@@ -114,6 +132,10 @@
 
   &__icon {
     margin-right: 14px;
+
+    &--less {
+      margin-right: 10px;
+    }
   }
 
   &__phone {
@@ -123,10 +145,19 @@
   &__map {
     width: 384px;
     height: 220px;
+    background-color: $colorAdsressMap;
+    border: 1px solid #bababa;
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px $colorBoxShadow;
 
     @include for-size(tablet) {
       width: 535px;
       height: 412px;
+      box-shadow: 5px 5px 70px 17px $colorBoxShadow;
+    }
+
+    @include for-size(desktop) {
+      width: 634px;
     }
   }
 }
