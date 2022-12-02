@@ -1,7 +1,7 @@
 <section class="about">
-    <div class="container">
+    <div class="container about__container">
         <div class="about__restaurant">
-            <h1 class="section__title-hidden">About our restaurant</h1>
+            <h1 class="visually-hidden">About our restaurant</h1>
 
             <h2 class="section__title">Amet minim mollit non</h2>
 
@@ -13,8 +13,7 @@
                 Exercitation veniam consequat sunt nostrud amet.
             </p>
 
-            <div class="about__restaurant-box">
-                <picture>
+                <picture class="about__restaurant-box">
 
                     <source
                         srcset="/src/images/about-restaurant/about_restaurant_desktop1.jpg 1x, /src/images/about-restaurant/about_restaurant_desktop1@2x.jpg 2x"
@@ -34,11 +33,9 @@
                     <img
                     class="restaurant__img-right"
                     src="/src/images/about-restaurant/about_restaurant_phone1.jpg"  
-                    width="244" 
                     alt="Інтер'єр ресторану">
 
                 </picture>
-            </div>
 
             <figure class="about__restaurant-post">
 
@@ -61,8 +58,7 @@
 
                     <img
                     class="restaurant__img-left"
-                    src="/src/images/about-restaurant/about_restaurant_phone2.jpg"  
-                    width="200" 
+                    src="/src/images/about-restaurant/about_restaurant_phone2.jpg"   
                     alt="Інтер'єр ресторану">
 
                 </picture>
@@ -74,76 +70,71 @@
                 </figcaption>
             </figure>
 
-            <ul class="restaurant__flipper-img">
-                <li class="restaurant__item">
-                    <picture>
-
-                    <source
-                        srcset="/src/images/about-restaurant/restaurant_flipper_desktop1.jpg 1x, /src/images/about-restaurant/restaurant_flipper_desktop1@2x.jpg 2x"
-                        media="(min-width: 1280px)"
-                    />
-
-                    <source
-                        srcset="/src/images/about-restaurant/restaurant_flipper_tablet1.jpg 1x, /src/images/about-restaurant/restaurant_flipper_tablet1@2x.jpg 2x"
-                        media="(min-width: 1024px)"
-                    />
-
-                    <source
-                        srcset="/src/images/about-restaurant/restaurant_flipper_phone1.jpg 1x, /src/images/about-restaurant/restaurant_flipper_phone1@2x.jpg 2x"
-                        media="(min-width: 414px)"
-                    />
-
-                    <img
-                    class="restaurant__img"
-                    src="/src/images/about-restaurant/restaurant_flipper_phone1.jpg"  
-                    width="245" 
-                    alt="Можливості накриття столу">
-
-                    </picture>
-
-                </li>
-
-                <li class="restaurant__item">
-                    <picture>
-
-                        <source
-                            srcset="/src/images/about-restaurant/restaurant_flipper_desktop2.jpg 1x, /src/images/about-restaurant/restaurant_flipper_desktop2@2x.jpg 2x"
-                            media="(min-width: 1280px)"
-                        />
-    
-                        <source
-                            srcset="/src/images/about-restaurant/restaurant_flipper_tablet2.jpg 1x, /src/images/about-restaurant/restaurant_flipper_tablet2@2x.jpg 2x"
-                            media="(min-width: 1024px)"
-                        />
-    
-                        <source
-                            srcset="/src/images/about-restaurant/restaurant_flipper_phone2.jpg 1x, /src/images/about-restaurant/restaurant_flipper_phone2@2x.jpg 2x"
-                            media="(min-width: 414px)"
-                        />
-    
-                        <img
-                        class="restaurant__img"
-                        src="/src/images/about-restaurant/restaurant_flipper_phone2.jpg"  
-                        width="245" 
-                        alt="Можливості накриття столу">
-    
+            <div class="slider__container">
+                <div class="slider">
+                  <div class="slider__line">
+                        <picture class="slider__picture">
+                            <source
+                            srcset="/src/images/about-restaurant/restaurant_flipper_desktop1.jpg 1x, /src/images/about-restaurant/restaurant_flipper_desktop1@2x.jpg 2x" />
+                            <img 
+                            class="slider__line-img"
+                            width="254px"
+                            src="/src/images/about-restaurant/restaurant_flipper_desktop1.jpg" 
+                            alt="Можливості накриття столу"/>
                         </picture>
-                </li>
-            </ul>
+
+                        <picture>
+                            <source
+                            srcset="/src/images/about-restaurant/restaurant_flipper_desktop2.jpg 1x, /src/images/about-restaurant/restaurant_flipper_desktop2@2x.jpg 2x" />
+                            <img 
+                            class="slider__line-img"
+                            width="254px"
+                            src="/src/images/about-restaurant/restaurant_flipper_desktop2.jpg" 
+                            alt="Можливості накриття столу"/>
+                        </picture>
+
+                        <!-- <picture>
+                            <source
+                            srcset="/src/images/about-restaurant/restaurant_flipper_desktop1.jpg 1x, /src/images/about-restaurant/restaurant_flipper_desktop1@2x.jpg 2x" />
+                            <img 
+                            class="slider__line-img"
+                            width="254px"
+                            src="/src/images/about-restaurant/restaurant_flipper_desktop1.jpg" 
+                            alt="Можливості накриття столу"/>
+                        </picture>
+
+                        <picture>
+                            <source
+                            srcset="/src/images/about-restaurant/restaurant_flipper_desktop2.jpg 1x, /src/images/about-restaurant/restaurant_flipper_desktop2@2x.jpg 2x" />
+                            <img 
+                            class="slider__line-img"
+                            width="254px"
+                            src="/src/images/about-restaurant/restaurant_flipper_desktop2.jpg" 
+                            alt="Можливості накриття столу"/>
+                        </picture> -->
+                  </div>
+                </div>
+            </div>
 
             <ul class="restaurant__flipper-btn">
                 <li class="restaurant__link">
-                    <svg class="restaurant__icon" width="32" height="32">
-                        <use href="/src/images/icons.svg#icon-arrow-left"></use>
-                    </svg>
+                    <a href="" class="restaurant__button slider-prev">
+                        <svg class="restaurant__icon" width="32" height="32">
+                            <use href="/src/images/icons.svg#icon-arrow-left"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="restaurant__link">
-                    <svg class="restaurant__icon" width="32" height="32">
-                        <use href="/src/images/icons.svg#icon-arrow-right"></use>
-                    </svg>
+                    <a href="" class="restaurant__button slider-next">
+                        <svg class="restaurant__icon" width="32" height="32">
+                            <use href="/src/images/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         
         </div>
     </div>
+    <script src="/src/slider.js"></script>
+
 </section>
