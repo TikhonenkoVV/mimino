@@ -1,0 +1,83 @@
+.contacts-section {
+  padding-top: 32px;
+  padding-bottom: 36px;
+
+  @include for-size(tablet) {
+    padding-top: 69px;
+    padding-bottom: 40px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 64px;
+    padding-bottom: 74px;
+  }
+
+  &__logo {
+    margin-bottom: 12px;
+    font-family: $fontFamilyLogo;
+    @include font(700, 40px, calc(43 / 40), 0.3em);
+    color: $colorDarkGray;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    @include font(600, 16px, calc(20 / 16), 0.02em);
+  }
+}
+
+.contacts {
+  font-style: normal;
+
+  &__item-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    min-width: 124px;
+    @include font(500, 20px, calc(24 / 20), 0.02em);
+    color: $colorAccentBrown;
+  }
+
+  &__title--hidden {
+    opacity: 0;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px 10px 14px;
+    margin-bottom: 16px;
+    @include font(400, 14px, calc(17 / 14), 0.02em);
+    color: $colorDarkGray;
+    fill: $colorAccentBrown;
+    background-color: $colorWhite;
+    outline: 0.5px solid $colorAccentYellow;
+    border-radius: 2px;
+  }
+
+  &__address {
+    padding: 8px 33px 8px 16px;
+    margin-bottom: 32px;
+    @include font(400, 16px, calc(20 / 16), 0.01em);
+  }
+
+  &__address,
+  &__hotel {
+    width: 100%;
+  }
+
+  &__icon {
+    margin-right: 14px;
+  }
+
+  &__phone {
+    margin-right: 12px;
+  }
+
+  &__map {
+    width: 384px;
+    height: 220px;
+  }
+}
