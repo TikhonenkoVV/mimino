@@ -8,7 +8,7 @@
         ></use>
       </svg>
     </button>
-    <h2 class="modal__title">Забронювати столик</h2>
+    <h2 class="modal__title">Забронювати номер</h2>
     <form>
       <div>
         <input
@@ -22,7 +22,7 @@
           class="modal__input"
         />
         <label class="modal__label" for="client-name">
-          На кого забронювати столик?</label
+          На кого забронювати номер?</label
         >
       </div>
       <div>
@@ -41,28 +41,21 @@
       <div>
         <select
           class="custom-select"
-          id="number-clients"
-          name="select-table"
-          placeholder="2"
+          id="room"
+          name="room-category"
+          placeholder="Двомісний люкс"
         >
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value=">8">8 і більше</option>
+          <option value="Двомісний люкс">Двомісний люкс</option>
+          <option value="Трьохмісний номер">Трьохмісний номер</option>
+          <option value="Двомісний номер">Двомісний номер</option>
         </select>
-        <label class="modal__label" for="number-clients">
-          Столик на яку кількість осіб?
-        </label>
+        <label class="modal__label" for="room"> Категорія номеру </label>
       </div>
       <div>
         <select
           class="custom-select"
           id="choose-date"
-          name="select"
+          name="date-checkin"
           placeholder="Сьогодні"
         >
           <option value="Сьогодні">Сьогодні</option>
@@ -70,8 +63,27 @@
           <option value="Післязавтра">Післязавтра</option>
           <option value="Інший день">Інший день</option>
         </select>
-        <label class="modal__label modal__label--bigmargin" for="choose-date">
-          На яку дату бронювати?
+        <label class="modal__label modal__label--biggerfont" for="choose-date">
+          Дата заїзду
+        </label>
+      </div>
+      <div>
+        <select
+          class="custom-select"
+          id="choose-date"
+          name="date-checkout"
+          placeholder="Сьогодні"
+        >
+          <option value="Сьогодні">Сьогодні</option>
+          <option value="Завтра">Завтра</option>
+          <option value="Післязавтра">Післязавтра</option>
+          <option value="Інший день">Інший день</option>
+        </select>
+        <label
+          class="modal__label modal__label--bigmargin modal__label--biggerfont"
+          for="choose-date"
+        >
+          Дата виїзду
         </label>
       </div>
       <button class="modal__button" type="submit">Оформити бронювання</button>

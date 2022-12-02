@@ -60,3 +60,9 @@ $('.custom-option').on('click', function () {
     .find('.custom-select-trigger')
     .text($(this).text());
 });
+
+$('#number-nights').keyup(function () {
+  var number = parseFloat($('#number-nights').val());
+
+  $('#total-price').val(number * 1000);
+});

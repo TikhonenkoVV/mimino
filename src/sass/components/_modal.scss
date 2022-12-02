@@ -1,6 +1,5 @@
 .modal {
   position: relative;
-  height: 668px;
   padding: 60px 15px;
   background-color: $colorBackgroundPrimary;
 }
@@ -18,7 +17,7 @@
   right: 16px;
 }
 
-.icon {
+.modal__icon {
   stroke: currentColor;
 }
 
@@ -30,6 +29,20 @@
   color: $colorBlack;
 
   margin-bottom: 40px;
+}
+
+.modal__subtitle {
+  font-family: $fontFamilyTNRoman;
+  @include font(700, 24px, 1.17, 0.05em);
+  color: $colorPlaceholder;
+  margin-bottom: 28px;
+}
+
+.modal__heading {
+  font-family: $fontFamilyMain;
+  @include font(500, 16px, 1.22, 0.02em);
+  color: $colorAccentBrown;
+  margin-bottom: 20px;
 }
 
 .modal__input {
@@ -64,6 +77,10 @@
 
   &--bigmargin {
     margin-bottom: 40px;
+  }
+
+  &--biggerfont {
+    font-size: 16px;
   }
 }
 
