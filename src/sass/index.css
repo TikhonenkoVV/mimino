@@ -149,6 +149,10 @@ textarea {
   }
 }
 
+.logo-box {
+  position: relative;
+}
+
 .button-room__details {
   padding: 14px 65px 14px 64px;
   background-color: #000000;
@@ -175,7 +179,7 @@ textarea {
   padding: 14px 37px;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 1023px) {
   .logo__text {
     font-family: "Times New Roman";
     font-size: 20px;
