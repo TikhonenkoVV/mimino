@@ -235,12 +235,13 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;    
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em;
+    transition: color $baseTransition,
+        background-color $baseTransition;
     padding: 14px 24px;
 
     &:hover,
     &:focus {
-    transition: background-color $baseTransition;
     background-color: $colorAccentYellow;
     color: $colorBlack;
     }
