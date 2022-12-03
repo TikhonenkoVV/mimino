@@ -1,0 +1,255 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.modal-open {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #5f5f5f;
+  background-color: #fffdee;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Times New Roman Cyr";
+  src: url("../fonts/TimesNRCyrMT.woff2") format("woff2"), url("../fonts/TimesNRCyrMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Times New Roman Cyr";
+  src: url("../fonts/TimesNRCyrMT-Bold.woff2") format("woff2"), url("../fonts/TimesNRCyrMT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Film P3";
+  src: url("../fonts/FilmP3Bold.eot");
+  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  padding: 0 15px;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 47px;
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 85px;
+    width: 1280px;
+  }
+}
+
+.restaurant-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 735px;
+  padding: 24px 0 40px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-details/mobile/restaurant-details-418@1x.jpg");
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .restaurant-details {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-details/mobile/restaurant-details-418@2x.jpg");
+  }
+}
+@media screen and (min-width: 414px) {
+  .restaurant-details {
+    height: 620px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/tablet/restaurant-details-1024@1x.jpg");
+  }
+}
+@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
+  .restaurant-details {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg");
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-details {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg");
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .restaurant-details {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg");
+  }
+}
+
+.restaurant-details__title {
+  margin-bottom: 12px;
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 414px) {
+  .restaurant-details__title {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 1.08;
+  }
+}
+
+.restaurant-details__subtitle {
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 414px) {
+  .restaurant-details__subtitle {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.restaurant-details__text {
+  margin-bottom: 48px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #BABABA;
+}
+@media screen and (min-width: 414px) {
+  .restaurant-details__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.restaurant-details__button {
+  display: inline-block;
+  padding: 14px 24px;
+  margin-bottom: 16px;
+  min-width: 236px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  color: #F3C653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.restaurant-details__button:hover, .restaurant-details__button:focus {
+  background-color: #FFFFFF;
+}
+
+.restaurant-details__list {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}/*# sourceMappingURL=index.css.map */

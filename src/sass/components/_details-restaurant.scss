@@ -1,0 +1,190 @@
+.restaurant-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 735px;
+    padding: 24px 0 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: $LinearGradientSection,
+    url('../images/restaurant-details/mobile/restaurant-details-418@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {   
+        background-image: $LinearGradientSection,
+        url('../images/restaurant-details/mobile/restaurant-details-418@2x.jpg');
+}
+
+@media screen and (min-width: 1024px) {   
+    background-image: $LinearGradientSection,
+    url('../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg'); 
+    padding: 48px 0 40px 0;
+             
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {   
+      background-image: $LinearGradientSection,
+      url('../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg'); 
+}
+}
+
+@media screen and (min-width: 1280px) {   
+    background-image: $LinearGradientSection,
+    url('../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg'); 
+             
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {   
+      background-image: $LinearGradientSection,
+      url('../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg'); 
+}
+}
+}
+
+.restaurant-details__container {
+    display: flex;
+    flex-direction: column;
+   
+    @media screen and (min-width: 1024px) {
+        margin-left: 278px;
+    } 
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 338px;
+    } 
+}
+
+.restaurant-details__title {
+margin-bottom: 12px;
+font-family: $fontFamilyLogo;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.08;
+letter-spacing: 0.3em;
+color: $colorWhite;
+
+@media screen and (min-width: 1024px) {
+margin-bottom: 16px;
+font-size: 64px;
+line-height: 1.08;
+}
+}
+
+.restaurant-details__subtitle {
+margin-bottom: 20px;
+font-family: $fontFamilyMain;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: $colorWhite;
+
+@media screen and (min-width: 1024px) {
+margin-bottom: 8px;    
+font-size: 24px;
+line-height: 1.21;
+}
+}
+
+.restaurant-details__text {
+margin-bottom: 48px;
+max-width: 259px;  
+height: 62px;
+font-family: $fontFamilyMain;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: $colorDescriptionGray;
+
+@media screen and (min-width: 1024px) {
+font-size: 16px;
+line-height: 1.25;
+max-width: 610px;
+}
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        bottom: 96px;
+        left: 47px;
+    } 
+}
+
+.order__button {
+display: flex;    
+padding: 14px 24px;
+min-width: 236px;
+height: 48px;
+font-family: $fontFamilyMain;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+
+cursor: pointer;
+color: $colorAccentYellow;
+background-color: $colorBackgroundButton;
+border: 2px solid $colorWhite;
+border-radius: 25px;
+
+transition: background-color $baseTransition;
+
+&:hover,
+&:focus {
+background-color: $colorWhite;
+}
+}
+
+.order__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.restaurant-details__list {
+    display: flex;
+    position: absolute;
+    left: 29px;
+    bottom: 232px;
+}
+
+.restaurant-details__svg {
+    display: flex;
+    gap: 32px;
+    position: absolute;
+    left: 40px;
+    bottom: 184px;
+
+@media screen and (min-width: 1024px) {
+    left: 312px;
+    bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    left: 354px;
+}
+}
+
+.restaurant-details__icon {
+    fill: $colorWhite;
+
+    transition: fill $baseTransition;
+
+&:hover,
+&:focus {
+    fill: $colorAccentYellow;
+}
+}
+
+
+
