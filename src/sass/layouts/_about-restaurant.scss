@@ -1,5 +1,6 @@
 .about
 {
+    overflow-x: hidden;
     background-color: $colorBackgroundPrimary;
 }
 
@@ -67,6 +68,12 @@
         width: 439px;
         font-size: 16px;
     }
+
+    @include for-size(desktop) {
+        width: 518px;
+    }
+
+
 }
 
 .restaurant__img-right, 
@@ -86,7 +93,14 @@
     @include for-size(tablet) {
         position: absolute;
         right: 112px;
-        top: -38px;
+        top: -33px;
+        margin: 0;
+    }
+
+    @include for-size(desktop) {
+        position: absolute;
+        right: 180px;
+        top: -33px;
         margin: 0;
     }
 }
@@ -97,6 +111,7 @@
     padding: 0;
     display: flex;
     align-items: center;
+        position: relative;
 
     @include for-size(tablet) {
         margin-top: 142px;
@@ -127,55 +142,81 @@
     color: $colorAccentBrown;
 }
 
-.restaurant__flipper-img
-{
-    padding: 0;
-}
-
-.restaurant__flipper-btn
-{
-    padding: 0;
-    margin-top: 27.5px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    gap: 24px;
-}
-
 // SLIDER
 
 .slider__container
 {
     width: auto;
     height: auto;
-    position: relative;
 }
 
-.slider {
-    &:not(:last-child)
-    {
-        margin-right: 25px;
-    }
+
+.slider
+{
     overflow: hidden;
+    display: flex;  
+    position: relative;
+    left: 20%;
+
+    @include for-size(tablet) {
+        width: 428px;
+
+        position: relative;
+        left: 50%;
+        bottom: 96px;
+        }
+
+    @include for-size(desktop) {
+        width: 548px;
+
+        position: relative;
+        left: 50%;
+        bottom: 118px;
+    }
+    
 }
 
 
 .slider__line {
+    width: 1024px;
     display: flex;
     position: relative;
-    top: 0;
     right: 0;
     transition: all ease 1s;
-    width: 90%;
-
-    box-shadow: 2px 2px 60px $colorBoxShadow;
+ 
 }
 
-.slider__picture
-{
-    box-shadow: 2px 2px 60px $colorBoxShadow;
+.restaurant__flipper-img {
+    padding: 0;
+}
+
+.restaurant__flipper-btn {
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    position: relative;
+    left: 77%;
+    top: 28px;
+
+    @include for-size(tablet) {
+        position: relative;
+        left: 87%;
+        bottom: 40px;
+        top: 0;
+    }
+
+    @include for-size(desktop) {
+        position: relative;
+        left: 92%;
+        bottom: 58px;
+    }
 }
 
 .restaurant__button {
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.slider__picture {
+    @include for-size(desktop) {
+        width: 254px;
+    }}
