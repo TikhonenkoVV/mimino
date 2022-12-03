@@ -212,17 +212,16 @@
     fill: $colorAccentYellow;
 }
 .hero__btn-control {
-    @media screen and (max-width: 1023px) {
-        display: flex;        
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
     @media screen and (min-width: 1024px) {
-        display: inline-flex;
+        flex-direction: row;
         gap: 40px;
     }
-    @media screen and (min-width: 1280px) {        
+    @media screen and (min-width: 1280px) {                
         gap: 60px;
     }
 }
