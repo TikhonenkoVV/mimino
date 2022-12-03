@@ -28,6 +28,11 @@
       $letter-spacing: 0.03em
     );
     color: $colorWhite;
+    @include for-size(tablet) {
+      @include font(
+        $size: 40px
+      );
+    }
     @include for-size(desktop) {
       margin-right: 96px;
     }
