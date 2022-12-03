@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.custom-select-trigger {
+.custom-select__trigger {
   position: relative;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@
   }
 }
 
-.custom-options {
+.custom-select__options {
   width: 100%;
   position: absolute;
   top: 100%;
@@ -72,7 +72,7 @@
   }
 }
 
-.custom-option {
+.custom-select__option {
   padding: 15px 12px;
   cursor: pointer;
   background-color: $colorWhite;

@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal-room>
+<div class="backdrop" data-modal-room>
   <div class="modal">
     <button class="modal__close-button" data-modal-room-close>
       <svg width="18" height="18">
@@ -41,30 +41,33 @@
         </div>
         <div class="modal__field"></div>
         <div class="modal__field">
-          <select
-            class="custom-select"
-            id="room"
-            name="room-category"
-            placeholder="Двомісний люкс"
-          >
-            <option value="Двомісний люкс">Двомісний люкс</option>
-            <option value="Трьохмісний номер">Трьохмісний номер</option>
-            <option value="Двомісний номер">Двомісний номер</option>
-          </select>
+          <div class="custom-select-wrapper">
+            <select
+              class="custom-select"
+              id="room"
+              name="room-category"
+              placeholder="Двомісний люкс"
+            >
+              <option value="Двомісний люкс">Двомісний люкс</option>
+              <option value="Трьохмісний номер">Трьохмісний номер</option>
+              <option value="Двомісний номер">Двомісний номер</option>
+            </select>
+          </div>
           <label class="modal__label" for="room"> Категорія номеру </label>
         </div>
         <div class="modal__field">
-          <select
-            class="custom-select"
-            id="choose-date"
-            name="date-checkin"
-            placeholder="Сьогодні"
-          >
-            <option value="Сьогодні">Сьогодні</option>
-            <option value="Завтра">Завтра</option>
-            <option value="Післязавтра">Післязавтра</option>
-            <option value="Інший день">Інший день</option>
-          </select>
+          <div class="modal__datepickerwrapper">
+            <span class="modal__datepickerbox">
+              <input
+                type="text"
+                id="datepicker"
+                placeholder="Сьогодні"
+                required
+                class="modal__input modal__input--withafter"
+                autocomplete="off"
+              />
+            </span>
+          </div>
           <label
             class="modal__label modal__label--biggerfont"
             for="choose-date"
@@ -73,17 +76,18 @@
           </label>
         </div>
         <div class="modal__field">
-          <select
-            class="custom-select"
-            id="choose-date"
-            name="date-checkout"
-            placeholder="Сьогодні"
-          >
-            <option value="Сьогодні">Сьогодні</option>
-            <option value="Завтра">Завтра</option>
-            <option value="Післязавтра">Післязавтра</option>
-            <option value="Інший день">Інший день</option>
-          </select>
+          <div class="modal__datepickerwrapper">
+            <span class="modal__datepickerbox">
+              <input
+                type="text"
+                id="datepickersecond"
+                placeholder="Сьогодні"
+                required
+                class="modal__input"
+                autocomplete="off"
+              />
+            </span>
+          </div>
           <label
             class="modal__label modal__label--bigmargin modal__label--biggerfont"
             for="choose-date"

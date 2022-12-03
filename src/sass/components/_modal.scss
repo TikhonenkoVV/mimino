@@ -110,6 +110,28 @@
   }
 }
 
+.modal__datepickerwrapper {
+  position: relative;
+}
+
+.modal__datepickerbox::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: 0;
+
+  background-image: url(../images/select-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transition: transform $baseTransition;
+}
+
 .modal__label {
   display: inline-block;
   margin-bottom: 20px;
