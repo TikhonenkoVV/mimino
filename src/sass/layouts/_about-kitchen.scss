@@ -1,0 +1,223 @@
+a {
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: transparent;
+}
+
+.kitchen {
+  background: $colorBackgroundPrimary;
+
+  h2 {
+    font-family: $fontFamilyTNRoman;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $colorTextLightGray;
+  }
+
+  p {
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+
+  .logo {
+    font-family: $fontFamilyLogo;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: $colorDarkGray;
+    margin: 12px 0;
+  }
+
+  img {
+    background: #dadada;
+    box-shadow: 2px 2px 60px 2px $colorBoxShadow;
+    border-radius: 2px;
+
+    @include for-size(tablet) {
+      background: #dadada;
+      box-shadow: 5px 5px 70px 17px $colorBoxShadow;
+      border-radius: 0;
+    }
+  }
+
+  .container {
+    background: repeating-linear-gradient(
+      90deg,
+      #0000,
+      #0000 138px,
+      #bababa66 140px 141px
+    );
+
+    @include for-size(tablet) {
+      background: repeating-linear-gradient(
+        90deg,
+        #0000,
+        #0000 261px,
+        #bababa66 264px 227px
+      );
+    }
+  }
+
+  &__chiefs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0;
+
+    &__description {
+      max-width: 258px;
+      margin-bottom: 28px;
+      color: $colorTextPrimary;
+    }
+
+    &__picture {
+      margin-left: auto;
+    }
+  }
+
+  &__ingredients {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+
+    &__picture {
+      img {
+        all: unset;
+      }
+    }
+
+    &__description {
+      margin-left: 20px;
+      color: $colorAccentBrown;
+    }
+  }
+
+  @include for-size(tablet) {
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .logo {
+      font-size: 64px;
+    }
+
+    &__chiefs {
+      padding: 120px 0;
+      &__description {
+        max-width: 50%;
+        padding-right: 15px;
+      }
+
+      &__picture {
+        position: absolute;
+        left: 50%;
+        top: -32px;
+      }
+    }
+
+    &__ingredients {
+      height: 465px;
+      &__description {
+        margin-left: 48px;
+        max-width: 312px;
+      }
+    }
+  }
+
+  @include for-size(desktop) {
+    &__ingredients {
+      height: 600px;
+
+      &__description {
+        margin-left: 32px;
+      }
+    }
+  }
+}
+
+.kitchen__title-hidden {
+  visibility: hidden;
+}
+
+.carousel {
+  overflow: hidden;
+  margin: 0 -15px;
+
+  .slider {
+    transform: translateX(calc(50% - 125px));
+    display: flex;
+    overflow-x: scroll;
+
+    &-img {
+      max-width: 245px;
+      height: 245px;
+      counter-increment: item;
+      flex: 0 0 100%;
+      position: relative;
+      box-shadow: none;
+    }
+
+    &-item {
+      border-radius: 2px;
+      box-shadow: 0 4px 4px #00000040;
+      height: 100%;
+      margin-right: 24px;
+
+      @include for-size(tablet) {
+        margin-right: 40px;
+      }
+    }
+
+    @include for-size(tablet) {
+      transform: none;
+
+      &-img {
+        max-width: 194px;
+        height: 194px;
+        background: #dadada;
+      }
+    }
+
+    @include for-size(desktop) {
+    }
+  }
+
+  .carousel-btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+
+    .prev-btn {
+      margin-right: 33px;
+    }
+
+    @include for-size(tablet) {
+      padding-right: 0;
+    }
+  }
+
+  @include for-size(tablet) {
+    margin: 0;
+    margin-left: auto;
+    max-width: 428px;
+  }
+}
