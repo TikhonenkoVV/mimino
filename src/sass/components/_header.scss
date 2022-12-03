@@ -26,9 +26,14 @@
       $weight: 700,
       $size: 36px,
       $line-height: 1.08,
-      $letter-spacing: 0.03em
+      $letter-spacing: 0.3em
     );
     color: $colorWhite;
+    @include for-size(tablet) {
+      @include font(
+        $size: 40px
+      );
+    }
     @include for-size(desktop) {
       margin-right: 96px;
     }
