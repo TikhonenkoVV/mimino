@@ -1,12 +1,13 @@
 .room__service {
   display: flex;
   flex-flow: column;
-  gap: 72px;
-  flex-flow: wrap-reverse;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
 
   @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-flow: wrap;
+    flex-flow: row-reverse;
   }
 }
 
@@ -22,4 +23,35 @@
 }
 .frame {
   order: 2;
+}
+
+.button-room__details {
+  padding: 14px 65px 14px 64px;
+  background-color: #000000;
+  color: #f3c653;
+  display: inline-block;
+  width: 236px;
+  height: 48px;
+  border-radius: 25px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.button-room__price {
+  background-color: #000000;
+  color: #f3c653;
+  display: inline-block;
+  width: 236px;
+  height: 48px;
+  border-radius: 25px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  padding: 14px 37px;
 }
