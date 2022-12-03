@@ -1,3 +1,5 @@
+// input mask
+
 $(document).ready(function () {
   $('#phone-input').inputmask('+38 (999) 999-99-99');
 });
@@ -5,6 +7,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('#client-phone').inputmask('+38 (999) 999-99-99');
 });
+
+// custom calendar
 
 $(function () {
   $('#datepicker').datepicker({
@@ -55,6 +59,8 @@ $(function () {
 $(function () {
   $('#datepickersecond').datepicker();
 });
+
+// custom select
 
 $('.custom-select').each(function () {
   var classes = $(this).attr('class'),
@@ -115,6 +121,8 @@ $('.custom-select__option').on('click', function () {
     .text($(this).text());
 });
 
+// script for open close modal window (3 modal windows, 3 different scripts)
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-room-open]'),
@@ -127,6 +135,7 @@ $('.custom-select__option').on('click', function () {
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('modal-open');
   }
 })();
 
@@ -142,6 +151,7 @@ $('.custom-select__option').on('click', function () {
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('modal-open');
   }
 })();
 
@@ -157,5 +167,6 @@ $('.custom-select__option').on('click', function () {
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('modal-open');
   }
 })();

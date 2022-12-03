@@ -45,37 +45,40 @@
         </div>
         <div class="modal__field modal__field--flex">
           <div>
-            <select
-              class="custom-select"
-              id="number-clients"
-              name="select-table"
-              placeholder="2"
-            >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value=">8">8 і більше</option>
-            </select>
+            <div class="custom-select-wrap">
+              <select
+                class="custom-select"
+                id="number-clients"
+                name="select-table"
+                placeholder="2"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value=">8">8 і більше</option>
+              </select>
+            </div>
             <label class="modal__label" for="number-clients">
               Столик на яку кількість осіб?
             </label>
           </div>
           <div>
-            <select
-              class="custom-select"
-              id="choose-date"
-              name="select"
-              placeholder="Сьогодні"
-            >
-              <option value="Сьогодні">Сьогодні</option>
-              <option value="Завтра">Завтра</option>
-              <option value="Післязавтра">Післязавтра</option>
-              <option value="Інший день">Інший день</option>
-            </select>
+            <div class="modal__datepickerwrapper">
+              <span class="modal__datepickerbox">
+                <input
+                  type="text"
+                  id="datepicker"
+                  placeholder="Сьогодні"
+                  required
+                  class="modal__input"
+                  autocomplete="off"
+                />
+              </span>
+            </div>
             <label
               class="modal__label modal__label--bigmargin"
               for="choose-date"
