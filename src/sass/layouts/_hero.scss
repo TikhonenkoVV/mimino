@@ -238,6 +238,7 @@
     letter-spacing: 0.02em;
     transition: color $baseTransition,
         background-color $baseTransition;
+        cursor: pointer;
     padding: 14px 24px;
 
     &:hover,
@@ -259,4 +260,5 @@
 }
 .hero__network-link {
     fill: $colorBorderAdress;
+    cursor: pointer;
 }
