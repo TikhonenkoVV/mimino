@@ -23,9 +23,9 @@
     font-family: $fontFamilyLogo;
     @include font(
       $weight: 700,
-      $size: 36px,
+      $size: 40px,
       $line-height: 1.08,
-      $letter-spacing: 0.03em
+      $letter-spacing: 0.3em
     );
     color: $colorWhite;
     @include for-size(desktop) {

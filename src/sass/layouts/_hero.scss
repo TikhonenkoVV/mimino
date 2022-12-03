@@ -115,6 +115,9 @@
     margin-bottom: 32px;
     }
 }
+.hero__title--hotel {
+    margin-bottom: 32px;
+}
 .hero__subtitle {
     color: $colorWhite;
     text-align: center;
@@ -132,6 +135,15 @@
     }
     @media screen and (min-width: 1280px) {
     margin-bottom: 64px;
+    }
+}
+.hero__subtitle--hotel {
+    margin-bottom: 178px;
+    @media screen and (min-width: 1024px) {
+    margin-bottom: 218px;
+    }
+    @media screen and (min-width: 1280px) {
+    margin-bottom: 242px;
     }
 }
 .hero__text {
@@ -166,12 +178,14 @@
     margin-bottom: 58px;
     }    
 }
+.hero__container {
+    position: relative;
+}
 .hero__address {    
     @media screen and (max-width: 1023px) {        
-        // position: fixed;
         position: absolute;
-        top: 0;
-        right: 15px;
+        top: -100px;
+        right: 0;
     }
     display: inline-block;
     border: 1px solid rgba(243, 198, 83, 0.7);
@@ -186,10 +200,14 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.01em;    
     color: $colorAdsressMap; 
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: 1.25;
+    }
 }
 .hero__address-icon {
     fill: $colorAccentYellow;
