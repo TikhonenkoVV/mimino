@@ -1,5 +1,4 @@
 .contacts-section {
-  position: relative;
   padding-top: 32px;
   padding-bottom: 36px;
 
@@ -168,8 +167,7 @@
   &__map {
     width: 100%;
     height: 100%;
-    background-color: $colorAdsressMap;
-    border: 1px solid #bababa;
+    border: 1px solid $colorBorderMap;
     border-radius: 2px;
     box-shadow: 2px 2px 60px 2px $colorBoxShadow;
 
@@ -177,29 +175,4 @@
       box-shadow: 5px 5px 70px 17px $colorBoxShadow;
     }
   }
-}
-
-.section-striped {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  --total-count: 3;
-  --lines-number: 2;
-
-  @include for-size(tablet) {
-    --total-count: 4;
-    --lines-number: 3;
-  }
-
-  background: repeating-linear-gradient(
-    90deg,
-    transparent 0 calc((100% - var(--lines-number) * 1px) / var(--total-count)),
-    $colorVerticalLine 0
-      calc((100% - var(--lines-number) * 0.5px) / var(--total-count) + 0.5px)
-  );
-
-  filter: blur(0.5px);
 }
