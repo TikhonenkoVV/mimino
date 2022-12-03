@@ -1,0 +1,325 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.modal-open {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #5f5f5f;
+  background-color: #fffdee;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Times New Roman Cyr";
+  src: url("../fonts/TimesNRCyrMT.woff2") format("woff2"), url("../fonts/TimesNRCyrMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Times New Roman Cyr";
+  src: url("../fonts/TimesNRCyrMT-Bold.woff2") format("woff2"), url("../fonts/TimesNRCyrMT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Film P3";
+  src: url("../fonts/FilmP3Bold.eot");
+  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  padding: 0 15px;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 47px;
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 85px;
+    width: 1280px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: transparent;
+}
+
+.kitchen {
+  background: #fffdee;
+}
+.kitchen h2 {
+  font-family: "Times New Roman Cyr", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+}
+.kitchen p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+.kitchen .logo {
+  font-family: "Film P3", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin: 12px 0;
+}
+.kitchen img {
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .kitchen img {
+    background: #dadada;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+  }
+}
+.kitchen .container {
+  background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 138px, rgba(186, 186, 186, 0.4) 140px 141px);
+}
+@media screen and (min-width: 1024px) {
+  .kitchen .container {
+    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 261px, rgba(186, 186, 186, 0.4) 264px 227px);
+  }
+}
+.kitchen__chiefs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0;
+}
+.kitchen__chiefs__description {
+  max-width: 258px;
+  margin-bottom: 28px;
+  color: #5f5f5f;
+}
+.kitchen__chiefs__picture {
+  margin-left: auto;
+}
+.kitchen__ingredients {
+  display: flex;
+  padding: 16px 0;
+  align-items: center;
+}
+.kitchen__ingredients__picture img {
+  all: unset;
+}
+.kitchen__ingredients__description {
+  margin-left: 20px;
+  color: #c79002;
+}
+@media screen and (min-width: 1024px) {
+  .kitchen h2 {
+    font-size: 32px;
+  }
+  .kitchen p {
+    font-size: 16px;
+  }
+  .kitchen .logo {
+    font-size: 64px;
+  }
+  .kitchen__chiefs {
+    padding: 120px 0;
+  }
+  .kitchen__chiefs__description {
+    max-width: 50%;
+    padding-right: 15px;
+  }
+  .kitchen__chiefs__picture {
+    position: absolute;
+    left: 50%;
+    top: -32px;
+  }
+  .kitchen__ingredients {
+    height: 465px;
+  }
+  .kitchen__ingredients__description {
+    margin-left: 48px;
+    max-width: 312px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .kitchen__ingredients {
+    height: 600px;
+  }
+  .kitchen__ingredients__description {
+    margin-left: 32px;
+  }
+}
+
+.kitchen__title-hidden {
+  visibility: hidden;
+}
+
+.carousel {
+  overflow: hidden;
+  margin: 0 -15px;
+}
+.carousel .slider {
+  transform: translateX(calc(50% - 125px));
+  display: flex;
+  overflow-x: scroll;
+}
+.carousel .slider-img {
+  max-width: 245px;
+  height: 245px;
+  counter-increment: item;
+  flex: 0 0 100%;
+  position: relative;
+  box-shadow: none;
+}
+.carousel .slider-item {
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
+  height: 100%;
+  margin-right: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .carousel .slider-item {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel .slider {
+    transform: none;
+  }
+  .carousel .slider-img {
+    max-width: 194px;
+    height: 194px;
+    background: #dadada;
+  }
+}
+.carousel .carousel-btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.carousel .carousel-btns .prev-btn {
+  margin-right: 33px;
+}
+@media screen and (min-width: 1024px) {
+  .carousel .carousel-btns {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carousel {
+    margin: 0;
+    margin-left: auto;
+    max-width: 428px;
+  }
+}/*# sourceMappingURL=index.css.map */
