@@ -21,6 +21,11 @@
   @include font(700, 20px, 1.15, 0.05em);
   color: $colorPlaceholder;
 
+  @include for-size(tablet) {
+    font-size: 24px;
+    height: 64px;
+  }
+
   &::after {
     content: '';
     position: absolute;

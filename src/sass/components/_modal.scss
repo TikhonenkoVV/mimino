@@ -2,7 +2,6 @@
   position: relative;
   padding: 60px 15px;
   background-color: $colorBackgroundPrimary;
-  margin-top: 15px;
 
   @include for-size(mobile) {
     width: 414px;
@@ -72,6 +71,16 @@
   color: $colorBlack;
 
   margin-bottom: 40px;
+
+  @include for-size(tablet) {
+    font-size: 32px;
+  }
+
+  &--biggerfont {
+    @include for-size(tablet) {
+      font-size: 40px;
+    }
+  }
 }
 
 .modal__subtitle {
@@ -107,6 +116,11 @@
   &:focus {
     outline: 0;
     border-color: $colorAccentYellow;
+  }
+
+  @include for-size(tablet) {
+    height: 64px;
+    font-size: 24px;
   }
 }
 
@@ -156,6 +170,7 @@
 
   @include for-size(tablet) {
     margin-bottom: 0px;
+    font-size: 16px;
   }
 }
 
@@ -176,6 +191,10 @@
   text-transform: uppercase;
 
   transition: background-color $baseTransition;
+
+  @include for-size(tablet) {
+    font-size: 24px;
+  }
 
   &:hover,
   &:focus {

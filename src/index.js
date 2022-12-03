@@ -32,7 +32,28 @@ $(function () {
 });
 
 $(function () {
-  $('#datepickersecond').datepicker({
+  $('#datepicker2').datepicker({
+    dateFormat: 'dd/mm/yy',
+    monthNames: [
+      'Січень',
+      'Лютий',
+      'Березень',
+      'Квітень',
+      'Травень',
+      'Червень',
+      'Липень',
+      'Серпень',
+      'Вересень',
+      'Жовтень',
+      'Листопад',
+      'Грудень',
+    ],
+    dayNamesMin: ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'нд'],
+  });
+});
+
+$(function () {
+  $('#datepicker3').datepicker({
     dateFormat: 'dd/mm/yy',
     monthNames: [
       'Січень',
@@ -57,7 +78,11 @@ $(function () {
 });
 
 $(function () {
-  $('#datepickersecond').datepicker();
+  $('#datepicker2').datepicker();
+});
+
+$(function () {
+  $('#datepicker3').datepicker();
 });
 
 // custom select
