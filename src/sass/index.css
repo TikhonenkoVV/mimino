@@ -161,17 +161,44 @@ textarea {
   }
 }
 
-.menu {
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-container__col-1,
+.menu-container__col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 106px) / 2);
+    gap: 20px;
+  }
+}
+
+.dishes {
   width: 100%;
   text-align: left;
   margin-bottom: 16px;
 }
-
-.menu-drinks {
-  margin-bottom: 32px;
+@media screen and (min-width: 1024px) {
+  .dishes {
+    margin-bottom: 0;
+  }
 }
 
-.menu__category {
+.dishes-drinks {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes-drinks {
+    margin-bottom: 0;
+  }
+}
+
+.dishes__category {
   font-family: "Times New Roman Cyr", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -180,9 +207,14 @@ textarea {
   text-align: left;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .dishes__category {
+    margin-bottom: 20px;
+  }
+}
 
-.menu__caption {
-  width: 200px;
+.dishes__caption {
+  width: 225px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -191,8 +223,13 @@ textarea {
   color: #000000;
   padding-bottom: 4px;
 }
+@media screen and (min-width: 1024px) {
+  .dishes__caption {
+    width: 221px;
+  }
+}
 
-.menu__ingredients {
+.dishes__ingredients {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 10px;
@@ -202,17 +239,25 @@ textarea {
   padding-bottom: 8px;
 }
 
-.menu__portion {
+.dishes__portion {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: #000000;
-  padding: 4px 0 4px 33px;
+  padding: 4px 0 4px 32px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes__portion {
+    padding: 4px 0 4px 40px;
+  }
+}
+.dishes-drinks .dishes__portion {
+  padding: 4px 0 4px 20px;
 }
 
-.menu__price {
+.dishes__price {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -220,7 +265,11 @@ textarea {
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: #000000;
-  padding: 4px 0 4px 33px;
+  text-align: right;
+  padding: 4px 0 4px 7px;
+}
+.dishes-drinks .dishes__price {
+  padding: 4px 0;
 }
 
 .book-table {

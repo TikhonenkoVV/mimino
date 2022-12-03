@@ -1,14 +1,35 @@
-.menu {
+.menu-container {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menu-container__col-1,
+.menu-container__col-2 {
+  @include for-size(tablet) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 106px) / 2);
+    gap: 20px;
+  }
+}
+.dishes {
   width: 100%;
   text-align: left;
   margin-bottom: 16px;
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
 }
 
-.menu-drinks {
+.dishes-drinks {
   margin-bottom: 32px;
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
 }
 
-.menu__category {
+.dishes__category {
   font-family: $fontFamilyTNRoman;
   font-weight: 700;
   font-size: 20px;
@@ -16,10 +37,13 @@
   color: $colorBlack;
   text-align: left;
   margin-bottom: 16px;
+  @include for-size(tablet) {
+    margin-bottom: 20px;
+  }
 }
 
-.menu__caption {
-  width: 200px;
+.dishes__caption {
+  width: 225px;
   font-family: $fontFamilyMain;
   font-weight: 500;
   font-size: 14px;
@@ -27,9 +51,12 @@
   letter-spacing: 0.02em;
   color: $colorBlack;
   padding-bottom: 4px;
+  @include for-size(tablet) {
+    width: 221px;
+  }
 }
 
-.menu__ingredients {
+.dishes__ingredients {
   font-family: $fontFamilyMain;
   font-weight: 400;
   font-size: 10px;
@@ -39,17 +66,23 @@
   padding-bottom: 8px;
 }
 
-.menu__portion {
+.dishes__portion {
   font-family: $fontFamilyMain;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: $colorBlack;
-  padding: 4px 0 4px 33px;
+  padding: 4px 0 4px 32px;
+  @include for-size(tablet) {
+    padding: 4px 0 4px 40px;
+  }
+  .dishes-drinks & {
+    padding: 4px 0 4px 20px;
+  }
 }
 
-.menu__price {
+.dishes__price {
   font-family: $fontFamilyMain;
   font-style: normal;
   font-weight: 700;
@@ -57,7 +90,11 @@
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: $colorBlack;
-  padding: 4px 0 4px 33px;
+  text-align: right;
+  padding: 4px 0 4px 7px;
+  .dishes-drinks & {
+    padding: 4px 0;
+  }
 }
 
 .book-table {
