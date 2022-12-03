@@ -6,10 +6,12 @@
 @import './base/base';
 @import './base/fonts';
 @import './layouts/container';
+@import './layouts/decor';
 @import './layouts/button_a';
 @import './layouts/button_b';
 @import './layouts/about';
 @import './layouts/details';
+@import './components/header';
 @import './components/backdrop';
 @import './components/modal';
 @import './components/custom-select.scss';
