@@ -166,7 +166,7 @@ background-color: $colorWhite;
 }
 }
 
-.restaurant-details__svg {
+.navigation {
     display: flex;
     gap: 32px;
     position: absolute;
@@ -194,7 +194,7 @@ background-color: $colorWhite;
 }
 }
 
-.restaurant-details__list {
+.thumb {
     display: flex;
     position: absolute;
 @media screen and (max-width: 1023px) {
