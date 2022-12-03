@@ -1,6 +1,11 @@
 .menu {
+  width: 100%;
   text-align: left;
   margin-bottom: 16px;
+}
+
+.menu-drinks {
+  margin-bottom: 32px;
 }
 
 .menu__category {
@@ -56,6 +61,7 @@
 }
 
 .book-table {
+  display: block;
   cursor: pointer;
   font-family: $fontFamilyMain;
   font-weight: 700;
@@ -68,6 +74,11 @@
   border-radius: $borderRadiusPrimary;
   padding: 15px 24px;
   transition: background-color $baseTransition;
+  margin: 0 auto;
+
+  @include for-size(tablet) {
+    margin: 0 0 0 auto;
+  }
 }
 
 .book-table:hover,
