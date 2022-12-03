@@ -16,8 +16,6 @@
   background-color: #000000;
   color: #f3c653;
   display: inline-block;
-  width: 236px;
-  height: 48px;
   border-radius: 25px;
   font-family: Montserrat;
   font-size: 16px;
@@ -31,10 +29,7 @@
   background-color: #000000;
   color: #f3c653;
   display: inline-block;
-  width: 236px;
-  height: 48px;
   border-radius: 25px;
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -42,8 +37,8 @@
   padding: 14px 37px;
 }
 
-@media screen and (max-width: 1023px) {
-  .logo_text {
+@media screen and (min-width: 414px) {
+  .logo__text {
     font-family: 'Times New Roman';
     font-size: 20px;
     font-weight: 400;
@@ -54,7 +49,7 @@
     margin-bottom: 8px;
   }
 
-  .logo_title {
+  .logo__title {
     font-family: Film P3;
     font-size: 40px;
     letter-spacing: 0.03em;
@@ -64,7 +59,7 @@
     color: #494848;
     margin-bottom: 32px;
   }
-  .room_title {
+  .room__title {
     font-family: 'Times New Roman';
     font-size: 24px;
     line-height: 100%;
@@ -73,7 +68,7 @@
     text-transform: uppercase;
     margin-bottom: 12px;
   }
-  .room_text {
+  .room__text {
     font-family: Montserrat;
     font-size: 12px;
     line-height: 1.25;
@@ -85,17 +80,27 @@
     margin-bottom: 32px;
   }
 
-  .hotel_picture {
+  .hotel__picture {
     border-radius: 2px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
     margin-bottom: 32px;
     max-width: 244px;
     height: auto;
     width: 100%;
+    margin-right: auto;
   }
 
   .room__service {
     display: flex;
     flex-flow: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel__picture {
+    position: absolute;
+    top: -32px;
+    left: 112px;
+    margin-right: 26px;
   }
 }
