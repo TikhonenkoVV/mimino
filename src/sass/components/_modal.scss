@@ -130,6 +130,11 @@
   background-size: contain;
 
   transition: transform $baseTransition;
+
+  .modal__datepickerwrapper:focus-within & {
+    transform: rotate(-180deg);
+    top: 25%;
+  }
 }
 
 .modal__label {
