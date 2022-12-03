@@ -1,7 +1,7 @@
 <section class="restaurant-details">
   <div class="container">
     <div class="restaurant-details__container">
-      <h1 class="restaurant-details__title">Mimino</h1>
+      <h1 class="restaurant-details__title">Mimiho</h1>
       <h2 class="restaurant-details__subtitle">Ресторан</h2>
       <p class="restaurant-details__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -11,16 +11,17 @@
 
     <ul class="order">
       <li class="order__item">
-        <button type="button" class="order__button">Забронювати столик</button>
+        <button type="button" class="order__button" data-modal-table-open>Забронювати столик</button>
       </li>
       <li>
-        <button type="button" class="order__button">Переглянути меню</button>
+        <button type="button" class="order__button" onClick='window.location.href="../restaurant/menu.html"'>Переглянути меню</button>
       </li>
     </ul>
 
-    <!-- <ul class="restaurant-details__list">
+    <ul class="restaurant-details__list thumb">
       <li>
-        <img
+        <div class="thumb__left">
+          <img
           srcset="
             ./images/restaurant-details/image1@1x.jpg 1x,
             ./images/restaurant-details/image1@2x.jpg 2x"
@@ -29,8 +30,10 @@
           width="370"
           height="270"
         />
+        </div>
       </li>
       <li>
+        <div class="thumb__center">
         <img
           srcset="
             ./images/restaurant-details/image2@1x.jpg 1x,
@@ -40,8 +43,10 @@
           width="182"
           height="270"
         />
+      </div>
       </li>
       <li>
+        <div class="thumb__right">
         <img
           srcset="
             ./images/restaurant-details/image3@1x.jpg 1x,
@@ -51,8 +56,9 @@
           width="476"
           height="270"
         />
+      </div>
       </li>
-    </ul> -->
+    </ul>
 
     <ul class="restaurant-details__svg">
       <li>

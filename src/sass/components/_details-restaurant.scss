@@ -1,12 +1,8 @@
 .restaurant-details {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    overflow: hidden;
     height: 735px;
     padding: 24px 0 40px 0;
-    margin-left: auto;
-    margin-right: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,6 +19,7 @@
 @media screen and (min-width: 1024px) {   
     background-image: $LinearGradientSection,
     url('../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg'); 
+    height: 620px;
     padding: 48px 0 40px 0;
              
 @media screen and (min-device-pixel-ratio: 2),
@@ -49,14 +46,15 @@ screen and (min-resolution: 2dppx) {
 .restaurant-details__container {
     display: flex;
     flex-direction: column;
+    margin-left: 33.82%;
    
-    @media screen and (min-width: 1024px) {
-        margin-left: 278px;
-    } 
+@media screen and (min-width: 1024px) {
+    margin-left: 27.14%;
+} 
 
-    @media screen and (min-width: 1280px) {
-        margin-left: 338px;
-    } 
+@media screen and (min-width: 1280px) {
+    margin-left: 26.41%;
+} 
 }
 
 .restaurant-details__title {
@@ -66,6 +64,7 @@ font-weight: 700;
 font-size: 40px;
 line-height: 1.08;
 letter-spacing: 0.3em;
+text-transform: uppercase;
 color: $colorWhite;
 
 @media screen and (min-width: 1024px) {
@@ -106,24 +105,40 @@ color: $colorDescriptionGray;
 font-size: 16px;
 line-height: 1.25;
 max-width: 610px;
+height: 44px;
+margin-bottom: 40px;
 }
 }
 
 .order {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @media screen and (max-width: 1023px) {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
 
     @media screen and (min-width: 1024px) {
         position: absolute;
         bottom: 96px;
         left: 47px;
     } 
+
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: 94px;
+        left: 85px;
+    } 
+}
+
+.order__item:not(:last-child) {
+    margin-bottom: 16px; 
 }
 
 .order__button {
-display: flex;    
+display: flex;  
+justify-content: center; 
+align-items: center; 
 padding: 14px 24px;
 min-width: 236px;
 height: 48px;
@@ -145,17 +160,10 @@ transition: background-color $baseTransition;
 &:focus {
 background-color: $colorWhite;
 }
-}
 
-.order__item:not(:last-child) {
-    margin-bottom: 16px;
+&:last-child {
+    padding: 14px 3px;
 }
-
-.restaurant-details__list {
-    display: flex;
-    position: absolute;
-    left: 29px;
-    bottom: 232px;
 }
 
 .restaurant-details__svg {
@@ -184,6 +192,52 @@ background-color: $colorWhite;
 &:focus {
     fill: $colorAccentYellow;
 }
+}
+
+.restaurant-details__list {
+    display: flex;
+    position: absolute;
+@media screen and (max-width: 1023px) {
+    top: 50%;
+    left: 29px;
+    transform: translateY(-50%);
+    gap: 34px;
+}
+
+@media screen and (min-width: 1024px) {
+    left: 312px;
+    bottom: 96px;
+    gap: 34px;
+}
+     
+@media screen and (min-width: 1280px) {
+    left: 353px;
+    gap: 87px; 
+}
+}
+
+.thumb__left {
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    background: $colorBackgroundImages;
+    border-radius: 2px;
+}
+
+.thumb__center {
+    overflow: hidden;
+    width: 162px;
+    height: 270px;
+    background: $colorBackgroundImages;
+    border-radius: 2px;
+}
+
+.thumb__right {
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    background: $colorBackgroundImages;
+    border-radius: 2px;
 }
 
 
