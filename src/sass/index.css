@@ -202,6 +202,11 @@ textarea {
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
 }
 .room-x3-adult__button-details:hover, .room-x3-adult__button-details:active {
   background-color: #ffffff;
@@ -219,6 +224,11 @@ textarea {
   line-height: 1.25;
   letter-spacing: 0.02em;
   padding: 14px 37px;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
 }
 .room-x3-adult__price:hover, .room-x3-adult__price:active {
   background-color: #ffffff;
