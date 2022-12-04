@@ -130,11 +130,6 @@
 
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @include for-size(mobile-only){
-        // margin-left: auto;
-        // margin-right: auto;
-    }
     
     @include for-size(tablet) {
         max-width: 434px;
