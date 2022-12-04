@@ -9,15 +9,20 @@ function init() {
 
   images.forEach(item => {
     width = document.querySelector('.slider').offsetWidth;
-    console.log(width);
 
-    if (width > 427) {
+    if (width < 547 && width > 427) {
       item.style.marginRight = '40' + 'px';
       item.style.width = '194' + 'px';
+      item.style.boxShadow = `2px 2px 60px rgba(0, 0, 0, 0.25)`;
     } else if (width < 427) {
       item.style.marginRight = '25' + 'px';
       item.style.width = '245' + 'px';
       item.style.height = 'auto';
+      item.style.boxShadow = `2px 2px 60px rgba(0, 0, 0, 0.25)`;
+    } else if (width > 547) {
+      item.style.width = '254' + 'px';
+      item.style.marginRight = '40' + 'px';
+      item.style.boxShadow = `2px 2px 60px rgba(0, 0, 0, 0.25)`;
     }
     // item.style.width = '254' + 'px';
     // item.style.marginRight = '40' + 'px';
@@ -33,7 +38,9 @@ window.addEventListener('resize', init);
 document.querySelector('.slider-next').addEventListener('click', function (e) {
   e.preventDefault();
   count++;
-  if (count >= images.length) {
+  console.log(images.length);
+
+  if (count >= images.length - 1) {
     count = 0;
   }
   rollSlider();
@@ -54,18 +61,18 @@ document.querySelector('.slider-prev').addEventListener('click', function (e) {
 
 function rollSlider() {
   if (width > 548) {
-    sliderLine.style.transform = 'translate(-' + (count * width) / 1.5 + 'px)';
+    sliderLine.style.transform = 'translate(-' + (count * width) / 1.45 + 'px)';
   }
 }
 
 function rollSliderM() {
   if (width < 427) {
-    sliderLine.style.transform = 'translate(-' + (count * width) / 1.45 + 'px)';
+    sliderLine.style.transform = 'translate(-' + (count * width) / 1.42 + 'px)';
   }
 }
 
 function rollSliderT() {
   if (width > 427) {
-    sliderLine.style.transform = 'translate(-' + (count * width) / 1.85 + 'px)';
+    sliderLine.style.transform = 'translate(-' + (count * width) / 1.82 + 'px)';
   }
 }
