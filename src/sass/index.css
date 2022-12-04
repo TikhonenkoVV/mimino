@@ -134,6 +134,13 @@ textarea {
   }
 }
 
+.decor {
+  padding-top: 50px;
+  height: 600px;
+  background: repeating-linear-gradient(90deg, transparent 0 calc((100% - 3px) / 4), rgba(186, 186, 186, 0.4) 0 calc((100% - 3px) / 4 + 1px));
+  filter: blur(0.5px);
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -156,6 +163,7 @@ textarea {
 }
 .header__logo {
   font-family: "Film P3", sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.08;
