@@ -1,4 +1,4 @@
-.luxe_container {
+.luxe__container {
   height: 100%;
   padding: 32px 15px;
   margin-left: auto;
@@ -19,7 +19,7 @@
   }
 }
 
-.label-blok_text {
+.luxe__label-text {
   font-family: $fontFamilyTNRoman;
   font-style: normal;
   font-weight: 400;
@@ -34,7 +34,7 @@
   }
 }
 
-.label-blok_title {
+.luxe__label-title {
   font-family: $fontFamilyLogo;
   font-style: normal;
   font-weight: 700;
@@ -50,7 +50,7 @@
   }
 }
 
-.room_title-luxe {
+.luxe__room-title {
   font-family: $fontFamilyTNRoman;
   font-style: normal;
   font-weight: 700;
@@ -71,7 +71,7 @@
   }
 }
 
-.room_text--luxe {
+.luxe__room-text {
   font-family: $fontFamilyMain;
   font-style: normal;
   font-weight: 600;
@@ -139,6 +139,10 @@
     background-color: $colorWhite;
     border: 2px solid $colorAccentYellow;
   }
+}
+
+.luxe__box {
+  display: block;
 }
 
 .luxe__picture {
