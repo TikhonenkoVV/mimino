@@ -36,14 +36,14 @@
 }
 
 .room-x3-adult__buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media screen and (max-width: 1023px) {
-    justify-content: center;
-    align-items: center;
+  @media screen and (min-width: 1023px) {
   }
+}
+.room-x3-adult__buttons-item {
+  margin-bottom: 16px;
 }
 .room-x3-adult__button-details {
   font-family: 'Montserrat';
@@ -58,12 +58,10 @@
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
   white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  justify-content: center;
 
   &:hover,
   &:active {

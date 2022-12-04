@@ -177,15 +177,11 @@ textarea {
 }
 
 .room-x3-adult__buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (max-width: 1023px) {
-  .room-x3-adult__buttons {
-    justify-content: center;
-    align-items: center;
-  }
+.room-x3-adult__buttons-item {
+  margin-bottom: 16px;
 }
 
 .room-x3-adult__button-details {
@@ -201,12 +197,10 @@ textarea {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
   white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  justify-content: center;
 }
 .room-x3-adult__button-details:hover, .room-x3-adult__button-details:active {
   background-color: #ffffff;
