@@ -189,24 +189,23 @@
 }
 
 .room-x3-adult__service {
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-    @media screen and (max-width: 1023px) {
-      justify-content: center;
-      align-items: center;
-    }
+  @media screen and (min-width: 1024px) {
   }
+}
+.room-x3-adult__service-box {
+}
+.room-x3-adult__foto-swipper {
+  display: flex;
+  gap: 16px;
 }
 
 .room-x3-adult__swipper {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 20px;
-  }
+  align-items: flex-start;
 }

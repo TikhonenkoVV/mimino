@@ -337,27 +337,19 @@ textarea {
   }
 }
 
-@media (min-width: 1024px) {
-  .room-x3-adult__service {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+.room-x3-adult__service {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1023px) {
-  .room-x3-adult__service {
-    justify-content: center;
-    align-items: center;
-  }
+.room-x3-adult__foto-swipper {
+  display: flex;
+  gap: 16px;
 }
 
 .room-x3-adult__swipper {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-}
-@media screen and (max-width: 1023px) {
-  .room-x3-adult__swipper {
-    margin-bottom: 20px;
-  }
+  align-items: flex-start;
 }/*# sourceMappingURL=index.css.map */
