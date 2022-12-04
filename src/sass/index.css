@@ -282,14 +282,14 @@ button {
   position: relative;
   box-shadow: none;
 }
-.carousel .slider-item {
+.carousel .slider__item {
   border-radius: 2px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
   height: 100%;
   margin-right: 24px;
 }
 @media screen and (min-width: 1024px) {
-  .carousel .slider-item {
+  .carousel .slider__item {
     margin-right: 40px;
   }
 }
