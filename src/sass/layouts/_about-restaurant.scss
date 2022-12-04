@@ -163,6 +163,8 @@
     position: relative;
     left: 20%;
 
+    box-shadow: 2px 2px 60px $colorBoxShadow;
+
     @include for-size(tablet) {
         width: 428px;
 
@@ -188,7 +190,13 @@
     position: relative;
     right: 0;
     transition: all ease 1s;
- 
+
+    // box-shadow: 2px 2px 60px $colorBoxShadow;
+}
+
+.slider__line-img
+{
+    box-shadow: 2px 2px 60px $colorBoxShadow;
 }
 
 .restaurant__flipper-img {
@@ -221,6 +229,8 @@
 }
 
 .slider__picture {
-    @include for-size(desktop) {
-        width: 254px;
-    }}
+
+    // @include for-size(desktop) {
+    //     width: 254px;
+    // }
+}

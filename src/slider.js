@@ -19,8 +19,8 @@ function init() {
       item.style.width = '245' + 'px';
       item.style.height = 'auto';
     }
-      item.style.width = '254' + 'px';
-      item.style.marginRight = '40' + 'px';
+    // item.style.width = '254' + 'px';
+    // item.style.marginRight = '40' + 'px';
   });
   rollSlider();
   rollSliderT();
