@@ -19,6 +19,8 @@ function init() {
       item.style.width = '245' + 'px';
       item.style.height = 'auto';
     }
+      item.style.width = '254' + 'px';
+      item.style.marginRight = '40' + 'px';
   });
   rollSlider();
   rollSliderT();
@@ -57,13 +59,13 @@ function rollSlider() {
 }
 
 function rollSliderM() {
-  if (width < 1023) {
+  if (width < 427) {
     sliderLine.style.transform = 'translate(-' + (count * width) / 1.45 + 'px)';
   }
 }
 
 function rollSliderT() {
-  if (width > 1024) {
-    sliderLine.style.transform = 'translate(-' + (count * width) / 1 + 'px)';
+  if (width > 427) {
+    sliderLine.style.transform = 'translate(-' + (count * width) / 1.85 + 'px)';
   }
 }

@@ -6,6 +6,10 @@
 
 .about__container
 {
+    @include for-size(mobile)
+    {
+        padding-bottom: 28px;
+    }
     @include for-size(tablet) {
         position: relative;
         padding-top: 120px;
@@ -23,6 +27,7 @@
     color: $colorTextLightGray;
 
     margin-bottom: 12px;
+    margin-top: 16px;
 
     @include for-size(tablet) {
         font-size: 32px;
@@ -201,14 +206,13 @@
     @include for-size(tablet) {
         position: relative;
         left: 87%;
-        bottom: 40px;
-        top: 0;
+        top: -40px;
     }
 
     @include for-size(desktop) {
         position: relative;
         left: 92%;
-        bottom: 58px;
+        top: -58px;
     }
 }
 
