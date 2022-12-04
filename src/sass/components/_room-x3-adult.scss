@@ -197,19 +197,22 @@
     flex-direction: row-reverse;
   }
 }
+.room-x3-adult__service-box {
+  margin-left: 115px;
+  margin-bottom: 20px;
+}
 
 .room-x3-adult__service-img {
   display: flex;
   gap: 16px;
-  margin-left: -15px;
   margin-bottom: 20px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
   list-style: none;
-
-  @media screen and (min-width: 1024px) {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  }
+}
+.room-x3-adult__item {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .room-x3-adult__swipper {
