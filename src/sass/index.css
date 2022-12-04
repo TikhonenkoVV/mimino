@@ -135,7 +135,7 @@ textarea {
 }
 
 .room-x3-adult {
-  background-color: #fffdee;
+  background-color: #f0ecd6;
 }
 
 .room-x3-adult__container {
@@ -337,19 +337,26 @@ textarea {
   }
 }
 
-.room-x3-adult__service {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+@media screen and (min-width: 1024px) {
+  .room-x3-adult__service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
+
 .room-x3-adult__foto-swipper {
   display: flex;
   gap: 16px;
+  margin-left: -15px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  background-color: #f0ecd6;
 }
 
 .room-x3-adult__swipper {
   display: flex;
-  flex-wrap: wrap;
   gap: 32px;
-  align-items: flex-start;
+  justify-content: flex-end;
 }/*# sourceMappingURL=index.css.map */
