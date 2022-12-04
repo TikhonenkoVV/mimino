@@ -39,6 +39,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
 }
 
 .room-x3-adult__buttons-item {
@@ -91,7 +92,7 @@
 }
 .room-x3-adult__wrap {
   @media screen and (max-width: 1023px) {
-    margin-left: 83px;
+    margin-left: 82px;
   }
 }
 .room-x3-adult__logo-text {
@@ -133,12 +134,9 @@
 }
 .room-x3-adult__title {
   font-family: 'Times New Roman';
-  font-weight: 700;
   font-size: 24px;
   line-height: 1.14;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
-  text-align: right;
   color: #000000;
   margin-bottom: 12px;
   &--small {
@@ -195,8 +193,7 @@
     flex-wrap: wrap;
   }
 }
-.room-x3-adult__service-box {
-}
+
 .room-x3-adult__foto-swipper {
   display: flex;
   gap: 16px;
@@ -204,7 +201,6 @@
   margin-bottom: 20px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  background-color: #f0ecd6;
 }
 
 .room-x3-adult__swipper {
