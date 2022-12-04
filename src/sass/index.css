@@ -336,7 +336,8 @@ textarea {
 .menu__button:hover, .menu__button:focus {
   background-color: #ffffff;
   border: 2px solid #f3c653;
-  border-radius: 25px;
+  border-radius: 25px;}
+  
 .header {
   position: absolute;
   top: 0;
