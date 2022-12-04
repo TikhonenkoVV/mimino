@@ -12,20 +12,17 @@
 
 .luxe__container {
   height: 100%;
-  padding: 32px 15px;
   margin-left: auto;
   margin-right: auto;
   background-color: $colorBackgroundPrimary;
   position: relative;
 
   @media (min-width: 1024px) {
-    position: relative;
     padding-left: 47px;
     padding-right: 47px;
   }
 
   @media (min-width: 1280px) {
-    position: relative;
     padding-left: 85px;
     padding-right: 85px;
   }
