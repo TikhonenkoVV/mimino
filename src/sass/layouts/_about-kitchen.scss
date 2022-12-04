@@ -14,7 +14,7 @@ button {
 .kitchen {
   background: $colorBackgroundPrimary;
 
-  h3 {
+  .kitchen__title {
     font-family: $fontFamilyTNRoman;
     font-style: normal;
     font-weight: 400;
@@ -108,7 +108,7 @@ button {
   }
 
   @include for-size(tablet) {
-    h3 {
+    .kitchen__title {
       font-size: 32px;
     }
 
