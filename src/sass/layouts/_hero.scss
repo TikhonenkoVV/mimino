@@ -99,32 +99,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: $LinearGradientHeader, url('../images/hero_images/room-hero-mob-1x.jpg');
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-image: url('../images/hero_images/room-hero-mob-1x.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-hero-mob-2x.jpg');
+        background-image: url('../images/hero_images/room-hero-mob-2x.jpg');
     }
 
     @media screen and (min-width: 1024px) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-hero-tab-1x.jpg');
+        background-image: url('../images/hero_images/room-hero-tab-1x.jpg');
     }
 
     @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
     (min-width: 1024px) and (min-resolution: 192dpi),
     (min-width: 1024px) and (min-resolution: 2dppx) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-hero-tab-2x.jpg');
+        background-image: url('../images/hero_images/room-hero-tab-2x.jpg');
     }
 
     @media screen and (min-width: 1280px) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-hero-desk-1x.jpg');
+        background-image: url('../images/hero_images/room-hero-desk-1x.jpg');
     }
 
     @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
     (min-width: 1280px) and (min-resolution: 192dpi),
     (min-width: 1280px) and (min-resolution: 2dppx) {
-        background-image: $LinearGradientHeader, url('../images/hero_images/room-hero-desk-2x.jpg');
+        background-image: url('../images/hero_images/room-hero-desk-2x.jpg');
     }
 }
 
@@ -150,6 +151,74 @@
 .hero__title--hotel {
     margin-bottom: 32px;
 }
+
+.hero__title--room {
+    color: $colorWhite;
+        // text-align: center;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        // margin-top: 377px;
+        margin-bottom: 14px;
+        text-align: start;
+    
+        @media screen and (min-width: 1024px) {
+            font-size: 36px;
+            line-height: 1.14;
+            margin-bottom: 24px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            // margin-bottom: 137px;
+        }
+}
+
+.hero__title--style {
+    color: $colorWhite;
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+        // text-transform: uppercase;
+        // margin-top: 377px;
+        margin-bottom: 14px;
+        text-align: start;
+    
+        @media screen and (min-width: 1024px) {
+            font-size: 36px;
+            line-height: 1.14;
+            margin-bottom: 24px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            // margin-bottom: 137px;
+        }
+
+}
+
+.hero__text--room {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        // margin-top: 24px;
+        margin-bottom: 48px;
+        /* White */
+        width: 400px;
+        color: #FFFFFF;
+}
+
+
 .hero__subtitle {
     color: $colorWhite;
     text-align: center;
@@ -279,6 +348,32 @@
     background-color: $colorWhite;
     // color: $colorBlack;
     }
+}
+
+.hero__btn--room {
+    color: $colorAccentYellow;
+        background: $colorBackgroundButton;
+        border: 2px solid $colorWhite;
+        border-radius: 25px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        transition: color $baseTransition,
+            background-color $baseTransition;
+        cursor: pointer;
+        padding: 14px 24px;
+    
+        &:hover,
+        &:focus {
+            background-color: $colorWhite;
+            // color: $colorBlack;
+        }
+    margin-left: 85px;
+    margin-bottom: 66px;
+    // flex-direction: column-reverse;
 }
 .hero__network {
     display: flex;
