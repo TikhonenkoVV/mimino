@@ -28,6 +28,7 @@
   }
 }
 
+// Label
 .luxe__label-text {
   font-family: $fontFamilyTNRoman;
   font-style: normal;
@@ -66,6 +67,7 @@
   }
 }
 
+// Room-name
 .luxe__room-title {
   font-family: $fontFamilyTNRoman;
   font-style: normal;
@@ -119,6 +121,7 @@
   }
 }
 
+// Buttons
 .buttons-room {
   @media (min-width: 1024px) {
     margin-top: 89px;
@@ -175,6 +178,7 @@
   }
 }
 
+// Picture
 .luxe__box {
   display: block;
   margin-left: auto;
@@ -197,4 +201,83 @@
     right: 112px;
     margin-left: 26px;
   }
+}
+
+// Slider
+.slider__container {
+  width: auto;
+  height: auto;
+}
+
+.slider {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  left: 20%;
+  background-color: $colorBackgroundPrimary;
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+
+  @include for-size(tablet) {
+    width: 428px;
+
+    position: relative;
+    left: 50%;
+    bottom: 96px;
+  }
+
+  @include for-size(desktop) {
+    width: 548px;
+
+    position: relative;
+    left: 50%;
+    bottom: 118px;
+  }
+}
+
+.slider__line {
+  width: 1024px;
+  display: flex;
+  position: relative;
+  right: 0;
+  transition: all ease 1s;
+  background-color: $colorBackgroundPrimary;
+}
+
+.slider__line-img {
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+  background-color: transparent;
+}
+
+.restaurant__flipper-img {
+  padding: 0;
+}
+
+.restaurant__flipper-btn {
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  position: relative;
+  left: 77%;
+  top: 28px;
+
+  @include for-size(tablet) {
+    position: relative;
+    left: 87%;
+    top: -40px;
+  }
+
+  @include for-size(desktop) {
+    position: relative;
+    left: 92%;
+    top: -58px;
+  }
+}
+
+.restaurant__button {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider__picture {
+  background-color: transparent;
+  box-shadow: 2px 2px 60px $colorBoxShadow;
 }
