@@ -16,6 +16,11 @@
   padding-right: 15px;
   gap: 85px;
 
+  @media screen and (max-width: 380px) {
+    justify-content: space-between;
+    gap: 0;
+  }
+
   @include for-size(tablet){
     padding-right: 75px;
     gap: 163px;
@@ -93,7 +98,7 @@
   align-items: center;
   width: 143px;
   justify-content: space-between;
-  color: #f3c653;
+  color: $colorAccentYellow;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -101,7 +106,7 @@
   padding: 10px 12px;
   border: 0.5px solid;
   border-radius: 2px;
-  border-color: #f3c653;
+  border-color: $colorAccentYellow;
   }
 }
 .footer__social-text{

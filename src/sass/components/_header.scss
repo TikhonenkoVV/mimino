@@ -29,10 +29,17 @@
       $letter-spacing: 0.3em
     );
     color: $colorWhite;
+
+    @media screen and (max-width: 345px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 346px) and (max-width: 375px) {
+      font-size: 32px;
+    }
+
     @include for-size(tablet) {
-      @include font(
-        $size: 40px
-      );
+      @include font($size: 40px);
     }
     @include for-size(desktop) {
       margin-right: 96px;
@@ -42,6 +49,16 @@
   &__navigation-list {
     display: flex;
     gap: 20px;
+
+    @media screen and (max-width: 345px) {
+      gap: 6px;
+    }
+
+    @media screen and (min-width: 346px) and (max-width: 375px) {
+      gap: 10px;
+    }
+
+    font-size: 15px;
     @include for-size(tablet) {
       gap: 72px;
     }
@@ -51,6 +68,10 @@
     display: flex;
     align-items: center;
     gap: 6px;
+
+    @media screen and (max-width: 375px) {
+      gap: 4px;
+    }
     @include for-size(tablet) {
       gap: 32px;
     }
@@ -64,6 +85,15 @@
       $line-height: 1.25,
       $letter-spacing: 0.02em
     );
+
+    @media screen and (max-width: 345px) {
+      font-size: 13px;
+    }
+
+    @media screen and (min-width: 346px) and (max-width: 375px) {
+      font-size: 15px;
+    }
+
     @include for-size(tablet) {
       @include font(
         $weight: 500,
