@@ -36,15 +36,18 @@
 }
 
 .room-x3-adult__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.room-x3-adult__buttons-item {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  justify-content: center;
+}
 
-  @media screen and (min-width: 1023px) {
-  }
-}
-.room-x3-adult__buttons-item {
-  margin-bottom: 16px;
-}
 .room-x3-adult__button-details {
   font-family: 'Montserrat';
   padding: 14px 65px 14px 64px;
@@ -59,9 +62,6 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   white-space: nowrap;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 
   &:hover,
   &:active {
@@ -73,7 +73,6 @@
 .room-x3-adult__price {
   background-color: #000000;
   color: #f3c653;
-
   width: 236px;
   height: 48px;
   border-radius: 25px;
@@ -83,10 +82,6 @@
   letter-spacing: 0.02em;
   padding: 14px 37px;
   white-space: nowrap;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  justify-content: center;
 
   &:hover,
   &:active {
