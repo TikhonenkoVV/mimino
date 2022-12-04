@@ -134,10 +134,6 @@ textarea {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
 button {
   display: inline-block;
   border: none;
@@ -148,7 +144,7 @@ button {
 }
 
 .kitchen {
-  background: #fffdee;
+  position: relative;
 }
 .kitchen .kitchen__title {
   font-family: "Times New Roman Cyr", sans-serif;
@@ -231,6 +227,7 @@ button {
   }
   .kitchen .logo {
     font-size: 64px;
+    margin-bottom: 24px;
   }
   .kitchen__chiefs {
     padding: 120px 0;
@@ -261,10 +258,6 @@ button {
   }
 }
 
-.kitchen__title-hidden {
-  visibility: hidden;
-}
-
 .carousel {
   overflow: hidden;
   margin: 0 -15px;
@@ -273,6 +266,7 @@ button {
   transform: translateX(calc(50% - 125px));
   display: flex;
   overflow-x: scroll;
+  margin-top: 16px;
 }
 .carousel .slider-img {
   max-width: 245px;
@@ -287,6 +281,7 @@ button {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
   height: 100%;
   margin-right: 24px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1024px) {
   .carousel .slider__item {
@@ -303,17 +298,17 @@ button {
     background: #dadada;
   }
 }
-.carousel .carousel-btns {
+.carousel .carousel__btns {
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
   padding-right: 15px;
 }
-.carousel .carousel-btns .prev-btn {
+.carousel .carousel__btns .prev__btn {
   margin-right: 33px;
 }
 @media screen and (min-width: 1024px) {
-  .carousel .carousel-btns {
+  .carousel .carousel__btns {
     padding-right: 0;
   }
 }
