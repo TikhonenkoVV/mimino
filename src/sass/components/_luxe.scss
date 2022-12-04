@@ -1,0 +1,283 @@
+.room--luxe {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @media (min-width: 1024px) {
+    padding-top: 62px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 72px;
+  }
+}
+
+.luxe__container {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $colorBackgroundPrimary;
+  position: relative;
+
+  @media (min-width: 1024px) {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+// Label
+.luxe__label-text {
+  font-family: $fontFamilyTNRoman;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $colorTextLightGray;
+  margin-bottom: 8px;
+
+  @media (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 4px;
+  }
+}
+
+.luxe__label-title {
+  font-family: $fontFamilyLogo;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: $colorDarkGray;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 62px;
+    font-size: 64px;
+    line-height: 1.08;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 72px;
+  }
+}
+
+// Room-name
+.luxe__room-title {
+  font-family: $fontFamilyTNRoman;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $colorBlack;
+  margin-bottom: 12px;
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 24px;
+  }
+
+  &--small {
+    text-transform: lowercase;
+  }
+}
+
+.luxe__room-text {
+  font-family: $fontFamilyMain;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $colorTextPrimary;
+  margin-bottom: 32px;
+  width: 258px;
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 1.25;
+    height: 80px;
+    width: 439px;
+    margin-bottom: 176px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 188px;
+    width: 400px;
+  }
+}
+
+// Buttons
+.buttons-room {
+  @media (min-width: 1024px) {
+    margin-top: 89px;
+  }
+}
+
+.buttons-room__item {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.buttons-room__details--luxe {
+  padding: 14px 65px 14px 64px;
+  background-color: $colorBlack;
+  color: $colorAccentYellow;
+  display: inline-block;
+  border-radius: 25px;
+  border: 2px solid $colorWhite;
+  font-family: $fontFamilyMain;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  transition: border $baseTransition, background-color $baseTransition;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $colorWhite;
+    border: 2px solid $colorAccentYellow;
+  }
+}
+
+.buttons-room__price--luxe {
+  padding: 14px 65px 14px 64px;
+  background-color: $colorBlack;
+  color: $colorAccentYellow;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  padding: 14px 37px;
+  transition: border $baseTransition, background-color $baseTransition;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $colorWhite;
+    border: 2px solid $colorAccentYellow;
+  }
+}
+
+// Picture
+.luxe__box {
+  display: block;
+  margin-left: auto;
+  min-width: 244px;
+}
+
+.luxe__picture {
+  display: block;
+  margin-bottom: 32px;
+  width: 244px;
+  // height: 322px;
+  margin-right: 15px;
+  // margin-left: 155px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    margin-left: 26px;
+  }
+}
+
+// Slider
+.slider__container {
+  width: auto;
+  height: auto;
+}
+
+.slider {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  left: 20%;
+  background-color: $colorBackgroundPrimary;
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+
+  @media (min-width: 1024px) {
+    width: 428px;
+
+    position: relative;
+    left: 50%;
+    bottom: 96px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 548px;
+
+    position: relative;
+    left: 50%;
+    bottom: 118px;
+  }
+}
+
+.slider__line {
+  width: 1024px;
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  transition: all ease 1s;
+  background-color: $colorBackgroundPrimary;
+}
+
+.slider__line-img {
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+  background-color: transparent;
+}
+
+.restaurant__flipper-img {
+  padding: 0;
+}
+
+.restaurant__flipper-btn {
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    position: relative;
+    left: 87%;
+    top: -40px;
+  }
+
+  @media (min-width: 1280px) {
+    position: relative;
+    left: 92%;
+    top: -58px;
+  }
+}
+
+.restaurant__button {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider__picture {
+  background-color: transparent;
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+}
