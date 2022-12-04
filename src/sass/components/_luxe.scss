@@ -20,7 +20,7 @@
 }
 
 .label-blok_text {
-  font-family: 'Times New Roman';
+  font-family: $fontFamilyTNRoman;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -35,7 +35,7 @@
 }
 
 .label-blok_title {
-  font-family: 'Film P3';
+  font-family: $fontFamilyLogo;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -50,7 +50,7 @@
   }
 }
 .room_title-luxe {
-  font-family: 'Times New Roman';
+  font-family: $fontFamilyTNRoman;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -71,7 +71,7 @@
 }
 
 .room_text--luxe {
-  font-family: 'Montserrat';
+  font-family: $fontFamilyMain;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -107,7 +107,7 @@
   display: inline-block;
   border-radius: 25px;
   border: 2px solid $colorWhite;
-  font-family: 'Montserrat';
+  font-family: $fontFamilyMain;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
