@@ -176,12 +176,25 @@ textarea {
   }
 }
 
+.room-x3-adult__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (max-width: 1023px) {
+  .room-x3-adult__buttons {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .room-x3-adult__button-details {
   font-family: "Montserrat";
   padding: 14px 65px 14px 64px;
   background-color: #000000;
   color: #f3c653;
-  display: inline-block;
+  width: 236px;
+  height: 48px;
   border-radius: 25px;
   font-family: Montserrat;
   font-size: 16px;
@@ -198,7 +211,8 @@ textarea {
 .room-x3-adult__price {
   background-color: #000000;
   color: #f3c653;
-  display: inline-block;
+  width: 236px;
+  height: 48px;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 700;
@@ -292,6 +306,7 @@ textarea {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #7a7a7a;
+  max-width: 400px;
 }
 @media (max-width: 1023px) {
   .room-x3-adult__text {
@@ -299,14 +314,6 @@ textarea {
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 32px;
-  }
-}
-@media (min-width: 1024px) {
-  .room-x3-adult__text {
-    height: 83px;
-    width: 400px;
-    margin-bottom: 169px;
-    margin-left: auto;
   }
 }
 
@@ -345,7 +352,7 @@ textarea {
 .room-x3-adult__swipper {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 32px;
 }
 @media screen and (max-width: 1023px) {
   .room-x3-adult__swipper {
