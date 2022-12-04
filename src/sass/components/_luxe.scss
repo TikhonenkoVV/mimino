@@ -145,6 +145,8 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  transition: border $baseTransition, background-color $baseTransition;
+  cursor: pointer;
 
   &:hover,
   &:active {
@@ -163,6 +165,8 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   padding: 14px 37px;
+  transition: border $baseTransition, background-color $baseTransition;
+  cursor: pointer;
 
   &:hover,
   &:active {
