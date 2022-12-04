@@ -1,0 +1,2 @@
+!function(){var e={openModalBtnTable:document.querySelector("[data-modal-table-open]"),closeModalBtnTable:document.querySelector("[data-modal-table-close]"),modalTable:document.querySelector("[data-modal-table]")};function l(){e.modalTable.classList.toggle("is-hidden"),document.body.classList.toggle("modal-open")}e.openModalBtnTable.addEventListener("click",l),e.closeModalBtnTable.addEventListener("click",l)}();
+//# sourceMappingURL=restaurant.eecb37e3.js.map
