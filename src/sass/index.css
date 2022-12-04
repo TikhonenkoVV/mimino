@@ -225,7 +225,7 @@ textarea {
 }
 @media screen and (min-width: 1024px) {
   .logo__text {
-    margin-top: 32px;
+    padding-top: 34px;
     margin-bottom: 4px;
   }
 }
