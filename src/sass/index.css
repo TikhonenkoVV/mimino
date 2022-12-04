@@ -182,6 +182,11 @@ textarea {
   gap: 16px;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .room-x3-adult__buttons {
+    margin-top: 89px;
+  }
+}
 
 .room-x3-adult__buttons-item {
   margin-left: auto;
@@ -338,22 +343,28 @@ textarea {
 @media screen and (min-width: 1024px) {
   .room-x3-adult__service {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
 }
 
-.room-x3-adult__foto-swipper {
+.room-x3-adult__service-img {
   display: flex;
   gap: 16px;
   margin-left: -15px;
   margin-bottom: 20px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .room-x3-adult__service-img {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .room-x3-adult__swipper {
   display: flex;
   gap: 32px;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }/*# sourceMappingURL=index.css.map */
