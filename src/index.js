@@ -146,52 +146,37 @@ $('.custom-select__option').on('click', function () {
     .text($(this).text());
 });
 
-// script for open close modal window (3 modal windows, 3 different scripts)
+const windowInnerWidth = window.innerWidth;
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-room-open]'),
-    closeModalBtn: document.querySelector('[data-modal-room-close]'),
-    modal: document.querySelector('[data-modal-room]'),
-  };
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1.35,
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  leftSlides: true,
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle('modal-open');
-  }
-})();
+  slideToClickedSlide: true,
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-table-open]'),
-    closeModalBtn: document.querySelector('[data-modal-table-close]'),
-    modal: document.querySelector('[data-modal-table]'),
-  };
+  spaceBetween: 20,
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  loop: true,
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle('modal-open');
-  }
-})();
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-price-open]'),
-    closeModalBtn: document.querySelector('[data-modal-price-close]'),
-    modal: document.querySelector('[data-modal-price]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle('modal-open');
-  }
-})();
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
