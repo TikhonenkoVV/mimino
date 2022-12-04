@@ -150,7 +150,7 @@ button {
 .kitchen {
   background: #fffdee;
 }
-.kitchen h2 {
+.kitchen .kitchen__title {
   font-family: "Times New Roman Cyr", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -168,6 +168,7 @@ button {
 }
 .kitchen .logo {
   font-family: "Film P3", sans-serif;
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -222,7 +223,7 @@ button {
   color: #c79002;
 }
 @media screen and (min-width: 1024px) {
-  .kitchen h2 {
+  .kitchen .kitchen__title {
     font-size: 32px;
   }
   .kitchen p {
