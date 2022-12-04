@@ -159,6 +159,7 @@
 }
 
 .buttons-room__price--luxe {
+  padding: 14px 65px 14px 64px;
   background-color: $colorBlack;
   color: $colorAccentYellow;
   display: inline-block;
@@ -217,7 +218,7 @@
   background-color: $colorBackgroundPrimary;
   box-shadow: 2px 2px 60px $colorBoxShadow;
 
-  @include for-size(tablet) {
+  @media (min-width: 1024px) {
     width: 428px;
 
     position: relative;
@@ -225,7 +226,7 @@
     bottom: 96px;
   }
 
-  @include for-size(desktop) {
+  @media (min-width: 1280px) {
     width: 548px;
 
     position: relative;
@@ -238,7 +239,7 @@
   width: 1024px;
   display: flex;
   position: relative;
-  right: 0;
+  margin-bottom: 20px;
   transition: all ease 1s;
   background-color: $colorBackgroundPrimary;
 }
@@ -257,16 +258,15 @@
   display: flex;
   gap: 24px;
   position: relative;
-  left: 77%;
-  top: 28px;
+  margin-bottom: 20px;
 
-  @include for-size(tablet) {
+  @media (min-width: 1024px) {
     position: relative;
     left: 87%;
     top: -40px;
   }
 
-  @include for-size(desktop) {
+  @media (min-width: 1280px) {
     position: relative;
     left: 92%;
     top: -58px;
