@@ -1,83 +1,125 @@
 <section class="room">
   <div class="container container-room">
     <div class="logo-box">
-    <p class="logo__text">Amet minim mollit non</p>
-    <h3 class="logo__title">mimiho</h3>
+      <p class="logo__text">Amet minim mollit non</p>
+      <h3 class="logo__title">mimiho</h3>
     </div>
     <div class="room__name">
       <h2 class="room__title">трьохмісний номер</h2>
-      <p class="room__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <picture class="hotel__picture">
+      <p class="room__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <picture class="hotel__picture">
+      <!--desktop-->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          /src/images/hotel_img/bedroom_desk@1x_result.webp 1x,
+          /src/images/hotel_img/bedroom_desk@2x_result.webp 2x
+        "
+      />
+
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          /src/images/hotel_img/bedroom_desk@1x.jpg 1x,
+          /src/images/hotel_img/bedroom_desk@2x.jpg 2x
+        "
+      />
+
+      <img src="/src/images/hotel_img/bedroom_desk@1x.jpg" />
+
+      <!--tablet-->
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          /src/images/hotel_img/bedroom_tab@1x_result.webp 1x,
+          /src/images/hotel_img/bedroom_tab@2x_result.webp 2x
+        "
+      />
+
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          /src/images/hotel_img/bedroom_tab@1x.jpg 1x,
+          /src/images/hotel_img/bedroom_tab@2x.jpg 2x
+        "
+      />
+
+      <!--mobile-->
+      <source
+        media="(min-width:414px)"
+        srcset="
+          /src/images/hotel_img/bedroom_mob@1x_result.webp 1x,
+          /src/images/hotel_img/bedroom_mob@2x_result.webp 2x
+        "
+      />
+    </picture>
+
+    <div class="room__service">
+      <h2 class="visually-hidden">fotogallery</h2>
+      <ul class="frame list">
+        <li>
+          <picture>
             <!--desktop-->
-             <source media="(min-width:1280px)"
-             srcset="/src/images/hotel_img/bedroom_desk@1x_result.webp 1x,
-             /src/images/hotel_img/bedroom_desk@2x_result.webp 2x"/>
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                /src/images/hotel_img/bedroom1_desk@1x_result.webp 1x,
+                /src/images/hotel_img/bedroom1_desk@2x_result.webp 2x
+              "
+            />
 
-            <source media="(min-width:1280px)"
-            srcset="/src/images/hotel_img/bedroom_desk@1x.jpg 1x,
-            /src/images/hotel_img/bedroom_desk@2x.jpg 2x"/>
-
-            <img src="/src/images/hotel_img/bedroom_desk@1x.jpg"> 
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                /src/images/hotel_img/bedroom1_desk@1x.jpg 1x,
+                /src/images/hotel_img/bedroom1_desk@2x.jpg 2x
+              "
+            />
 
             <!--tablet-->
-            <source media="(min-width:1024px)"
-            srcset="/src/images/hotel_img/bedroom_tab@1x_result.webp 1x,
-            /src/images/hotel_img/bedroom_tab@2x_result.webp 2x"/>
+            <source
+              media="(min-width:1024px)"
+              srcset="
+                /src/images/hotel_img/bedroom1_tab@1x_result.webp 1x,
+                /src/images/hotel_img/bedroom1_tab@2x_result.webp 2x
+              "
+            />
 
-            <source media="(min-width:1024px)"
-            srcset="/src/images/hotel_img/bedroom_tab@1x.jpg 1x,
-            /src/images/hotel_img/bedroom_tab@2x.jpg 2x"/>
-
-            <!--mobile-->
-            <source media="(min-width:414px)"
-            srcset="/src/images/hotel_img/bedroom_mob@1x_result.webp 1x,
-            /src/images/hotel_img/bedroom_mob@2x_result.webp 2x"/>
-
+            <source
+              media="(min-width:1024px)"
+              srcset="
+                /src/images/hotel_img/bedroom1_tab@1x.jpg 1x,
+                /src/images/hotel_img/bedroom1_tab@2x.jpg 2x
+              "
+            />
           </picture>
-        </div>
-          <div class="room__service">
-            <h2 class="visually-hidden">fotogallery</h2>
-            <ul class="frame list">
-              <li>
-                <picture>
-                  <!--desktop-->
-                  <source media="(min-width:1280px)"
-                  srcset="/src/images/hotel_img/bedroom1_desk@1x_result.webp 1x,
-                  /src/images/hotel_img/bedroom1_desk@2x_result.webp 2x"/>
-
-                  <source media="(min-width:1280px)"
-                  srcset="/src/images/hotel_img/bedroom1_desk@1x.jpg 1x,
-                  /src/images/hotel_img/bedroom1_desk@2x.jpg 2x"/>
-
-                  <!--tablet-->
-                  <source media="(min-width:1024px)"
-                  srcset="/src/images/hotel_img/bedroom1_tab@1x_result.webp 1x,
-                  /src/images/hotel_img/bedroom1_tab@2x_result.webp 2x"/>
-
-                  <source media="(min-width:1024px)"
-                  srcset="/src/images/hotel_img/bedroom1_tab@1x.jpg 1x,
-                  /src/images/hotel_img/bedroom1_tab@2x.jpg 2x"/>
-
-                </picture>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <h2 class="visually-hidden">список кнопок</h2>
-            <ul class="button-room__list list">
-              <li class="button-room__item">
-                   <a href="./room.html" class="button-room__details">детальніше</a>
-              </li>
-              <li class="button-room__item">
-                <button type="button" class="button-room__price" data-modal-price-open>Переглянути ціни</button>
-              </li>
-            </ul>
-          </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h2 class="visually-hidden">список кнопок</h2>
+      <ul class="button-room__list list">
+        <li class="button-room__item">
+          <a href="./room.html" class="button-room__details">детальніше</a>
+        </li>
+        <li class="button-room__item">
+          <button
+            type="button"
+            class="button-room__price"
+            data-modal-price-open
+          >
+            Переглянути ціни
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

@@ -134,6 +134,29 @@ textarea {
   }
 }
 
+.container-room {
+  padding: 32px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffdee;
+  position: relative;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  .container-room {
+    position: relative;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+@media (min-width: 1280px) {
+  .container-room {
+    position: relative;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
 .room__service {
   display: flex;
   flex-flow: column;
@@ -149,11 +172,15 @@ textarea {
   }
 }
 
-.logo-box {
-  position: relative;
+.button-room__item {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
 }
 
 .button-room__details {
+  font-family: "Montserrat";
   padding: 14px 65px 14px 64px;
   background-color: #000000;
   color: #f3c653;
@@ -165,6 +192,10 @@ textarea {
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+}
+.button-room__details:hover, .button-room__details:active {
+  background-color: #ffffff;
+  border: 2px solid #f3c653;
 }
 
 .button-room__price {
@@ -178,67 +209,106 @@ textarea {
   letter-spacing: 0.02em;
   padding: 14px 37px;
 }
+.button-room__price:hover, .button-room__price:active {
+  background-color: #ffffff;
+  border: 2px solid #f3c653;
+}
 
-@media screen and (max-width: 1023px) {
+.logo__text {
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: 400;
+  color: #b4b4b4;
+  line-height: 23px;
+  text-align: right;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1024px) {
   .logo__text {
-    font-family: "Times New Roman";
-    font-size: 20px;
-    font-weight: 400;
-    color: #b4b4b4;
-    line-height: 23px;
-    text-align: right;
-    padding-top: 32px;
-    margin-bottom: 8px;
-  }
-  .logo__title {
-    font-family: Film P3;
-    font-size: 40px;
-    letter-spacing: 0.03em;
-    line-height: 100%;
-    text-transform: uppercase;
-    text-align: right;
-    color: #494848;
-    margin-bottom: 32px;
-  }
-  .room__title {
-    font-family: "Times New Roman";
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0.05em;
-    text-align: right;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-  .room__text {
-    font-family: Montserrat;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #5f5f5f;
-    text-align: left;
-    margin-left: 98px;
-    width: 242px;
-    margin-bottom: 32px;
-  }
-  .hotel__picture {
-    border-radius: 2px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
-    margin-bottom: 32px;
-    max-width: 244px;
-    height: auto;
-    width: 100%;
-    margin-right: auto;
-  }
-  .room__service {
-    display: flex;
-    flex-flow: column;
+    margin-top: 32px;
+    margin-bottom: 4px;
   }
 }
+
+.logo__title {
+  font-family: "Film P3";
+  font-size: 40px;
+  letter-spacing: 0.03em;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: right;
+  color: #494848;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .logo__title {
+    margin-bottom: 62px;
+  }
+}
+
+.room__title {
+  font-family: "Times New Roman";
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+@media (min-width: 1024px) {
+  .room__title {
+    margin-bottom: 16px;
+  }
+}
+.room__title--small {
+  text-transform: lowercase;
+}
+
+.room__text {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+  text-align: left;
+  margin-left: 98px;
+  width: 242px;
+  height: 76px;
+  margin-bottom: 32px;
+}
+@media (min-width: 1024px) {
+  .room__text {
+    height: 83px;
+    width: 400px;
+    margin-bottom: 169px;
+  }
+}
+
+.hotel__picture {
+  border-radius: 2px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+  max-width: 244px;
+  height: auto;
+  width: 100%;
+  margin-right: auto;
+}
+
+.room__service {
+  display: flex;
+  flex-flow: column;
+}
+
 @media screen and (min-width: 1024px) {
   .hotel__picture {
     position: absolute;
     top: -32px;
     left: 112px;
     margin-right: 26px;
+  }
+}
+@media (min-width: 1024px) {
+  .button-room__list {
+    margin-top: 89px;
   }
 }/*# sourceMappingURL=index.css.map */
