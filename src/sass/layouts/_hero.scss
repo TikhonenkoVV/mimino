@@ -114,18 +114,23 @@
 }
 
 .hero__title {
-  color: $colorWhite;
-  text-align: center;
-  font-family: 'Film P3';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 103px;
-  letter-spacing: 0.3em;
-  margin-bottom: 24px;
-  @media screen and (min-width: 1024px) {
+    color: $colorWhite;
+    text-align: center;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 103px;
+    letter-spacing: 0.3em;
+    max-width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1024px) {
     font-size: 128px;
     line-height: 1.08;
+    max-width: 404px;
     margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
