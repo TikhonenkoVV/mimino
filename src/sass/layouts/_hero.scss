@@ -196,7 +196,7 @@
     line-height: 1.16;
     letter-spacing: 0.05em;
     text-transform: lowercase;
-    margin-bottom: 14px;
+    // margin-bottom: 14px;
     text-align: start;
 
     @media screen and (min-width: 1024px) {
@@ -210,11 +210,11 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    // margin-top: 24px;
-    margin-bottom: 48px;
+    margin-top: 14px;
+    margin-bottom: 16px;
     /* White */
     max-width: 400px;
     color: #FFFFFF;
@@ -309,9 +309,9 @@
     max-width: 285px;
     padding: 8px 8px 8px 10px;
     position: absolute;
-    top: -117px;
+    top: -420px;
     right: 15px;
-    @media screen and (max-width: 413px) and (min-width:1280px){
+    @media screen and (min-width:1280px){
         display: none;
     }
 }
@@ -372,28 +372,42 @@
 }
 
 .hero__btn--room {
+    position: absolute;
     color: $colorAccentYellow;
-        background: $colorBackgroundButton;
-        border: 2px solid $colorWhite;
-        border-radius: 25px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        transition: color $baseTransition,
-            background-color $baseTransition;
-        cursor: pointer;
-        padding: 14px 24px;
+    background: $colorBackgroundButton;
+    border: 2px solid $colorWhite;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    transition: color $baseTransition,
+    background-color $baseTransition;
+    cursor: pointer;
+    padding: 14px 24px;
+    bottom: 40px;
+    right: 73px;
     
-        &:hover,
-        &:focus {
-            background-color: $colorWhite;
-            // color: $colorBlack;
-        }
-    margin-left: 85px;
-    margin-bottom: 66px;
+    @media screen and (min-width: 1024px) {
+        bottom: 64px;
+        right: 47px;
+    }
+    @media screen and (min-width: 1280px) {
+        bottom: 66px;
+        right: 85px;
+    }
+        
+    
+
+    &:hover,
+    &:focus {
+        background-color: $colorWhite;
+        // color: $colorBlack;
+    }
+    // margin-left: 85px;
+    // margin-bottom: 66px;
     // flex-direction: column-reverse;
 }
 .hero__network {
