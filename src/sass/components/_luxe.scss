@@ -104,8 +104,8 @@
 
 .buttons-room__details--luxe {
   padding: 14px 65px 14px 64px;
-  background-color: #000000;
-  color: #f3c653;
+  background-color: $colorBlack;
+  color: $colorAccentYellow;
   display: inline-block;
   border-radius: 25px;
   border: 2px solid $colorWhite;
@@ -124,8 +124,8 @@
 }
 
 .buttons-room__price--luxe {
-  background-color: #000000;
-  color: #f3c653;
+  background-color: $colorBlack;
+  color: $colorAccentYellow;
   display: inline-block;
   border-radius: 25px;
   font-size: 16px;
