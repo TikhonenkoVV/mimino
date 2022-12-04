@@ -2,6 +2,10 @@
   @include for-size(tablet) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 23px;
   }
 }
 .menu-container__col-1,
@@ -11,6 +15,9 @@
     flex-direction: column;
     flex-basis: calc((100% - 106px) / 2);
     gap: 20px;
+  }
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 140px) / 2);
   }
 }
 .dishes {
@@ -43,7 +50,6 @@
 }
 
 .dishes__caption {
-  width: 225px;
   font-family: $fontFamilyMain;
   font-weight: 500;
   font-size: 14px;
@@ -51,8 +57,15 @@
   letter-spacing: 0.02em;
   color: $colorBlack;
   padding-bottom: 4px;
+
+  @include for-size(mobile) {
+    width: 225px;
+  }
   @include for-size(tablet) {
     width: 221px;
+  }
+  @include for-size(desktop) {
+    width: 262px;
   }
 }
 
@@ -64,6 +77,9 @@
   letter-spacing: 0.02em;
   color: $colorBlack;
   padding-bottom: 8px;
+  @include for-size(desktop) {
+    padding-bottom: 12px;
+  }
 }
 
 .dishes__portion {
@@ -73,12 +89,23 @@
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: $colorBlack;
-  padding: 4px 0 4px 32px;
+  padding: 4px 0;
+
+  @include for-size(mobile) {
+    padding: 4px 0 4px 32px;
+  }
   @include for-size(tablet) {
     padding: 4px 0 4px 40px;
   }
   .dishes-drinks & {
-    padding: 4px 0 4px 20px;
+    padding: 4px 0;
+
+    @include for-size(mobile) {
+      padding: 4px 0 4px 20px;
+    }
+    @include for-size(tablet) {
+      padding: 4px 0 4px 40px;
+    }
   }
 }
 
@@ -91,13 +118,17 @@
   letter-spacing: 0.02em;
   color: $colorBlack;
   text-align: right;
-  padding: 4px 0 4px 7px;
+  padding: 4px 0;
+
+  @include for-size(mobile) {
+    padding: 4px 0 4px 18px;
+  }
   .dishes-drinks & {
     padding: 4px 0;
   }
 }
 
-.book-table {
+.menu__button {
   display: block;
   cursor: pointer;
   font-family: $fontFamilyMain;
@@ -116,11 +147,10 @@
   @include for-size(tablet) {
     margin: 0 0 0 auto;
   }
-}
-
-.book-table:hover,
-.book-table:focus {
-  background-color: $colorWhite;
-  border: 2px solid $colorAccentYellow;
-  border-radius: $borderRadiusPrimary;
+  &:hover,
+  &:focus {
+    background-color: $colorWhite;
+    border: 2px solid $colorAccentYellow;
+    border-radius: $borderRadiusPrimary;
+  }
 }

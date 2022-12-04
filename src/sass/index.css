@@ -144,6 +144,11 @@ textarea {
     background-color: #f0ecd6;
   }
 }
+@media screen and (min-width: 1280px) {
+  .section__menu {
+    padding: 58px 0 60px 0;
+  }
+}
 
 .section__title {
   font-family: "Times New Roman Cyr", sans-serif;
@@ -175,6 +180,12 @@ textarea {
     flex-direction: column;
     flex-basis: calc((100% - 106px) / 2);
     gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-container__col-1,
+.menu-container__col-2 {
+    flex-basis: calc((100% - 140px) / 2);
   }
 }
 
@@ -214,7 +225,6 @@ textarea {
 }
 
 .dishes__caption {
-  width: 225px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -223,9 +233,19 @@ textarea {
   color: #000000;
   padding-bottom: 4px;
 }
+@media screen and (min-width: 414px) {
+  .dishes__caption {
+    width: 225px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .dishes__caption {
     width: 221px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dishes__caption {
+    width: 262px;
   }
 }
 
@@ -246,7 +266,12 @@ textarea {
   line-height: 1.21;
   letter-spacing: 0.02em;
   color: #000000;
-  padding: 4px 0 4px 32px;
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes__portion {
+    padding: 4px 0 4px 32px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .dishes__portion {
@@ -254,7 +279,17 @@ textarea {
   }
 }
 .dishes-drinks .dishes__portion {
-  padding: 4px 0 4px 20px;
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes-drinks .dishes__portion {
+    padding: 4px 0 4px 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dishes-drinks .dishes__portion {
+    padding: 4px 0 4px 40px;
+  }
 }
 
 .dishes__price {
@@ -266,13 +301,18 @@ textarea {
   letter-spacing: 0.02em;
   color: #000000;
   text-align: right;
-  padding: 4px 0 4px 7px;
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes__price {
+    padding: 4px 0 4px 18px;
+  }
 }
 .dishes-drinks .dishes__price {
   padding: 4px 0;
 }
 
-.book-table {
+.menu__button {
   display: block;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
@@ -289,13 +329,11 @@ textarea {
   margin: 0 auto;
 }
 @media screen and (min-width: 1024px) {
-  .book-table {
+  .menu__button {
     margin: 0 0 0 auto;
   }
 }
-
-.book-table:hover,
-.book-table:focus {
+.menu__button:hover, .menu__button:focus {
   background-color: #ffffff;
   border: 2px solid #f3c653;
   border-radius: 25px;

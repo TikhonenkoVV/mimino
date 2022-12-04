@@ -5,6 +5,9 @@
     padding: 58px 0 40px 0;
     background-color: $colorBackgroundSecondary;
   }
+  @include for-size(desktop) {
+    padding: 58px 0 60px 0;
+  }
 }
 
 .section__title {
