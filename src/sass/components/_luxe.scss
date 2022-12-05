@@ -208,19 +208,17 @@
 .slider__container {
   width: auto;
   height: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .slider {
   overflow: hidden;
   display: flex;
   position: relative;
-  left: 0%;
+  left: 20%;
   background-color: $colorBackgroundPrimary;
   box-shadow: 2px 2px 60px $colorBoxShadow;
 
-  @media (min-width: 1024px) {
+  @include for-size(tablet) {
     width: 428px;
 
     position: relative;
@@ -228,7 +226,7 @@
     bottom: 96px;
   }
 
-  @media (min-width: 1280px) {
+  @include for-size(desktop) {
     width: 548px;
 
     position: relative;
@@ -241,7 +239,7 @@
   width: 1024px;
   display: flex;
   position: relative;
-  margin-bottom: 20px;
+  right: 0;
   transition: all ease 1s;
   background-color: $colorBackgroundPrimary;
 }
@@ -260,15 +258,16 @@
   display: flex;
   gap: 24px;
   position: relative;
-  margin-bottom: 20px;
+  left: 77%;
+  top: 28px;
 
-  @media (min-width: 1024px) {
+  @include for-size(tablet) {
     position: relative;
     left: 87%;
     top: -40px;
   }
 
-  @media (min-width: 1280px) {
+  @include for-size(desktop) {
     position: relative;
     left: 92%;
     top: -58px;
