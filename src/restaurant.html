@@ -2,23 +2,29 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ресторанно-готельний комплекс "МІМІНО" ресторан</title>
-    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ресторанно-готельний комплекс "МІМІНО" ресторан</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/humanity/jquery-ui.css" />
+  <script type="module" src="./index.js"></script>
 </head>
 
 <body>
-    <include src="./partials/header.html"></include>
-    <main>
-        <include src="./partials/restaurant/hero.html"></include>
-        <include src="./partials/restaurant/about-kitchen.html"></include>
-        <include src="./partials/restaurant/menu.html"></include>
-    </main>
-    <include src="./partials/footer.html"></include>
-    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+  <include src="./partials/header.html"></include>
+  <main>
+    <include src="./partials/restaurant/hero.html"></include>
+    <include src="./partials/restaurant/about-kitchen.html"></include>
+    <include src="./partials/restaurant/menu.html"></include>
+  </main>
+  <include src="./partials/footer.html"></include>
+
+  <include src="./partials/modal/modal-table.html"></include>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+  <script src="../src/js/modal.js"></script>
 </body>
 
 </html>

@@ -231,6 +231,210 @@ textarea {
   display: flex;
 }
 
+.section__menu {
+  padding: 32px 0;
+  background-color: #fffdee;
+}
+@media screen and (min-width: 1024px) {
+  .section__menu {
+    padding: 58px 0 40px 0;
+    background-color: #f0ecd6;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section__menu {
+    padding: 58px 0 60px 0;
+  }
+}
+
+.section__title {
+  font-family: "Times New Roman Cyr", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .section__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-container__col-1,
+.menu-container__col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 106px) / 2);
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-container__col-1,
+.menu-container__col-2 {
+    flex-basis: calc((100% - 140px) / 2);
+  }
+}
+
+.dishes {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes {
+    margin-bottom: 0;
+  }
+}
+
+.dishes-drinks {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes-drinks {
+    margin-bottom: 0;
+  }
+}
+
+.dishes__category {
+  font-family: "Times New Roman Cyr", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes__category {
+    margin-bottom: 20px;
+  }
+}
+
+.dishes__caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 4px;
+}
+@media screen and (min-width: 414px) {
+  .dishes__caption {
+    width: 225px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dishes__caption {
+    width: 221px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dishes__caption {
+    width: 262px;
+  }
+}
+
+.dishes__ingredients {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.dishes__portion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes__portion {
+    padding: 4px 0 4px 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dishes__portion {
+    padding: 4px 0 4px 40px;
+  }
+}
+.dishes-drinks .dishes__portion {
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes-drinks .dishes__portion {
+    padding: 4px 0 4px 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dishes-drinks .dishes__portion {
+    padding: 4px 0 4px 40px;
+  }
+}
+
+.dishes__price {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-align: right;
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes__price {
+    padding: 4px 0 4px 18px;
+  }
+}
+.dishes-drinks .dishes__price {
+  padding: 4px 0;
+}
+
+.menu__button {
+  display: block;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: #000000;
+  border: 2px solid #f0ecd6;
+  border-radius: 25px;
+  padding: 15px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .menu__button {
+    margin: 0 0 0 auto;
+  }
+}
+.menu__button:hover, .menu__button:focus {
+  background-color: #ffffff;
+  border: 2px solid #f3c653;
+  border-radius: 25px;}
+  
 .header {
   position: absolute;
   top: 0;
