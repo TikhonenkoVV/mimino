@@ -185,14 +185,6 @@ button {
     border-radius: 0;
   }
 }
-.kitchen .container {
-  background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 138px, rgba(186, 186, 186, 0.4) 140px 141px);
-}
-@media screen and (min-width: 1024px) {
-  .kitchen .container {
-    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 261px, rgba(186, 186, 186, 0.4) 264px 227px);
-  }
-}
 .kitchen__chiefs {
   display: flex;
   flex-wrap: wrap;
