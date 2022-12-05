@@ -11,21 +11,21 @@
 }
 
 .luxe__container {
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  // height: 100%;
+  // margin-left: auto;
+  // margin-right: auto;
   background-color: $colorBackgroundPrimary;
   position: relative;
 
-  @media (min-width: 1024px) {
-    padding-left: 47px;
-    padding-right: 47px;
-  }
+  // @media (min-width: 1024px) {
+  //   padding-left: 47px;
+  //   padding-right: 47px;
+  // }
 
-  @media (min-width: 1280px) {
-    padding-left: 85px;
-    padding-right: 85px;
-  }
+  // @media (min-width: 1280px) {
+  //   padding-left: 85px;
+  //   padding-right: 85px;
+  // }
 }
 
 // Label
