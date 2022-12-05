@@ -24,8 +24,6 @@ function init() {
       item.style.marginRight = '40' + 'px';
       item.style.boxShadow = `2px 2px 60px rgba(0, 0, 0, 0.25)`;
     }
-    // item.style.width = '254' + 'px';
-    // item.style.marginRight = '40' + 'px';
   });
   rollSlider();
   rollSliderT();
@@ -60,8 +58,8 @@ document.querySelector('.slider-prev').addEventListener('click', function (e) {
 });
 
 function rollSlider() {
-  if (width > 548) {
-    sliderLine.style.transform = 'translate(-' + (count * width) / 1.45 + 'px)';
+  if (width > 547) {
+    sliderLine.style.transform = 'translate(-' + (count * width) / 1.86 + 'px)';
   }
 }
 
@@ -72,7 +70,7 @@ function rollSliderM() {
 }
 
 function rollSliderT() {
-  if (width > 427) {
+  if (width < 547 && width > 427) {
     sliderLine.style.transform = 'translate(-' + (count * width) / 1.82 + 'px)';
   }
 }
