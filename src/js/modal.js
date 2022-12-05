@@ -14,8 +14,3 @@ Array.from(openBtn, openButton => {
     document.body.classList.add('modal-open');
   });
 });
-
-// function toggleModal() {
-//   refs.modalTable.classList.toggle('is-hidden');
-//   document.body.classList.toggle('modal-open');
-// }
