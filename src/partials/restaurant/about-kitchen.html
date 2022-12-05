@@ -1,50 +1,48 @@
-<section class="kitchen">
-  <div class="container">
-    <h1 class="visually-hidden">Про нашу кухню</h1>
-    <div class="kitchen__chiefs">
-      <div class="kitchen__chiefs__description">
-        <span class="kitchen__title">Amet minim mollit non</span>
-        <h3 class="logo">Mimiho</h3>
-        <p class="kitchen__chiefs-description">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-      </div>
-      <picture class="kitchen__chiefs__picture">
-        <source
-          srcset="
-            ./images/about-kitchen/mobile/kitchen-244.jpg 1x,
-            ./images/about-kitchen/mobile/kitchen-488.jpg 2x,
-            ./images/about-kitchen/mobile/kitchen-732.jpg 3x
-          "
-          media="(max-width: 1023px)"
-        />
-        <source
-          srcset="
-            ./images/about-kitchen/tablet/kitchen-400.jpg  1x,
-            ./images/about-kitchen/tablet/kitchen-800.jpg  2x,
-            ./images/about-kitchen/tablet/kitchen-1200.jpg 3x
-          "
-          media="(max-width: 1279px)"
-        />
-        <source
-          srcset="
-            ./images/about-kitchen/desktop/kitchen-460.jpg  1x,
-            ./images/about-kitchen/desktop/kitchen-920.jpg  2x,
-            ./images/about-kitchen/desktop/kitchen-1380.jpg 3x
-          "
-          media="(min-width: 1280px)"
-        />
-        <img
-          src="./images/about-kitchen/mobile/kitchen-244.jpg"
-          alt="Фото кухаря, що готує страву на сковороді"
-          class="kitchen__chiefs-img"
-        />
-      </picture>
-    </div>
-    <div class="kitchen__ingredients">
-      <picture class="kitchen__ingredients__picture">
+<section class="about-kitchen">
+  <div class="container about-kitchen__container">
+    <h2 class="visually-hidden">Про нашу кухню</h2>
+
+    <p class="about-kitchen__title">Amet minim mollit non</p>
+    <h3 class="about-kitchen__logo">Mimiho</h3>
+    <p class="about-kitchen__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+
+    <picture class="about-kitchen__img">
+      <source
+        srcset="
+          ./images/about-kitchen/mobile/kitchen-244.jpg 1x,
+          ./images/about-kitchen/mobile/kitchen-488.jpg 2x,
+          ./images/about-kitchen/mobile/kitchen-732.jpg 3x
+        "
+        media="(max-width: 1023px)"
+      />
+      <source
+        srcset="
+          ./images/about-kitchen/tablet/kitchen-400.jpg  1x,
+          ./images/about-kitchen/tablet/kitchen-800.jpg  2x,
+          ./images/about-kitchen/tablet/kitchen-1200.jpg 3x
+        "
+        media="(max-width: 1279px)"
+      />
+      <source
+        srcset="
+          ./images/about-kitchen/desktop/kitchen-460.jpg  1x,
+          ./images/about-kitchen/desktop/kitchen-920.jpg  2x,
+          ./images/about-kitchen/desktop/kitchen-1380.jpg 3x
+        "
+        media="(min-width: 1280px)"
+      />
+      <img
+        class="about-kitchen__img-right"
+        src="./images/about-kitchen/mobile/kitchen-244.jpg"
+        alt="Фото кухаря, що готує страву на сковороді"
+      />
+    </picture>
+    <div class="about-kitchen__holder">
+      <picture>
         <source
           srcset="
             ./images/about-kitchen/mobile/meat-200.jpg 1x,
@@ -70,20 +68,22 @@
           media="(min-width: 1280px)"
         />
         <img
+          class="about-kitchen__img-left"
           src="./images/about-kitchen/mobile/meat-200.jpg"
           alt="Фото сирого м'яса на обробній дошці"
-          class="kitchen__ingredients-img"
         />
       </picture>
-      <p class="kitchen__ingredients__description">
+
+      <p class="about-kitchen__description">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <div class="carousel">
-      <ul class="slider">
-        <li class="slider__item">
+
+    <div class="about-kitchen-swiper">
+      <div class="about-kitchen-swiper__container">
+        <div class="about-kitchen-swiper__wrapper">
           <picture>
             <source
               srcset="
@@ -112,11 +112,10 @@
             <img
               src="./images/about-kitchen/mobile/flour-245.jpg"
               alt="Фото кухаря працюючого з тістом"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-        <li class="slider__item">
+
           <picture>
             <source
               srcset="
@@ -145,11 +144,10 @@
             <img
               src="./images/about-kitchen/mobile/khinkali-245.jpg"
               alt="Фото готових хінкалі"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-        <li class="slider__item">
+
           <picture>
             <source
               srcset="
@@ -178,11 +176,10 @@
             <img
               src="./images/about-kitchen/mobile/unsplash_2LzqR50_NTw@1x.jpg"
               alt="Фото сніданку на столі"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-        <li class="slider__item">
+
           <picture>
             <source
               srcset="
@@ -211,11 +208,10 @@
             <img
               src="./images/about-kitchen/mobile/unsplash_7BbfjQoBfqA@1x.jpg"
               alt="Фото вечері удвох з келихом білого вина та устрицями"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-        <li class="slider__item">
+
           <picture>
             <source
               srcset="
@@ -244,11 +240,10 @@
             <img
               src="./images/about-kitchen/mobile/unsplash_7kZXH664hdk@1x.jpg"
               alt="Фото заварювання чаю у скляній філіжанці"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-        <li class="slider__item">
+
           <picture>
             <source
               srcset="
@@ -277,11 +272,10 @@
             <img
               src="./images/about-kitchen/mobile/unsplash_E87UW-n4X1Q@1x.jpg"
               alt="Фото десерту з лохиною"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-        <li class="slider__item">
+
           <picture>
             <source
               srcset="
@@ -310,11 +304,10 @@
             <img
               src="./images/about-kitchen/mobile/unsplash_g8gOnhMRckw@1x.jpg"
               alt="Фото інтер'єру ресторана"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-        <li class="slider__item">
+
           <picture>
             <source
               srcset="
@@ -343,22 +336,22 @@
             <img
               src="./images/about-kitchen/mobile/unsplash_lw3Lqe2K7xc@1x.jpg"
               alt="Фото сніданку по-французськи"
-              class="slider-img"
+              class="about-kitchen-swiper__slide"
             />
           </picture>
-        </li>
-      </ul>
-      <div class="carousel__btns">
-        <button class="prev__btn">
-          <svg class="prev__btn-icon" width="32px" height="32px">
-            <use href="./images/icons.svg#icon-arrow-left"></use>
-          </svg>
-        </button>
-        <button class="next-btn">
-          <svg class="next-btn-icon" width="32px" height="32px">
-            <use href="./images/icons.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
+        </div>
+        <div class="about-kitchen-swiper__buttons">
+          <div class="about-kitchen-swiper__button-prev">
+            <svg class="about-kitchen-swiper__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="about-kitchen-swiper__button-next">
+            <svg class="about-kitchen-swiper__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>

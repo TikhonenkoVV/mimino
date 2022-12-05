@@ -1,227 +1,154 @@
-button {
-  display: inline-block;
-  border: none;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  background: transparent;
-}
+.about-kitchen {
+  &__container {
+    position: relative;
+  }
 
-.kitchen {
-  position: relative;
+  padding-top: 16px;
+  padding-bottom: 20px;
 
-  .kitchen__title {
+  @include for-size(tablet) {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
     font-family: $fontFamilyTNRoman;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: left;
+    @include font(400, 20px, calc(23 / 20));
     color: $colorTextLightGray;
+
+    @include for-size(tablet) {
+      margin-bottom: 4px;
+      @include font(400, 32px, calc(37 / 32));
+    }
   }
 
-  p {
-    font-family: $fontFamilyMain;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-  }
-
-  .logo {
+  &__logo {
+    margin-bottom: 12px;
     font-family: $fontFamilyLogo;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.08;
-    letter-spacing: 0.3em;
+    @include font(700, 40px, calc(43 / 40), 0.3em);
     color: $colorDarkGray;
-    margin: 12px 0;
+    text-transform: uppercase;
+
+    @include for-size(tablet) {
+      margin-bottom: 24px;
+      @include font(700, 64px, calc(69 / 64), 0.3em);
+    }
   }
 
-  img {
-    background: #dadada;
+  &__text {
+    margin-bottom: 28px;
+    max-width: 258px;
+    @include font(600, 12px, calc(15 / 12), 0.02em);
+
+    @include for-size(tablet) {
+      margin-bottom: 142px;
+      max-width: 439px;
+      @include font(600, 16px, calc(20 / 16), 0.02em);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 162px;
+      max-width: 518px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    @include for-size(tablet) {
+      display: block;
+      margin-bottom: 0;
+      position: absolute;
+      top: -152px;
+      left: 512px;
+    }
+
+    @include for-size(tablet) {
+      top: -152px;
+      left: 640px;
+    }
+  }
+
+  &__img-right,
+  &__img-left {
     box-shadow: 2px 2px 60px 2px $colorBoxShadow;
     border-radius: 2px;
 
     @include for-size(tablet) {
-      background: #dadada;
       box-shadow: 5px 5px 70px 17px $colorBoxShadow;
-      border-radius: 0;
     }
   }
 
-  // .container {
-  //   background: repeating-linear-gradient(
-  //     90deg,
-  //     #0000,
-  //     #0000 138px,
-  //     #bababa66 140px 141px
-  //   );
-
-  //   @include for-size(tablet) {
-  //     background: repeating-linear-gradient(
-  //       90deg,
-  //       #0000,
-  //       #0000 261px,
-  //       #bababa66 264px 227px
-  //     );
-  //   }
-  // }
-
-  &__chiefs {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 16px 0;
-
-    &__description {
-      max-width: 258px;
-      margin-bottom: 28px;
-      color: $colorTextPrimary;
-    }
-
-    &__picture {
-      margin-left: auto;
-    }
+  &__img-left {
+    margin-bottom: 32px;
   }
 
-  &__ingredients {
+  &__holder {
     display: flex;
-    padding: 16px 0;
     align-items: center;
+    gap: 20px;
 
-    &__picture {
-      img {
-        all: unset;
-      }
+    @include for-size(tablet) {
+      gap: 48px;
     }
 
-    &__description {
-      margin-left: 20px;
-      color: $colorAccentBrown;
+    @include for-size(desktop) {
+      gap: 32px;
     }
   }
 
-  @include for-size(tablet) {
-    .kitchen__title {
-      font-size: 32px;
-    }
+  &__description {
+    @include font(600, 12px, calc(15 / 12), 0.02em);
+    color: $colorAccentBrown;
 
-    p {
-      font-size: 16px;
-    }
-
-    .logo {
-      font-size: 64px;
-      margin: 4px 0 24px;
-    }
-
-    &__chiefs {
-      padding: 120px 0;
-      &__description {
-        max-width: 50%;
-        padding-right: 15px;
-      }
-
-      &__picture {
-        position: absolute;
-        left: 50%;
-        top: -32px;
-      }
-    }
-
-    &__ingredients {
-      height: 465px;
-      &__description {
-        margin-left: 48px;
-        max-width: 312px;
-      }
-    }
-  }
-
-  @include for-size(desktop) {
-    &__ingredients {
-      height: 600px;
-
-      &__description {
-        margin-left: 32px;
-      }
+    @include for-size(tablet) {
+      @include font(600, 16px, calc(20 / 16), 0.02em);
+      max-width: 312px;
     }
   }
 }
 
-.carousel {
-  overflow: hidden;
-  margin: 0 -15px;
-
-  .slider {
-    transform: translateX(calc(50% - 125px));
-    display: flex;
-    overflow-x: scroll;
-    margin-top: 16px;
-
-    &-img {
-      max-width: 245px;
-      height: 245px;
-      counter-increment: item;
-      flex: 0 0 100%;
-      position: relative;
-      box-shadow: none;
-    }
-
-    &__item {
-      border-radius: 2px;
-      box-shadow: 0 4px 4px #00000040;
-      height: 100%;
-      margin-right: 24px;
-
-      box-shadow: 2px 2px 60px 2px $colorBoxShadow;
-
-      @include for-size(tablet) {
-        margin-right: 40px;
-      }
-    }
-
-    @include for-size(tablet-only) {
-      transform: none;
-
-      &-img {
-        max-width: 194px;
-        height: 194px;
-        background: #dadada;
-      }
-    }
-
-    @include for-size(desktop) {
-      margin-right: 40px;
-    }
-  }
-
-  .carousel__btns {
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
-
-    .prev__btn {
-      margin-right: 32px;
-    }
+.about-kitchen-swiper {
+  &__container {
+    margin-left: 84px;
+    max-width: 329px;
+    overflow: hidden;
 
     @include for-size(tablet) {
-      padding-right: 0;
-      margin-top: 32px;
+      position: relative;
+      left: 50%;
+      bottom: 96px;
+      max-width: 428px;
+      margin-left: 0;
     }
     @include for-size(desktop) {
-      padding-right: 0;
-      margin-top: 40px;
+      position: relative;
+      left: 52%;
+
+      bottom: 104px;
+      max-width: 530px;
     }
   }
 
-  @include for-size(tablet) {
-    margin: 0;
-    margin-left: auto;
-    max-width: 428px;
+  &__wrapper {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+    @include for-size(tablet) {
+      gap: 40px;
+      margin-bottom: 32px;
+    }
+  }
+  &__slide {
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px $colorBoxShadow;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
   }
 }
