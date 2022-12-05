@@ -121,6 +121,12 @@
   }
 }
 
+// control-box
+.luxe__control-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 // Buttons
 .buttons-room {
   @media (min-width: 1024px) {
@@ -148,6 +154,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  // width: 100%;
   transition: border $baseTransition, background-color $baseTransition;
   cursor: pointer;
 
@@ -169,6 +176,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   padding: 14px 37px;
+  // width: 100%;
   transition: border $baseTransition, background-color $baseTransition;
   cursor: pointer;
 
@@ -262,6 +270,7 @@
   left: 0%;
   top: 28px;
   margin-bottom: 20px;
+  max-width: 96px;
 
   @include for-size(tablet) {
     position: relative;
