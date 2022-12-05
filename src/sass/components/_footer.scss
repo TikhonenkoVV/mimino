@@ -1,12 +1,12 @@
 .footer {
+  position: relative;
   background-color: $colorBackgroundDark;
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @include for-size(tablet){
-  padding-top: 80px;
-  padding-bottom: 80px;
-    
+  @include for-size(tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .footer__container {
@@ -21,12 +21,12 @@
     gap: 0;
   }
 
-  @include for-size(tablet){
+  @include for-size(tablet) {
     padding-right: 75px;
     gap: 163px;
   }
 
-  @include for-size(desktop){
+  @include for-size(desktop) {
     padding-right: 101px;
     gap: 231px;
   }
@@ -37,37 +37,39 @@
   text-transform: uppercase;
   font-family: $fontFamilyLogo;
   color: $colorAccentYellow;
-  @include font($weight: 700, $size: 40px, $line-height: 1.08, $letter-spacing: 0.3em);
-  
-  @include for-size(tablet){
+  @include font(
+    $weight: 700,
+    $size: 40px,
+    $line-height: 1.08,
+    $letter-spacing: 0.3em
+  );
+
+  @include for-size(tablet) {
     font-size: 64px;
   }
-
 }
 .footer__nav-box {
-  @include for-size(tablet){
+  @include for-size(tablet) {
     display: flex;
   }
-  
 }
 .footer__nav-list {
-  @include for-size(mobile-only){
+  @include for-size(mobile-only) {
     margin-bottom: 32px;
   }
 
-  @include for-size(tablet){
+  @include for-size(tablet) {
     margin-right: 137px;
   }
 
-  @include for-size(desktop){
+  @include for-size(desktop) {
     margin-right: 199px;
   }
 }
 
-.footer__social{
+.footer__social {
   display: flex;
   align-items: center;
-  
 }
 
 .footer__nav-item:not(:last-child) {
@@ -79,13 +81,12 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
 }
 
 .footer__social-list {
   display: flex;
   gap: 20px;
-  @include for-size(tablet){
+  @include for-size(tablet) {
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -93,33 +94,32 @@
 }
 
 .footer__social-link {
-  @include for-size(tablet){
+  @include for-size(tablet) {
     display: flex;
-  align-items: center;
-  width: 143px;
-  justify-content: space-between;
-  color: $colorAccentYellow;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  padding: 10px 12px;
-  border: 0.5px solid;
-  border-radius: 2px;
-  border-color: $colorAccentYellow;
+    align-items: center;
+    width: 143px;
+    justify-content: space-between;
+    color: $colorAccentYellow;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    padding: 10px 12px;
+    border: 0.5px solid;
+    border-radius: 2px;
+    border-color: $colorAccentYellow;
   }
 }
-.footer__social-text{
-  @include for-size(mobile-only){
+.footer__social-text {
+  @include for-size(mobile-only) {
     display: none;
   }
-
 }
 
-.footer__social-icon{
+.footer__social-icon {
   fill: $colorBorderAdress;
 
-  @include for-size(tablet){
+  @include for-size(tablet) {
     fill: $colorAccentYellow;
   }
 }

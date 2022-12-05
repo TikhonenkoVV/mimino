@@ -114,24 +114,24 @@
 }
 
 .hero__title {
-    color: $colorWhite;
-    text-align: center;
-    font-family: 'Film P3';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 103px;
-    letter-spacing: 0.3em;
-    max-width: 303px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
+  color: $colorWhite;
+  text-align: center;
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 103px;
+  letter-spacing: 0.3em;
+  max-width: 303px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 
-    @media screen and (max-width: 360px) {
-        font-size: 88px;
-    }
+  @media screen and (max-width: 360px) {
+    font-size: 88px;
+  }
 
-    @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     font-size: 128px;
     line-height: 1.08;
     max-width: 404px;
@@ -252,27 +252,27 @@
     gap: 60px;
   }
 }
-.hero__btn {
-  color: $colorAccentYellow;
-  background: $colorBackgroundButton;
-  border: 2px solid $colorWhite;
-  border-radius: 25px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  transition: color $baseTransition, background-color $baseTransition;
-  cursor: pointer;
-  padding: 14px 24px;
+// .hero__btn {
+//   color: $colorAccentYellow;
+//   background: $colorBackgroundButton;
+//   border: 2px solid $colorWhite;
+//   border-radius: 25px;
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   transition: color $baseTransition, background-color $baseTransition;
+//   cursor: pointer;
+//   padding: 14px 24px;
 
-  &:hover,
-  &:focus {
-    background-color: $colorWhite;
-    // color: $colorBlack;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: $colorWhite;
+//     // color: $colorBlack;
+//   }
+// }
 .hero__network {
   display: flex;
   gap: 20px;

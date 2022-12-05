@@ -53,10 +53,14 @@
   stroke: $colorBlack;
   border: 0;
   background-color: transparent;
-
   position: absolute;
   top: 16px;
   right: 16px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/icon-close.svg');
+  background-size: cover;
+  cursor: pointer;
 }
 
 .modal__icon {
