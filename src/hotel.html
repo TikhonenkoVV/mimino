@@ -2,23 +2,31 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-    <title>Ресторанно-готельний комплекс "МІМІНО" готель</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ресторанно-готельний комплекс "МІМІНО" готель</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/humanity/jquery-ui.css" />
+  <script type="module" src="./index.js"></script>
 </head>
 
 <body>
-    <include src="./partials/header.html"></include>
-    <main>
-        <include src="./partials/hotel/hero.html"></include>
-        <include src="./partials/hotel/room-luxe-x2-adult.html"></include>
-        <include src="./partials/hotel/room-x3-adult.html"></include>
-        <include src="./partials/hotel/room-x2-adult.html"></include>
-    </main>
-    <include src="./partials/footer.html"></include>
+  <include src="./partials/header.html"></include>
+  <main>
+    <include src="./partials/hotel/hero.html"></include>
+    <include src="./partials/hotel/room-luxe-x2-adult.html"></include>
+    <include src="./partials/hotel/room-x3-adult.html"></include>
+    <include src="./partials/hotel/room-x2-adult.html"></include>
+  </main>
+  <include src="./partials/footer.html"></include>
+
+  <include src="./partials/modal/modal-room.html"></include>
+  <include src="./partials/modal/modal-price.html"></include>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+  <script src="../src/js/modal.js"></script>
 </body>
 
 </html>

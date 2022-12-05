@@ -1,0 +1,169 @@
+.details {
+  position: relative;
+  &--hotel-bgr {
+    background-image: $overlayBgr,
+      url('../images/main_images/details-hotel-mobile@1x.jpg');
+    @include for-size(retina) {
+      background-image: $overlayBgr,
+        url('../images/main_images/details-hotel-mobile@2x.jpg');
+    }
+    @include for-size(tablet) {
+      background-image: $overlayBgr,
+        url('../images/main_images/details-hotel-tablet@1x.jpg');
+      @include for-size(retina) {
+        background-image: $overlayBgr,
+          url('../images/main_images/details-hotel-tablet@2x.jpg');
+      }
+    }
+    @include for-size(desktop) {
+      background-image: $overlayBgr,
+        url('../images/main_images/details-hotel-desktop@1x.jpg');
+      @include for-size(retina) {
+        background-image: $overlayBgr,
+          url('../images/main_images/details-hotel-desktop@2x.jpg');
+      }
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 24px 0 40px;
+  @include for-size(tablet) {
+    padding-top: 48px;
+  }
+  @include for-size(desktop) {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__container {
+    padding-right: 129px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include for-size(tablet) {
+      padding-right: 231px;
+    }
+    @include for-size(desktop) {
+      padding-right: 253px;
+    }
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 12px;
+    margin-right: -0.3em;
+    font-family: Film P3;
+    @include font(700, 40px, 1.075, 0.3em);
+    color: $colorWhite;
+    text-transform: uppercase;
+    @include for-size(tablet) {
+      @include font('', 64px, 1.08, '');
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: $colorWhite;
+    @include font(700, 20px, 1.2, 0.02em);
+    @include for-size(tablet) {
+      @include font('', 24px, '', '');
+    }
+  }
+  &__text {
+    max-width: 243px;
+    margin-bottom: 48px;
+    text-align: left;
+    @include font(600, 12px, 1.25, 0.02em);
+    color: $colorBorderMap;
+    @include for-size(tablet) {
+      max-width: 549px;
+      @include font('', 16px, 1.25, '');
+    }
+    @include for-size(tablet) {
+      max-width: 595px;
+    }
+  }
+  &__content-box {
+    @include for-size(tablet) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  &__button-box {
+    @include for-size(tablet) {
+      padding-bottom: 48px;
+      margin-left: 32px;
+    }
+  }
+  &__button-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &__button-a {
+    width: 236px;
+    margin: 0 auto;
+  }
+}
+
+.details__swiper {
+  @include for-size(mobile-only) {
+    margin-left: -15px;
+  }
+  @include for-size(desktop) {
+    margin-left: -33px;
+  }
+}
+
+.swiper-container {
+  height: 270px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  @include for-size(mobile-only) {
+    max-width: 384px;
+  }
+  @include for-size(tablet) {
+    width: 662px;
+  }
+  @include for-size(desktop) {
+    width: 874px;
+  }
+}
+
+.swiper-wrapper {
+  padding-left: 106px;
+  @include for-size(tablet) {
+    padding-left: 52px;
+  }
+  @include for-size(desktop) {
+    padding-left: 180px;
+  }
+}
+
+.swiper-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-bottom: 32px;
+  padding-right: 15px;
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  &:after {
+    font-size: 0;
+  }
+}
+
+.swwiper-icon {
+  fill: $colorWhite;
+  transition: fill $baseTransition;
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
