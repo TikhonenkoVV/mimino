@@ -52,23 +52,23 @@ button {
     }
   }
 
-  .container {
-    background: repeating-linear-gradient(
-      90deg,
-      #0000,
-      #0000 138px,
-      #bababa66 140px 141px
-    );
+  // .container {
+  //   background: repeating-linear-gradient(
+  //     90deg,
+  //     #0000,
+  //     #0000 138px,
+  //     #bababa66 140px 141px
+  //   );
 
-    @include for-size(tablet) {
-      background: repeating-linear-gradient(
-        90deg,
-        #0000,
-        #0000 261px,
-        #bababa66 264px 227px
-      );
-    }
-  }
+  //   @include for-size(tablet) {
+  //     background: repeating-linear-gradient(
+  //       90deg,
+  //       #0000,
+  //       #0000 261px,
+  //       #bababa66 264px 227px
+  //     );
+  //   }
+  // }
 
   &__chiefs {
     display: flex;
