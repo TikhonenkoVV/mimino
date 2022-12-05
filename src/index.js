@@ -146,23 +146,44 @@ $('.custom-select__option').on('click', function () {
     .text($(this).text());
 });
 
-const windowInnerWidth = window.innerWidth;
-
-const swiper = new Swiper('.swiper-container', {
+var swiperH = new Swiper('.swiper-container', {
   slidesPerView: 1.35,
-
   leftSlides: true,
-
   slideToClickedSlide: true,
-
   spaceBetween: 20,
-
   loop: true,
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-prev',
     prevEl: '.swiper-button-next',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperR = new Swiper('.swiper-container-restaurant', {
+  slidesPerView: 1.35,
+  leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 20,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r',
+    prevEl: '.swiper-button-next-r',
   },
   breakpoints: {
     // when window width is >= 320px
