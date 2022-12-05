@@ -239,28 +239,29 @@
   height: auto;
 }
 
-.slider {
+.slider__luxe {
   overflow: hidden;
   display: flex;
   position: relative;
-  left: -32%;
   background-color: $colorBackgroundPrimary;
   box-shadow: 2px 2px 60px $colorBoxShadow;
+  margin-bottom: 20px;
+  left: -32%;
 
   @include for-size(tablet) {
     width: 428px;
 
     position: relative;
-    left: 50%;
-    bottom: 96px;
+    // left: 50%;
+    // bottom: 96px;
   }
 
   @include for-size(desktop) {
     width: 548px;
 
     position: relative;
-    left: 50%;
-    bottom: 118px;
+    // left: 50%;
+    // bottom: 118px;
   }
 }
 
@@ -271,6 +272,7 @@
   right: 0;
   transition: all ease 1s;
   background-color: $colorBackgroundPrimary;
+  gap: 16px;
 }
 
 .slider__line-img {
@@ -282,32 +284,22 @@
   padding: 0;
 }
 
-// .restaurant__flipper-btn {
-//   padding: 0;
-//   display: flex;
-//   gap: 24px;
-//   position: relative;
-//   left: 0%;
-//   top: 28px;
-//   margin-bottom: 20px;
-//   max-width: 96px;
+.luxe__flipper-btn {
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  max-width: 96px;
 
-//   @include for-size(tablet) {
-//     position: relative;
-//     left: 87%;
-//     top: -40px;
-//   }
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 100%;
+  }
+}
 
-//   @include for-size(desktop) {
-//     position: relative;
-//     left: 92%;
-//     top: -58px;
-//   }
-// }
-
-// .restaurant__button {
-//   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-// }
+.restaurant__button {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
 .slider__picture {
   background-color: transparent;
