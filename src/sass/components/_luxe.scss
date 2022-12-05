@@ -1,4 +1,5 @@
 .room--luxe {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   @media (min-width: 1024px) {
@@ -11,21 +12,8 @@
 }
 
 .luxe__container {
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: $colorBackgroundPrimary;
   position: relative;
-
-  @media (min-width: 1024px) {
-    padding-left: 47px;
-    padding-right: 47px;
-  }
-
-  @media (min-width: 1280px) {
-    padding-left: 85px;
-    padding-right: 85px;
-  }
 }
 
 // Label
@@ -124,7 +112,14 @@
 // control-box
 .luxe__control-box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
 }
 
 // Buttons
@@ -192,7 +187,7 @@
   display: block;
   margin-left: auto;
   min-width: 244px;
-  padding-left: 155px;
+  padding-left: 140px;
 
   @media (min-width: 1024px) {
     padding-left: 0;
@@ -203,17 +198,24 @@
   display: block;
   margin-bottom: 32px;
   width: 244px;
-  // height: 322px;
   margin-right: 15px;
-  // margin-left: 155px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 
   @media (min-width: 1024px) {
     position: absolute;
     top: -94px;
-    right: 112px;
+    right: 150px;
     margin-left: 26px;
+    margin-right: 100px;
+  }
+
+  @media (min-width: 1280px) {
+    position: absolute;
+    top: -94px;
+    right: 275px;
+    margin-left: 26px;
+    margin-right: 100px;
   }
 }
 
@@ -223,28 +225,23 @@
   height: auto;
 }
 
-.slider {
+.slider__luxe {
   overflow: hidden;
   display: flex;
   position: relative;
-  left: -32%;
   background-color: $colorBackgroundPrimary;
   box-shadow: 2px 2px 60px $colorBoxShadow;
+  margin-bottom: 20px;
+  left: -32%;
 
   @include for-size(tablet) {
     width: 428px;
-
     position: relative;
-    left: 50%;
-    bottom: 96px;
   }
 
   @include for-size(desktop) {
     width: 548px;
-
     position: relative;
-    left: 50%;
-    bottom: 118px;
   }
 }
 
@@ -255,6 +252,7 @@
   right: 0;
   transition: all ease 1s;
   background-color: $colorBackgroundPrimary;
+  gap: 16px;
 }
 
 .slider__line-img {
@@ -266,30 +264,20 @@
   padding: 0;
 }
 
-.restaurant__flipper-btn {
+.luxe__flipper-btn {
   padding: 0;
   display: flex;
   gap: 24px;
-  position: relative;
-  left: 0%;
-  top: 28px;
   margin-bottom: 20px;
   max-width: 96px;
 
-  @include for-size(tablet) {
-    position: relative;
-    left: 87%;
-    top: -40px;
-  }
-
-  @include for-size(desktop) {
-    position: relative;
-    left: 92%;
-    top: -58px;
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 100%;
   }
 }
 
-.restaurant__button {
+.luxe__slider-button {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 

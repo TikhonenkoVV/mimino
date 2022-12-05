@@ -1,4 +1,5 @@
 <section class="room room--luxe">
+  <span class="decor"></span>
   <div class="container luxe__container">
     <div class="luxe__label-box">
       <p class="luxe__label-text">Amet minim mollit non</p>
@@ -77,7 +78,7 @@
 
     <div class="luxe__control-box">
       <div class="slider__container">
-        <div class="slider">
+        <div class="slider__luxe">
           <div class="slider__line">
             <picture class="slider__picture">
               <source
@@ -120,20 +121,34 @@
                 alt="Диван із квітами"
               />
             </picture>
+
+            <picture class="slider__picture">
+              <source
+                srcset="
+                  /src/images/hotel_images/bedroom5_desk@1x.jpg 1x,
+                  /src/images/hotel_images/bedroom5_desk@2x.jpg 2x
+                "
+              />
+              <img
+                class="slider__line-img"
+                src="/src/images/hotel_images/bedroom5_desk@1x.jpg"
+                alt="Крісло"
+              />
+            </picture>
           </div>
         </div>
       </div>
 
-      <ul class="restaurant__flipper-btn">
-        <li class="restaurant__link">
-          <a href="" class="restaurant__button slider-prev">
+      <ul class="luxe__flipper-btn">
+        <li class="luxe__link">
+          <a href="#" class="luxe__slider-button slider-prev">
             <svg class="restaurant__icon" width="32" height="32">
               <use href="/src/images/icons.svg#icon-arrow-left"></use>
             </svg>
           </a>
         </li>
-        <li class="restaurant__link">
-          <a href="" class="restaurant__button slider-next">
+        <li class="luxe__link">
+          <a href="#" class="luxe__slider-button slider-next">
             <svg class="restaurant__icon" width="32" height="32">
               <use href="/src/images/icons.svg#icon-arrow-right"></use>
             </svg>
@@ -159,4 +174,6 @@
       </ul>
     </div>
   </div>
+
+  <script src="/src/slider_luxe.js"></script>
 </section>

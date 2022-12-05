@@ -1,4 +1,5 @@
 .details {
+  position: relative;
   &--hotel-bgr {
     background-image: $overlayBgr,
       url('../images/main_images/details-hotel-mobile@1x.jpg');
@@ -23,6 +24,37 @@
       }
     }
   }
+  &--restaurant-bgr {
+    background-image: $LinearGradientSection,
+      url('../images/restaurant-details/mobile/restaurant-details-418@1x.jpg');
+
+    @include for-size(retina) {
+      background-image: $LinearGradientSection,
+        url('../images/restaurant-details/mobile/restaurant-details-418@2x.jpg');
+    }
+
+    @include for-size(tablet) {
+      background-image: $LinearGradientSection,
+        url('../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg');
+      height: 620px;
+      padding: 48px 0 40px 0;
+
+      @include for-size(retina) {
+        background-image: $LinearGradientSection,
+          url('../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg');
+      }
+    }
+
+    @include for-size(desktop) {
+      background-image: $LinearGradientSection,
+        url('../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg');
+
+      @include for-size(retina) {
+        background-image: $LinearGradientSection,
+          url('../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg');
+      }
+    }
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -40,8 +72,24 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    &--rest {
+      padding-right: 0;
+      padding-left: 129px;
+      align-items: flex-start;
+    }
     @include for-size(tablet) {
       padding-right: 231px;
+      &--rest {
+        padding-right: 0;
+        padding-left: 231px;
+      }
+    }
+    @include for-size(desktop) {
+      padding-right: 253px;
+      &--rest {
+        padding-right: 0;
+        padding-left: 253px;
+      }
     }
   }
   &__logo {
@@ -82,12 +130,19 @@
     @include for-size(tablet) {
       display: flex;
       align-items: flex-end;
+      &--rest {
+        flex-direction: row-reverse;
+      }
     }
   }
   &__button-box {
     @include for-size(tablet) {
       padding-bottom: 48px;
       margin-left: 32px;
+      &--rest {
+        margin-right: 32px;
+        margin-left: 0;
+      }
     }
   }
   &__button-item:not(:last-child) {
@@ -108,7 +163,17 @@
   }
 }
 
-.swiper-container {
+.details__swiper--rest {
+  @include for-size(mobile-only) {
+    margin-right: -15px;
+  }
+  @include for-size(desktop) {
+    margin-right: -33px;
+  }
+}
+
+.swiper-container,
+.swiper-container-restaurant {
   height: 270px;
   overflow: hidden;
   margin-bottom: 16px;
@@ -131,6 +196,9 @@
   @include for-size(desktop) {
     padding-left: 180px;
   }
+  &--r {
+    padding-left: 0;
+  }
 }
 
 .swiper-button-wrapper {
@@ -139,6 +207,17 @@
   gap: 32px;
   margin-bottom: 32px;
   padding-right: 15px;
+  @include for-size(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.swiper-button-wrapper--rest {
+  display: flex;
+  // justify-content: flex-end;
+  gap: 32px;
+  margin-bottom: 32px;
+  padding-left: 15px;
   @include for-size(tablet) {
     margin-bottom: 0;
   }

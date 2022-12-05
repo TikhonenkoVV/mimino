@@ -1,4 +1,5 @@
 .menu {
+  position: relative;
   padding: 32px 0;
   background-color: $colorBackgroundPrimary;
   @include for-size(tablet) {
@@ -6,6 +7,8 @@
     background-color: $colorBackgroundSecondary;
   }
   @include for-size(desktop) {
+    width: 1280px;
+    margin: 0 auto;
     padding: 58px 0 60px 0;
   }
 }
@@ -23,6 +26,7 @@
     margin-bottom: 40px;
   }
 }
+
 .menu__container {
   @include for-size(tablet) {
     display: flex;
@@ -45,6 +49,7 @@
     flex-basis: calc((100% - 140px) / 2);
   }
 }
+
 .dishes {
   width: 100%;
   text-align: left;
@@ -157,28 +162,9 @@
 }
 
 .menu__button {
-  display: block;
-  cursor: pointer;
-  font-family: $fontFamilyMain;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: $colorAccentYellow;
   background-color: $colorBlack;
-  border: 2px solid $colorBackgroundSecondary;
-  border-radius: $borderRadiusPrimary;
-  padding: 15px 24px;
-  transition: background-color $baseTransition;
   margin: 0 auto;
-
   @include for-size(tablet) {
     margin: 0 0 0 auto;
-  }
-  &:hover,
-  &:focus {
-    background-color: $colorWhite;
-    border: 2px solid $colorAccentYellow;
-    border-radius: $borderRadiusPrimary;
   }
 }
