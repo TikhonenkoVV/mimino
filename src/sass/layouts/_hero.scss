@@ -265,8 +265,10 @@
   letter-spacing: 0.02em;
   transition: color $baseTransition, background-color $baseTransition;
   cursor: pointer;
-  width: 100%;
   padding: 14px 24px;
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+  }
 
   &:hover,
   &:focus {
