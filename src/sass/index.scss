@@ -1,6 +1,7 @@
 @import './utils/variables';
-@import './common';
 @import './utils/mixins';
+@import './base/fonts';
+@import './base/base';
 @import './utils/modal-open';
 @import './utils/vh';
 @import './base/base';
@@ -22,3 +23,6 @@
 @import './components/footer';
 @import './layouts/details';
 @import './components/room-amenities';
+@import './common';
+@import './layouts/container';
+@import './layouts/about-restaurant';
