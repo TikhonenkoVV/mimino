@@ -1,6 +1,5 @@
 .about
 {
-    overflow-x: hidden;
     background-color: $colorBackgroundPrimary;
 }
 
@@ -103,7 +102,6 @@
     }
 
     @include for-size(desktop) {
-        position: absolute;
         right: 180px;
         top: -33px;
         margin: 0;
@@ -203,30 +201,42 @@
     padding: 0;
 }
 
-.restaurant__flipper-btn {
+.slider__flipper-btn {
     padding: 0;
     display: flex;
     gap: 24px;
+    max-width: 96px;
     position: relative;
-    left: 77%;
+    left: 74%;
     top: 28px;
 
     @include for-size(tablet) {
-        position: relative;
-        left: 87%;
+        left: 91%;
         top: -40px;
     }
 
     @include for-size(desktop) {
-        position: relative;
-        left: 92%;
+        left: 86%;
         top: -58px;
     }
 }
 
-.restaurant__button {
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+// .slider__button
+// {
+//     color: $colorBlack;
+//     transition: color 0.7s cubic-bezier(.48,.42,.61,.72);
+// }
+
+// .slider__link
+// {
+//     fill: currentColor;
+
+//     &:hover,
+//     &:focus
+//     {
+//         color: $colorAccentYellow;
+//     }
+// }
 
 .slider__picture {
     background-color: transparent;
