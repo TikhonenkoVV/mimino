@@ -918,12 +918,14 @@ textarea {
 @media screen and (min-width: 1024px) {
   .hero--roompage {
     padding-top: 468px;
+    padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero--roompage {
     max-width: 1280px;
     padding-top: 524px;
+    padding-bottom: 48px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1030,7 +1032,12 @@ textarea {
   margin-bottom: 16px;
   /* White */
   max-width: 400px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+@media screen and (min-width: 1280px) {
+  .hero__text--room {
+    font-size: 16px;
+  }
 }
 
 .hero__subtitle {
@@ -1077,8 +1084,8 @@ textarea {
   font-family: "Times New Roman";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.14;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 113px;
@@ -1111,6 +1118,11 @@ textarea {
   .hero__control-box {
     margin-bottom: 58px;
   }
+}
+
+.hero__contact--roompage {
+  display: flex;
+  flex-direction: row;
 }
 
 .hero__container {
@@ -1146,6 +1158,12 @@ textarea {
   position: absolute;
   top: -420px;
   right: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__address--roompage {
+    bottom: 24px;
+    left: 47px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .hero__address--roompage {
@@ -1239,7 +1257,7 @@ textarea {
 }
 @media screen and (min-width: 1280px) {
   .hero__btn--room {
-    bottom: 66px;
+    bottom: 6px;
     right: 85px;
   }
 }
@@ -1272,6 +1290,8 @@ textarea {
 @media screen and (min-width: 1024px) {
   .hero__network--roompage {
     margin-bottom: 9px;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
