@@ -152,6 +152,7 @@ button {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
+  text-align: left;
   color: #b4b4b4;
 }
 .kitchen p {
@@ -280,7 +281,7 @@ button {
     margin-right: 40px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1279.98px) {
   .carousel .slider {
     transform: none;
   }
@@ -290,6 +291,11 @@ button {
     background: #dadada;
   }
 }
+@media screen and (min-width: 1280px) {
+  .carousel .slider {
+    margin-right: 40px;
+  }
+}
 .carousel .carousel__btns {
   margin-top: 20px;
   display: flex;
@@ -297,11 +303,18 @@ button {
   padding-right: 15px;
 }
 .carousel .carousel__btns .prev__btn {
-  margin-right: 33px;
+  margin-right: 32px;
 }
 @media screen and (min-width: 1024px) {
   .carousel .carousel__btns {
     padding-right: 0;
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .carousel .carousel__btns {
+    padding-right: 0;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 1024px) {
