@@ -83,6 +83,7 @@
   letter-spacing: 0.02em;
   color: $colorBlack;
   padding-bottom: 4px;
+  width: 55%;
 
   @include for-size(mobile) {
     width: 225px;
@@ -116,8 +117,10 @@
   letter-spacing: 0.02em;
   color: $colorBlack;
   padding: 4px 0;
+  text-align: right;
 
   @include for-size(mobile) {
+    text-align: left;
     padding: 4px 0 4px 32px;
   }
   @include for-size(tablet) {
