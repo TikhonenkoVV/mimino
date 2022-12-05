@@ -1,18 +1,31 @@
 <section class="room room-x3-adult">
-  <div class="container room-x3-adult__container">
+  <div class="container">
     <div class="room-x3-adult__box">
       <div class="room-x3-adult__wrap">
       <p class="room-x3-adult__logo-text">Amet minim mollit non</p>
-      <p class="room-x3-adult__logo-title">mimiho</p>
-      <h2 class="room-x3-adult__title">трьохмісний номер</h2>
-      <p class="room-x3-adult__text">
+      <h2 class="room-x3-adult__logo-title">mimiho</h2>
+      <p class="room-x3-adult__title">трьохмісний номер</p>
+      <h2 class="room-x3-adult__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
-      </p>
+      </h2>
     </div>
-    <div class="room-x3-adult__picture">
-    <picture>
+    <div class="room-x3-adult__picturebox">
+      <picture class="room-x3-adult__picture">
+      <!--mobile-->
+      <source
+        media="(max-width:1023px)"
+        srcset="
+          /src/images/hotel_img/bedroom_mob@1x_result.webp 1x,
+          /src/images/hotel_img/bedroom_mob@2x_result.webp 2x
+        "/>
+        <source
+        media="(max-width:1023px)"
+        srcset="/src/images/hotel_img/bedroom_mob@1x.jpg 1x,
+        /src/images/hotel_img/bedroom_mob@2x.jpg 2x
+        "
+      />
       <!--desktop-->
       <source
         media="(min-width:1280px)"
@@ -21,7 +34,6 @@
           /src/images/hotel_img/bedroom_desk@2x_result.webp 2x
         "
       />
-
       <source
         media="(min-width:1280px)"
         srcset="
@@ -29,9 +41,6 @@
           /src/images/hotel_img/bedroom_desk@2x.jpg 2x
         "
       />
-
-      <img src="/src/images/hotel_img/bedroom_desk@1x.jpg" />
-
       <!--tablet-->
       <source
         media="(min-width:1024px)"
@@ -40,7 +49,6 @@
           /src/images/hotel_img/bedroom_tab@2x_result.webp 2x
         "
       />
-
       <source
         media="(min-width:1024px)"
         srcset="
@@ -48,22 +56,18 @@
           /src/images/hotel_img/bedroom_tab@2x.jpg 2x
         "
       />
-
-      <!--mobile-->
-      <source
-        media="(min-width:414px)"
-        srcset="
-          /src/images/hotel_img/bedroom_mob@1x_result.webp 1x,
-          /src/images/hotel_img/bedroom_mob@2x_result.webp 2x
-        "
-      />
+      <img
+      src="/src/images/hotel_img/bedroom_desk@1x.jpg"
+      alt="Готельний номер"
+    />
     </picture>
   </div>
+
     </div>
     <div class="room-x3-adult__service">
-      <div class="room-x3-adult__service-box">
-        <ul class="room-x3-adult__service-img">
-        <li class="room-x3-adult__item">
+          <div  class="room-x3-adult__slider-box">
+            <ul class="room-x3-adult__gallery">
+              <li>
           <picture>
             <!--desktop-->
             <source
@@ -99,7 +103,7 @@
               "/>
        <!--mobile-->
        <source
-              media="(min-width:1024px)"
+              media="(max-width:1023px)"
               srcset="
                 /src/images/hotel_img/bedroom1_mob@1x_result.webp 1x,
                 /src/images/hotel_img/bedroom1_mob@2x_result.webp 2x
@@ -107,15 +111,16 @@
             />
 
             <source
-              media="(min-width:1024px)"
+              media="(max-width:1023px)"
               srcset="
                 /src/images/hotel_img/bedroom1_mob@1x.jpg 1x,
                 /src/images/hotel_img/bedroom1_mob@2x.jpg 2x
               "/>
-              <img src="/src/images/hotel_img/bedroom1_tab@1x.jpg"/>
+              <img  class="room-x3-adult__gallery-picture"  src="/src/images/hotel_img/bedroom1_tab@1x.jpg"/>
           </picture>
+    
         </li>
-        <li class="room-x3-adult__item">
+        <li>
           <picture>
             <!--desktop-->
             <source
@@ -151,7 +156,7 @@
               "/>
        <!--mobile-->
        <source
-              media="(min-width:1024px)"
+              media="(max-width:1023px)"
               srcset="
                 /src/images/hotel_img/bedroom2_mob@1x_result.webp 1x,
                 /src/images/hotel_img/bedroom2_mob@2x_result.webp 2x
@@ -159,16 +164,16 @@
             />
 
             <source
-              media="(min-width:1024px)"
+              media="(max-width:1023px)"
               srcset="
                 /src/images/hotel_img/bedroom2_mob@1x.jpg 1x,
                 /src/images/hotel_img/bedroom2_mob@2x.jpg 2x
               "/>
-              <img src="/src/images/hotel_img/bedroom2_tab@1x.jpg"/>
-          </picture>
-        </li>
-        <!-- <li class="room-x3-adult__item">
-          <picture>
+              <img  class="room-x3-adult__gallery-picture"  src="/src/images/hotel_img/bedroom2_tab@1x.jpg"/>
+          </picture >
+         </li>
+         
+          <li> <picture > 
             
             <source
               media="(min-width:1280px)"
@@ -216,11 +221,12 @@
                 /src/images/hotel_img/bedroom3_mob@1x.jpg 1x,
                 /src/images/hotel_img/bedroom3_mob@2x.jpg 2x
               "/>
-              <img src="/src/images/hotel_img/bedroom3_tab@1x.jpg"/>
+              <img   class="room-x3-adult__gallery-picture" src="/src/images/hotel_img/bedroom3_tab@1x.jpg"/>
           </picture>
         </li>
-        <li class="room-x3-adult__item">
-        <picture>
+        <li>
+
+        <picture >
            
             <source
               media="(min-width:1280px)"
@@ -268,11 +274,11 @@
                 /src/images/hotel_img/bedroom5_mob@1x.jpg 1x,
                 /src/images/hotel_img/bedroom5_mob@2x.jpg 2x
               "/>
-              <img src="/src/images/hotel_img/bedroom5_tab@1x.jpg"/>
+              <img class="room-x3-adult__gallery-picture"  src="/src/images/hotel_img/bedroom5_tab@1x.jpg"/>
           </picture>  
         </li>
-        <li class="room-x3-adult__item">
-<picture>
+        <li>        
+<picture  >
             
             <source
               media="(min-width:1280px)"
@@ -320,11 +326,11 @@
                 /src/images/hotel_img/bedroom6_mob@1x.jpg 1x,
                 /src/images/hotel_img/bedroom6_mob@2x.jpg 2x
               "/>
-              <img src="/src/images/hotel_img/bedroom6_tab@1x.jpg"/>
+              <img class="room-x3-adult__gallery-picture" src="/src/images/hotel_img/bedroom6_tab@1x.jpg"/>
           </picture>
         </li>
-        <li class="room-x3-adult__item">
-<picture>
+        <li>
+<picture >
             
             <source
               media="(min-width:1280px)"
@@ -372,15 +378,23 @@
                 /src/images/hotel_img/bedroom7_mob@1x.jpg 1x,
                 /src/images/hotel_img/bedroom7_mob@2x.jpg 2x
               "/>
-              <img src="/src/images/hotel_img/bedroom7_tab@1x.jpg"/>
-          </picture>
-        </li> -->
-      </ul>
-      <ul class="room-x3-adult__swipper">
-      <li> <svg width="32" height="32"> <use href="./images/icons.svg#icon-arrow-left"></use></svg> </li>
-      <li> <svg width="32" height="32"> <use href="./images/icons.svg#icon-arrow-right"></use></svg> </li>
+              <img class="room-x3-adult__gallery-picture" src="/src/images/hotel_img/bedroom7_tab@1x.jpg"/>
+          </picture> </li>
+        
+        </ul>
+        
+      <ul slider class="room-x3-adult__swipper">
+      <li> <a href=""  class="room-x3-adult__svg slider-prev">
+        <svg width="32" height="32"> <use href="./images/icons.svg#icon-arrow-left">
+
+        </use></svg></a>  </li>
+      <li> <a href="" class="room-x3-adult__svg slider-next ">
+        <svg width="32" height="32"> <use href="./images/icons.svg#icon-arrow-right"></use></svg>  </a></li>
        </ul>
-      </div>
+      </div> 
+
+      
+
       <div class="room-x3-adult__buttons">
           <a 
           href="./room.html" class="room-x3-adult__button-details">Детальніше</a></li>
@@ -388,15 +402,16 @@
         
   <button
             type="button"
-            class="room-x3-adult__price"
-            data-modal-price-open
+            data-id="data-modal-price"
+            class="open room-x3-adult__price"
           >
             Переглянути ціни
           </button>
-        </li>
-        </ul>
+      </div>
         </div>
      </div>
     </div>
   </div>
+  
+  <script src="/src/slider-x3.js"></script>
 </section>
