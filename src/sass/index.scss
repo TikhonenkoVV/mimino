@@ -1,10 +1,9 @@
 @import './utils/variables';
-@import './common';
 @import './utils/mixins';
+@import './base/fonts';
+@import './base/base';
 @import './utils/modal-open';
 @import './utils/vh';
-@import './base/base';
-@import './base/fonts';
 @import './layouts/container';
 @import './layouts/decor';
 @import './layouts/button_a';
@@ -23,3 +22,6 @@
 @import './layouts/details';
 @import './components/room-amenities';
 @import './components/room-x3-adult';
+@import './common';
+@import './layouts/container';
+@import './layouts/about-restaurant';
