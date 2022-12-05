@@ -172,9 +172,11 @@
 }
 
 .room-x3-adult__picture {
+  display: block;
   border-radius: 2px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   margin-right: 140px;
+  width: 244px;
 
   @media screen and (min-width: 1024px) {
     transform: translateY(-98px);
