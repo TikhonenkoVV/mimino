@@ -2690,7 +2690,7 @@ textarea {
 }
 
 .room-x3-adult__svg {
-  fill: 808080;
+  fill: #808080;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 

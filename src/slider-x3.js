@@ -1,14 +1,14 @@
-const images = document.querySelectorAll('.slider .slider__line img');
-const sliderLine = document.querySelector('.slider .slider__line');
+const images = document.querySelectorAll('.room-x3-adult__slider-box .room-x3-adult__gallery-picture');
+const sliderLine = document.querySelector('.room-x3-adult__slider-box .room-x3-adult__gallery');
 let count = 0;
 let width;
 
 function init() {
   console.log('resize');
-  width = document.querySelector('.slider').offsetWidth;
+  width = document.querySelector('.room-x3-adult__slider-box').offsetWidth;
 
   images.forEach(item => {
-    width = document.querySelector('.slider').offsetWidth;
+    width = document.querySelector('.room-x3-adult__slider-box').offsetWidth;
 
     if (width < 547 && width > 427) {
       item.style.marginRight = '40' + 'px';
