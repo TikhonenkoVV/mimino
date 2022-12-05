@@ -12,6 +12,7 @@
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   margin: -1px;
 }
@@ -22,7 +23,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #5f5f5f;
   background-color: #fffdee;
@@ -59,54 +60,88 @@ textarea {
 
 /* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat-v25-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.ttf') format('truetype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* montserrat-600 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat-v25-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.ttf') format('truetype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-600.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* montserrat-500 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat-v25-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.ttf') format('truetype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-500.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* montserrat-700 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat-v25-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.ttf') format('truetype'),
+    url('../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 @font-face {
-  font-family: "Times New Roman Cyr";
-  src: url("../fonts/TimesNRCyrMT.woff2") format("woff2"), url("../fonts/TimesNRCyrMT.woff") format("woff");
+  font-family: 'Times New Roman Cyr';
+  src: url('../fonts/TimesNRCyrMT.woff2') format('woff2'),
+    url('../fonts/TimesNRCyrMT.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Times New Roman Cyr";
-  src: url("../fonts/TimesNRCyrMT-Bold.woff2") format("woff2"), url("../fonts/TimesNRCyrMT-Bold.woff") format("woff");
+  font-family: 'Times New Roman Cyr';
+  src: url('../fonts/TimesNRCyrMT-Bold.woff2') format('woff2'),
+    url('../fonts/TimesNRCyrMT-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Film P3";
-  src: url("../fonts/FilmP3Bold.eot");
-  src: local("Film P3 Bold"), local("FilmP3Bold"), url("../fonts/FilmP3Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff"), url("../fonts/FilmP3Bold.ttf") format("truetype");
+  font-family: 'Film P3';
+  src: url('../fonts/FilmP3Bold.eot');
+  src: local('Film P3 Bold'), local('FilmP3Bold'),
+    url('../fonts/FilmP3Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff'),
+    url('../fonts/FilmP3Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -133,123 +168,426 @@ textarea {
   }
 }
 
-.restaurant-details {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 735px;
-  padding: 24px 0 40px 40px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-details/mobile/restaurant-details-418@1x.jpg");
+.decor {
+  padding-top: 50px;
+  height: 600px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 calc((100% - 3px) / 4),
+    rgba(186, 186, 186, 0.4) 0 calc((100% - 3px) / 4 + 1px)
+  );
+  filter: blur(0.5px);
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .restaurant-details {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/restaurant-details/mobile/restaurant-details-418@2x.jpg");
-  }
-}
+
 @media screen and (min-width: 414px) {
-  .restaurant-details {
-    height: 620px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/tablet/restaurant-details-1024@1x.jpg");
-  }
-}
-@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (min-width: 414px) and (min-resolution: 192dpi), screen and (min-width: 414px) and (min-resolution: 2dppx) {
-  .restaurant-details {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/tablet/restaurant-details-1024@2x.jpg");
+  .about-hotel__container {
+    padding-bottom: 28px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .restaurant-details {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg");
-  }
-}
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .restaurant-details {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/restaurant-details/desktop/restaurant-details-1280@2x.jpg");
+  .about-hotel__container {
+    position: relative;
+    padding-top: 120px;
   }
 }
 
-.restaurant-details__title {
-  margin-bottom: 12px;
-  font-family: "Film P3";
-  font-weight: 700;
+.about-hotel__title {
   font-size: 40px;
-  line-height: 1.08;
+  line-height: 1.075;
   letter-spacing: 0.3em;
-  color: #FFFFFF;
-}
-@media screen and (min-width: 414px) {
-  .restaurant-details__title {
-    margin-bottom: 16px;
-    font-size: 64px;
-    line-height: 1.08;
-  }
-}
-
-.restaurant-details__subtitle {
-  margin-bottom: 20px;
-  font-family: "Montserrat";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #494848;
+  text-align: end;
+  margin-top: 47px;
+  margin-bottom: 16px;
 }
-@media screen and (min-width: 414px) {
-  .restaurant-details__subtitle {
-    margin-bottom: 8px;
-    font-size: 24px;
-    line-height: 1.21;
+@media screen and (min-width: 1024px) {
+  .about-hotel__title {
+    font-size: 64px;
+    line-height: 1.078125;
+    margin-bottom: 24px;
+    margin-top: 160px;
   }
 }
 
-.restaurant-details__text {
-  margin-bottom: 48px;
-  font-family: "Montserrat";
+.about-hotel1__text {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #BABABA;
+  width: 242px;
+  margin-bottom: 28px;
+  margin-left: auto;
+  color: #5f5f5f;
 }
-@media screen and (min-width: 414px) {
-  .restaurant-details__text {
+@media screen and (min-width: 1024px) {
+  .about-hotel1__text {
     font-size: 16px;
     line-height: 1.25;
+    width: 419px;
   }
 }
 
-.restaurant-details__button {
-  display: inline-block;
-  padding: 14px 24px;
-  margin-bottom: 16px;
-  min-width: 236px;
-  font-family: "Montserrat";
+.about-hotel1__box {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-hotel__picture {
+    position: absolute;
+    top: -24px;
+    left: 112;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-hotel__picture {
+    position: absolute;
+    top: -24px;
+    left: 180;
+  }
+}
+
+.about-hotel2__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  width: 163px;
+  color: #c79002;
+  margin: auto;
+  padding-right: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .about-hotel2__text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 312px;
+  }
+}
+
+.about-hotel2__box {
+  display: flex;
+}
+
+.section__menu {
+  padding: 32px 0;
+  background-color: #fffdee;
+}
+@media screen and (min-width: 1024px) {
+  .section__menu {
+    padding: 58px 0 40px 0;
+    background-color: #f0ecd6;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section__menu {
+    padding: 58px 0 60px 0;
+  }
+}
+
+.section__title {
+  font-family: 'Times New Roman Cyr', sans-serif;
   font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .section__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-container__col-1,
+  .menu-container__col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 106px) / 2);
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-container__col-1,
+  .menu-container__col-2 {
+    flex-basis: calc((100% - 140px) / 2);
+  }
+}
+
+.dishes {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes {
+    margin-bottom: 0;
+  }
+}
+
+.dishes-drinks {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes-drinks {
+    margin-bottom: 0;
+  }
+}
+
+.dishes__category {
+  font-family: 'Times New Roman Cyr', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .dishes__category {
+    margin-bottom: 20px;
+  }
+}
+
+.dishes__caption {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 4px;
+}
+@media screen and (min-width: 414px) {
+  .dishes__caption {
+    width: 225px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dishes__caption {
+    width: 221px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .dishes__caption {
+    width: 262px;
+  }
+}
+
+.dishes__ingredients {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 8px;
+}
+
+.dishes__portion {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes__portion {
+    padding: 4px 0 4px 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dishes__portion {
+    padding: 4px 0 4px 40px;
+  }
+}
+.dishes-drinks .dishes__portion {
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes-drinks .dishes__portion {
+    padding: 4px 0 4px 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dishes-drinks .dishes__portion {
+    padding: 4px 0 4px 40px;
+  }
+}
+
+.dishes__price {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-align: right;
+  padding: 4px 0;
+}
+@media screen and (min-width: 414px) {
+  .dishes__price {
+    padding: 4px 0 4px 18px;
+  }
+}
+.dishes-drinks .dishes__price {
+  padding: 4px 0;
+}
+
+.menu__button {
+  display: block;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: #000000;
+  border: 2px solid #f0ecd6;
+  border-radius: 25px;
+  padding: 15px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .menu__button {
+    margin: 0 0 0 auto;
+  }
+}
+.menu__button:hover,
+.menu__button:focus {
+  background-color: #ffffff;
+  border: 2px solid #f3c653;
+  border-radius: 25px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-family: 'Film P3', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    margin-right: 96px;
+  }
+}
+.header__navigation-list {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .header__navigation-list {
+    gap: 72px;
+  }
+}
+.header__navigation-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+@media screen and (min-width: 1024px) {
+  .header__navigation-item {
+    gap: 32px;
+  }
+}
+.header__navigation-link {
+  color: #f3c653;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  cursor: pointer;
-  color: #F3C653;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #FFFFFF;
-  border-radius: 25px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.restaurant-details__button:hover, .restaurant-details__button:focus {
-  background-color: #FFFFFF;
+@media screen and (min-width: 1024px) {
+  .header__navigation-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
 }
-
-.restaurant-details__list {
+@media screen and (min-width: 1024px) {
+  .header__phone-box {
+    display: flex;
+    gap: 16px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px;
+  }
+}
+.header__phone-link {
   display: flex;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}/*# sourceMappingURL=index.css.map */
+  align-items: center;
+}
+.header__phone-icon {
+  fill: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .header__phone-icon {
+    margin-right: 8px;
+  }
+}
+.header__phone-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+@media screen and (max-width: 1023.98px) {
+  .header__phone-text {
+    display: none;
+  }
+}
+.header__network {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__network {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__network-icon {
+    fill: rgba(243, 198, 83, 0.7);
+  }
+} /*# sourceMappingURL=index.css.map */
