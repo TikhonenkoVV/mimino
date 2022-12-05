@@ -1,4 +1,5 @@
 .details {
+  position: relative;
   &--hotel-bgr {
     background-image: $overlayBgr,
       url('../images/main_images/details-hotel-mobile@1x.jpg');
@@ -42,6 +43,9 @@
     align-items: flex-end;
     @include for-size(tablet) {
       padding-right: 231px;
+    }
+    @include for-size(desktop) {
+      padding-right: 193px;
     }
   }
   &__logo {
