@@ -208,13 +208,15 @@
 .slider__container {
   width: auto;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider {
   overflow: hidden;
   display: flex;
   position: relative;
-  left: 20%;
+  left: 0%;
   background-color: $colorBackgroundPrimary;
   box-shadow: 2px 2px 60px $colorBoxShadow;
 
