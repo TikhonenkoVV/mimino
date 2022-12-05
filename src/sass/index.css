@@ -2655,6 +2655,17 @@ textarea {
   list-style: none;
   background-color: transparent;
   transition: all ease 1s;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .room-x3-adult__gallery {
+    width: 269px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .room-x3-adult__gallery {
+    width: 524px;
+  }
 }
 
 .room-x3-adult__gallery-picture {
