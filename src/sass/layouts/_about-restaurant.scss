@@ -1,0 +1,234 @@
+.about
+{
+    overflow-x: hidden;
+    background-color: $colorBackgroundPrimary;
+}
+
+.about__container
+{
+    @include for-size(mobile)
+    {
+        padding-bottom: 28px;
+    }
+    @include for-size(tablet) {
+        position: relative;
+        padding-top: 120px;
+    }
+}
+
+.about__title
+{
+    margin: 0;
+    font-family: $fontFamilyTNRoman;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: left;
+    color: $colorTextLightGray;
+
+    margin-bottom: 12px;
+    margin-top: 16px;
+
+    @include for-size(tablet) {
+        font-size: 32px;
+        line-height: 1.16;
+        margin-bottom: 4px;
+    }
+}
+
+.about__restaurant-logo
+{
+    font-family: $fontFamilyLogo;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: 0.3em;
+    color: $colorDarkGray;
+
+    margin: 0;
+    margin-bottom: 12px;
+
+    @include for-size(tablet) {
+        font-size: 64px;
+        margin-bottom: 24px;
+    }
+
+    @include for-size(desktop) {
+        color: $colorLightGray;
+    }
+}
+
+.about__restaurant-text
+{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: $colorTextPrimary;
+
+    width: 258px;
+
+    @include for-size(tablet) {
+        width: 439px;
+        font-size: 16px;
+    }
+
+    @include for-size(desktop) {
+        width: 518px;
+    }
+
+
+}
+
+.restaurant__img-right, 
+.restaurant__img-left
+{
+    box-shadow: 2px 2px 60px $colorBoxShadow;
+}
+
+
+
+.about__restaurant-box
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+
+    @include for-size(tablet) {
+        position: absolute;
+        right: 112px;
+        top: -33px;
+        margin: 0;
+    }
+
+    @include for-size(desktop) {
+        position: absolute;
+        right: 180px;
+        top: -33px;
+        margin: 0;
+    }
+}
+
+.about__restaurant-post
+{
+    margin: 32px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+        position: relative;
+
+    @include for-size(tablet) {
+        margin-top: 142px;
+    }
+}
+
+.restaurant__post-text
+{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+
+    width: 163px;
+    margin-left: 20px;
+
+    @include for-size(tablet) {
+        font-size: 16px;
+        width: 312px;
+        margin-left: 48px;
+    }
+}
+
+.restaurant__post-color
+{
+    color: $colorAccentBrown;
+}
+
+// SLIDER
+
+.slider__container
+{
+    width: auto;
+    height: auto;
+}
+
+
+.slider
+{
+    overflow: hidden;
+    display: flex;  
+    position: relative;
+    left: 20%;
+    background-color: $colorBackgroundPrimary;
+    box-shadow: 2px 2px 60px $colorBoxShadow;
+
+    @include for-size(tablet) {
+        width: 428px;
+
+        position: relative;
+        left: 50%;
+        bottom: 96px;
+        }
+
+    @include for-size(desktop) {
+        width: 548px;
+
+        position: relative;
+        left: 50%;
+        bottom: 118px;
+    }
+    
+}
+
+
+.slider__line {
+    width: 1024px;
+    display: flex;
+    position: relative;
+    right: 0;
+    transition: all ease 1s;
+    background-color: $colorBackgroundPrimary;
+}
+
+.slider__line-img
+{
+    box-shadow: 2px 2px 60px $colorBoxShadow;
+        background-color: transparent;
+}
+
+.restaurant__flipper-img {
+    padding: 0;
+}
+
+.restaurant__flipper-btn {
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    position: relative;
+    left: 77%;
+    top: 28px;
+
+    @include for-size(tablet) {
+        position: relative;
+        left: 87%;
+        top: -40px;
+    }
+
+    @include for-size(desktop) {
+        position: relative;
+        left: 92%;
+        top: -58px;
+    }
+}
+
+.restaurant__button {
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider__picture {
+    background-color: transparent;
+    box-shadow: 2px 2px 60px $colorBoxShadow;
+}
