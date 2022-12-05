@@ -135,21 +135,18 @@ textarea {
 }
 
 .room-x3-adult {
-  background-color: #f0ecd6;
-}
-
-.room-x3-adult__container {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: #f0ecd6;
 }
-@media (min-width: 1024px) {
-  .room-x3-adult__container {
+@media (min-width: 1023px) {
+  .room-x3-adult {
     padding-bottom: 40px;
     padding-top: 66px;
   }
 }
 @media (min-width: 1280px) {
-  .room-x3-adult__container {
+  .room-x3-adult {
     padding-top: 72px;
   }
 }
@@ -349,8 +346,8 @@ textarea {
 }
 
 .room-x3-adult__service-box {
-  margin-left: 115px;
   margin-bottom: 20px;
+  margin-left: 115px;
 }
 
 .room-x3-adult__service-img {
@@ -361,10 +358,14 @@ textarea {
 }
 
 .room-x3-adult__item {
-  max-width: 100%;
-  height: 100%;
+  width: 194px;
   border-radius: 2px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1280px) {
+  .room-x3-adult__item {
+    width: 254px;
+  }
 }
 
 .room-x3-adult__swipper {
