@@ -193,6 +193,10 @@
   margin-left: auto;
   min-width: 244px;
   padding-left: 155px;
+
+  @media (min-width: 1024px) {
+    padding-left: 0;
+  }
 }
 
 .luxe__picture {
