@@ -2460,7 +2460,6 @@ textarea {
     flex-direction: row-reverse;
     gap: 45px;
     margin-bottom: 48px;
-    height: 426px;
     margin-left: 65px;
   }
 }
@@ -2644,13 +2643,12 @@ textarea {
   }
 }
 
-.slider {
-  overflow: hidden;
+.room-x3-adult__slider-box {
   margin-bottom: 20px;
   margin-left: 115px;
 }
 
-.slider__line {
+.room-x3-adult__gallery {
   display: flex;
   gap: 16px;
   margin-bottom: 20px;
@@ -2659,14 +2657,13 @@ textarea {
   transition: all ease 1s;
 }
 
-.room-x3-adult__item {
-  counter-increment: slide;
+.room-x3-adult__gallery-picture {
   width: 194px;
   border-radius: 2px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1280px) {
-  .room-x3-adult__item {
+  .room-x3-adult__gallery-picture {
     width: 254px;
   }
 }
