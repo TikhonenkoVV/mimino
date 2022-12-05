@@ -19,32 +19,38 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: $LinearGradientHeader, url('../images/hero_images/homepage-iphone@1x.jpg');
+  background-image: $LinearGradientHeader,
+    url('../images/hero_images/homepage-iphone@1x.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/homepage-iphone@2x.jpg');
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/homepage-iphone@2x.jpg');
   }
 
   @media screen and (min-width: 1024px) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/homepage-ipad@1x.jpg');
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/homepage-ipad@1x.jpg');
   }
 
   @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  (min-width: 1024px) and (min-resolution: 192dpi),
-  (min-width: 1024px) and (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/homepage-ipad@2x.jpg');
+    (min-width: 1024px) and (min-resolution: 192dpi),
+    (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/homepage-ipad@2x.jpg');
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/homepage@1x.jpg');
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/homepage@1x.jpg');
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-width: 1280px) and (min-resolution: 192dpi),
-  (min-width: 1280px) and (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/homepage@2x.jpg');
+    (min-width: 1280px) and (min-resolution: 192dpi),
+    (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/homepage@2x.jpg');
   }
 }
 
@@ -52,32 +58,38 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: $LinearGradientHeader, url('../images/hero_images/kitchen-iphone@1x.jpg');
+  background-image: $LinearGradientHeader,
+    url('../images/hero_images/kitchen-iphone@1x.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/kitchen-iphone@2x.jpg');
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/kitchen-iphone@2x.jpg');
   }
 
   @media screen and (min-width: 1024px) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/kitchen-ipad@1x.jpg');
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/kitchen-ipad@1x.jpg');
   }
 
   @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  (min-width: 1024px) and (min-resolution: 192dpi),
-  (min-width: 1024px) and (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/kitchen-ipad@2x.jpg');
+    (min-width: 1024px) and (min-resolution: 192dpi),
+    (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/kitchen-ipad@2x.jpg');
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/kitchen@1x.jpg');
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/kitchen@1x.jpg');
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-width: 1280px) and (min-resolution: 192dpi),
-  (min-width: 1280px) and (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/kitchen@2x.jpg');
+    (min-width: 1280px) and (min-resolution: 192dpi),
+    (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/kitchen@2x.jpg');
   }
 }
 
@@ -85,36 +97,43 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: $LinearGradientHeader, url('../images/hero_images/hotel-iphone@1x.jpg');
+  background-image: $LinearGradientHeader,
+    url('../images/hero_images/hotel-iphone@1x.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/hotel-iphone@2x.jpg');
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/hotel-iphone@2x.jpg');
   }
 
   @media screen and (min-width: 1024px) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/hotel-ipad@1x.jpg');
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/hotel-ipad@1x.jpg');
   }
 
   @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  (min-width: 1024px) and (min-resolution: 192dpi),
-  (min-width: 1024px) and (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/hotel-ipad@2x.jpg');
+    (min-width: 1024px) and (min-resolution: 192dpi),
+    (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/hotel-ipad@2x.jpg');
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/hotel@1x.jpg');
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/hotel@1x.jpg');
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-width: 1280px) and (min-resolution: 192dpi),
-  (min-width: 1280px) and (min-resolution: 2dppx) {
-    background-image: $LinearGradientHeader, url('../images/hero_images/hotel@2x.jpg');
+    (min-width: 1280px) and (min-resolution: 192dpi),
+    (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: $LinearGradientHeader,
+      url('../images/hero_images/hotel@2x.jpg');
   }
 }
 
 .hero--roompage {
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -131,12 +150,15 @@
     padding-bottom: 24px;
   }
 
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url('../images/hero_images/hotel-iphone@1x.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url('../images/hero_images/hotel-iphone@2x.jpg');
   }
 
@@ -145,8 +167,8 @@
   }
 
   @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
-  (min-width: 1024px) and (min-resolution: 192dpi),
-  (min-width: 1024px) and (min-resolution: 2dppx) {
+    (min-width: 1024px) and (min-resolution: 192dpi),
+    (min-width: 1024px) and (min-resolution: 2dppx) {
     background-image: url('../images/hero_images/hotel-ipad@2x.jpg');
   }
 
@@ -155,8 +177,8 @@
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  (min-width: 1280px) and (min-resolution: 192dpi),
-  (min-width: 1280px) and (min-resolution: 2dppx) {
+    (min-width: 1280px) and (min-resolution: 192dpi),
+    (min-width: 1280px) and (min-resolution: 2dppx) {
     background-image: url('../images/hero_images/hotel@2x.jpg');
   }
 }
@@ -208,7 +230,6 @@
   text-align: start;
   max-width: 325px;
   margin-left: 0;
-  
 
   @media screen and (min-width: 1024px) {
     font-size: 36px;
@@ -235,7 +256,7 @@
 
   @media screen and (min-width: 1024px) {
     font-size: 20px;
-    line-height: 1.20;
+    line-height: 1.2;
     margin-bottom: 56px;
   }
 
@@ -313,10 +334,9 @@
 
 .hero__contact-box {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: baseline;
   gap: 40px;
-
 }
 
 .hero__address {
@@ -424,7 +444,6 @@
     bottom: 42px;
     right: 85px;
   }
-
 }
 
 .hero__network {
@@ -462,4 +481,26 @@
 .hero__network-link {
   fill: $colorBorderAdress;
   cursor: pointer;
+}
+
+.hero__gradientbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 143px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 1;
+
+  @include for-size(tablet) {
+    height: 116px;
+  }
+
+  @include for-size(desktop) {
+    height: 147px;
+  }
 }
