@@ -106,9 +106,8 @@
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1280px;
         padding-top: 524px;
-        padding-bottom: 48px;
+        padding-bottom: 24px;
     }
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -147,7 +146,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
-    line-height: 103px;
+    line-height: 1.07;
     letter-spacing: 0.3em;
     margin-bottom: 24px;
     @media screen and (min-width: 1024px) {
@@ -162,11 +161,8 @@
 .hero__title--hotel {
     margin-bottom: 32px;
 }
-.hero__title--room {
-    color: $colorWhite;
+.hero__title--roompage {
         font-family: 'Times New Roman';
-        font-style: normal;
-        font-weight: 700;
         font-size: 28px;
         line-height: 1.16;
         letter-spacing: 0.05em;
@@ -181,38 +177,9 @@
         }
 }
 .hero__title--style {
-    color: $colorWhite;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
     text-transform: lowercase;
-    text-align: start;
+}
 
-    @media screen and (min-width: 1024px) {
-        font-size: 36px;
-        line-height: 1.14;
-        margin-bottom: 24px;
-    }
-}
-.hero__text--room {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    margin-top: 14px;
-    margin-bottom: 16px;
-    /* White */
-    max-width: 400px;
-    color: $colorWhite;
-    @media screen and (min-width: 1024px) {
-        font-size: 16px;
-    }
-}
 .hero__subtitle {
     color: $colorWhite;
     text-align: center;
@@ -261,6 +228,20 @@
     margin-bottom: 137px;
     }
 }
+.hero__text--roompage {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    max-width: 400px;
+    text-transform: none;
+    margin-bottom: 17px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+}
 .hero__control-box {
     display: flex;    
     justify-content: center;
@@ -277,7 +258,7 @@
     display: flex;
     flex-direction: row;
     // justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     gap: 40px;
     // @media screen and (min-width: 1024px) {
     //     flex-direction: column;
@@ -287,8 +268,8 @@
     position: relative;
 }
 .hero__container--roompage {
-    width: 100%;
     padding: 0 47px;
+    position: relative;
 }
 .hero__address {    
     @media screen and (max-width: 1023px) {        
@@ -297,28 +278,18 @@
         right: 15px;
     }
     display: inline-block;
-    border: 1px solid rgba(243, 198, 83, 0.7);
+    border: 1px solid $colorBorderAdress;
     border-radius: 2px;
     max-width: 285px;
     padding: 8px 8px 8px 10px;   
 }
 .hero__address--roompage {
-    display: inline-block;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-    max-width: 285px;
-    padding: 8px 8px 8px 10px;
     position: absolute;
     top: -420px;
-    right: 15px;
+
     @media screen and (min-width: 1024px) {
         position: relative;
-        display: flex;
-        top: 1px;
-        bottom: 15px;
-        display: flex;
-        margin-bottom: 24px;
-        left: 1px;
+        top: 0;
     }
     @media screen and (min-width: 1280px){
         display: none;
@@ -368,34 +339,32 @@
     font-size: 16px;
     line-height: 1.25;    
     letter-spacing: 0.02em;
-    transition: color $baseTransition,
-        background-color $baseTransition;
-        cursor: pointer;
+    transition: background-color $baseTransition;
+    cursor: pointer;
     padding: 14px 24px;
 
     &:hover,
     &:focus {
     background-color: $colorWhite;
-    // color: $colorBlack;
     }
 }
 .hero__btn--room {
     position: absolute;
-    bottom: 40px;
-    right: 73px;
+    bottom: 32px;  
+    max-width: 232px;
+
+    @media screen and (max-width: 1023px) {
+        left: 109px;
+    }
     @media screen and (min-width: 1024px) {
         bottom: 40px;
         right: 47px;
     }
     @media screen and (min-width: 1280px) {
-        bottom: 18px;
-        right: 38px;
+        bottom: 42px;
+        right: 85px;
     }  
-    &:hover,
-    &:focus {
-        background-color: $colorWhite;
-        // color: $colorBlack;
-    }
+
 }
 .hero__network {
     display: flex;
@@ -413,9 +382,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     @media screen and (min-width: 1024px) {
-        margin-bottom: 9px;
+        margin-bottom: 0;
         flex-direction: row;
         gap: 20px;
     }
