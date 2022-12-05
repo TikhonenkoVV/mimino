@@ -188,6 +188,8 @@
 }
 
 .room-x3-adult__service {
+  width: auto;
+  height: auto;
   @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: space-between;

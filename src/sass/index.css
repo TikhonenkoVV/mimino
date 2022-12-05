@@ -2635,6 +2635,10 @@ textarea {
   }
 }
 
+.room-x3-adult__service {
+  width: auto;
+  height: auto;
+}
 @media screen and (min-width: 1024px) {
   .room-x3-adult__service {
     display: flex;
