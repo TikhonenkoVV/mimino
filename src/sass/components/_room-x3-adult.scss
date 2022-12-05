@@ -195,17 +195,19 @@
     flex-direction: row-reverse;
   }
 }
-.room-x3-adult__service-box {
+.slider {
+  overflow: hidden;
   margin-bottom: 20px;
   margin-left: 115px;
 }
 
-.room-x3-adult__service-img {
+.slider__line {
   display: flex;
   gap: 16px;
   margin-bottom: 20px;
   list-style: none;
   background-color: transparent;
+  transition: all ease 1s;
 }
 .room-x3-adult__item {
   counter-increment: slide;
@@ -222,4 +224,8 @@
   display: flex;
   gap: 32px;
   justify-content: flex-start;
+}
+
+.room-x3-adult__svg {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
