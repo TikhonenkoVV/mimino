@@ -11,44 +11,8 @@
         veniam consequat sunt nostrud amet.
       </h2>
     </div>
-    <div class="room-x3-adult__picture">
-    <picture>
-      <!--desktop-->
-      <source
-        media="(min-width:1280px)"
-        srcset="
-          /src/images/hotel_img/bedroom_desk@1x_result.webp 1x,
-          /src/images/hotel_img/bedroom_desk@2x_result.webp 2x
-        "
-      />
-
-      <source
-        media="(min-width:1280px)"
-        srcset="
-          /src/images/hotel_img/bedroom_desk@1x.jpg 1x,
-          /src/images/hotel_img/bedroom_desk@2x.jpg 2x
-        "
-      />
-
-      <img src="/src/images/hotel_img/bedroom_desk@1x.jpg" />
-
-      <!--tablet-->
-      <source
-        media="(min-width:1024px)"
-        srcset="
-          /src/images/hotel_img/bedroom_tab@1x_result.webp 1x,
-          /src/images/hotel_img/bedroom_tab@2x_result.webp 2x
-        "
-      />
-
-      <source
-        media="(min-width:1024px)"
-        srcset="
-          /src/images/hotel_img/bedroom_tab@1x.jpg 1x,
-          /src/images/hotel_img/bedroom_tab@2x.jpg 2x
-        "
-      />
-
+    <div class="room-x3-adult__picturebox">
+      <picture class="room-x3-adult__picture">
       <!--mobile-->
       <source
         media="(max-width:1023px)"
@@ -62,8 +26,43 @@
         /src/images/hotel_img/bedroom_mob@2x.jpg 2x
         "
       />
+      <!--desktop-->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          /src/images/hotel_img/bedroom_desk@1x_result.webp 1x,
+          /src/images/hotel_img/bedroom_desk@2x_result.webp 2x
+        "
+      />
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          /src/images/hotel_img/bedroom_desk@1x.jpg 1x,
+          /src/images/hotel_img/bedroom_desk@2x.jpg 2x
+        "
+      />
+      <!--tablet-->
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          /src/images/hotel_img/bedroom_tab@1x_result.webp 1x,
+          /src/images/hotel_img/bedroom_tab@2x_result.webp 2x
+        "
+      />
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          /src/images/hotel_img/bedroom_tab@1x.jpg 1x,
+          /src/images/hotel_img/bedroom_tab@2x.jpg 2x
+        "
+      />
+      <img
+      src="/src/images/hotel_img/bedroom_desk@1x.jpg"
+      alt="Готельний номер"
+    />
     </picture>
   </div>
+
     </div>
     <div class="room-x3-adult__service">
           <div  class="room-x3-adult__slider-box">
@@ -394,6 +393,8 @@
        </ul>
       </div> 
 
+      
+
       <div class="room-x3-adult__buttons">
           <a 
           href="./room.html" class="room-x3-adult__button-details">Детальніше</a></li>
@@ -401,8 +402,8 @@
         
   <button
             type="button"
-            class="room-x3-adult__price"
-            data-modal-price-open
+            data-id="data-modal-price"
+            class="open room-x3-adult__price"
           >
             Переглянути ціни
           </button>

@@ -3,8 +3,8 @@
   padding-bottom: 32px;
   background-color: #f0ecd6;
 
-  @media (min-width: 1023px) {
-    padding-bottom: 40px;
+  @media (min-width: 1024px) {
+    padding-bottom: 0;
     padding-top: 66px;
   }
 
@@ -27,7 +27,7 @@
 
   @media screen and (min-width: 1280px) {
     height: 470px;
-    margin-left: 165px;
+    margin-left: 48px;
   }
 }
 
@@ -39,6 +39,8 @@
 
   @media screen and (min-width: 1024px) {
     margin-top: 89px;
+    margin-bottom: 145px;
+    
   }
 }
 
@@ -90,6 +92,7 @@
     border: 2px solid $colorAccentYellow;
   }
 }
+
 .room-x3-adult__wrap {
   @media screen and (max-width: 1023px) {
     margin-left: 82px;
@@ -171,22 +174,33 @@
   }
 }
 
+.room-x3-adult__picturebox {
+  width: 244px;
+  margin-bottom: 32px;
+  margin-right: auto;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  overflow: hidden;
+
+  @include for-size(tablet) {
+    width: 400px;
+    position: absolute;
+    left: 112px;
+    top: -95px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+  }
+
+  @include for-size(desktop) {
+    width: 460px;
+    position: absolute;
+    left: 180px;
+  }
+}
+
 .room-x3-adult__picture {
   display: block;
-  border-radius: 2px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  margin-right: 140px;
-  width: 244px;
-
-  @media screen and (min-width: 1024px) {
-    transform: translateY(-98px);
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-    margin-right: 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    transform: translateY(-104px);
-  }
+  width: 100%;
 }
 
 .room-x3-adult__service {
@@ -233,7 +247,16 @@
 .room-x3-adult__swipper {
   display: flex;
   gap: 32px;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  @include for-size(tablet) {
+    position: absolute;
+    bottom: 40px;
+    right: 378px;
+  }
+
+  @include for-size(desktop) {
+    right: 535px;
+  }
 }
 
 .room-x3-adult__svg {
