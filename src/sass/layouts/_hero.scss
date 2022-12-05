@@ -127,6 +127,10 @@
     margin-right: auto;
     margin-bottom: 24px;
 
+    @media screen and (max-width: 360px) {
+        font-size: 88px;
+    }
+
     @media screen and (min-width: 1024px) {
     font-size: 128px;
     line-height: 1.08;
@@ -261,6 +265,7 @@
   letter-spacing: 0.02em;
   transition: color $baseTransition, background-color $baseTransition;
   cursor: pointer;
+  width: 100%;
   padding: 14px 24px;
 
   &:hover,
