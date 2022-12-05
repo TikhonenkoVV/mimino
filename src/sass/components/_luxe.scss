@@ -212,8 +212,9 @@
   @media (min-width: 1024px) {
     position: absolute;
     top: -94px;
-    right: 112px;
+    right: 150px;
     margin-left: 26px;
+    margin-right: 100px;
   }
 }
 
@@ -266,32 +267,32 @@
   padding: 0;
 }
 
-.restaurant__flipper-btn {
-  padding: 0;
-  display: flex;
-  gap: 24px;
-  position: relative;
-  left: 0%;
-  top: 28px;
-  margin-bottom: 20px;
-  max-width: 96px;
+// .restaurant__flipper-btn {
+//   padding: 0;
+//   display: flex;
+//   gap: 24px;
+//   position: relative;
+//   left: 0%;
+//   top: 28px;
+//   margin-bottom: 20px;
+//   max-width: 96px;
 
-  @include for-size(tablet) {
-    position: relative;
-    left: 87%;
-    top: -40px;
-  }
+//   @include for-size(tablet) {
+//     position: relative;
+//     left: 87%;
+//     top: -40px;
+//   }
 
-  @include for-size(desktop) {
-    position: relative;
-    left: 92%;
-    top: -58px;
-  }
-}
+//   @include for-size(desktop) {
+//     position: relative;
+//     left: 92%;
+//     top: -58px;
+//   }
+// }
 
-.restaurant__button {
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+// .restaurant__button {
+//   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+// }
 
 .slider__picture {
   background-color: transparent;
