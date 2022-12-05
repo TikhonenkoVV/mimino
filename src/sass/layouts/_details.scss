@@ -44,6 +44,9 @@
     @include for-size(tablet) {
       padding-right: 231px;
     }
+    @include for-size(desktop) {
+      padding-right: 193px;
+    }
   }
   &__logo {
     display: block;
