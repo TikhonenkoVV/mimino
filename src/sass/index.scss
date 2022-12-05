@@ -1,6 +1,7 @@
 @import './utils/variables';
-@import './common';
 @import './utils/mixins';
+@import './base/fonts';
+@import './base/base';
 @import './utils/modal-open';
 @import './utils/vh';
 @import './base/base';
@@ -14,6 +15,7 @@
 @import './layouts/section-menu';
 @import './components/contacts';
 @import './components/header';
+@import './layouts/about-restaurant';
 @import './components/backdrop';
 @import './components/modal';
 @import './components/custom-select.scss';
