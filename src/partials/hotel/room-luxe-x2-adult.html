@@ -55,74 +55,39 @@
     </div>
 
     <div class="luxe__control-box">
-      <div class="slider__container">
-        <div class="slider__luxe">
-          <div class="slider__line">
-            <picture class="slider__picture">
-              <source srcset="
-                  /src/images/hotel_images/bedroom1_desk@1x.jpg 1x,
-                  /src/images/hotel_images/bedroom1_desk@2x.jpg 2x
-                " />
-              <img class="slider__line-img" src="/src/images/hotel_images/bedroom1_desk@1x.jpg" alt="Раковина" />
-            </picture>
-
-            <picture class="slider__picture">
-              <source srcset="
-                  /src/images/hotel_images/bedroom2_desk@1x.jpg 1x,
-                  /src/images/hotel_images/bedroom2_desk@2x.jpg 2x
-                " />
-              <img class="slider__line-img" src="/src/images/hotel_images/bedroom2_desk@1x.jpg"
-                alt="Чашка кави на підвіконні" />
-            </picture>
-
-            <picture class="slider__picture">
-              <source srcset="
-                  /src/images/hotel_images/bedroom3_desk@1x.jpg 1x,
-                  /src/images/hotel_images/bedroom3_desk@2x.jpg 2x
-                " />
-              <img class="slider__line-img" src="/src/images/hotel_images/bedroom3_desk@1x.jpg"
-                alt="Диван із квітами" />
-            </picture>
-
-            <picture class="slider__picture">
-              <source srcset="
-                  /src/images/hotel_images/bedroom5_desk@1x.jpg 1x,
-                  /src/images/hotel_images/bedroom5_desk@2x.jpg 2x
-                " />
-              <img class="slider__line-img" src="/src/images/hotel_images/bedroom5_desk@1x.jpg" alt="Крісло" />
-            </picture>
-          </div>
+      <div class="swiper-container-room2l">
+        <div class="swiper-wrapper swiper-wrapper-r2">
+          <img class="swiper-slide" src="./images/hotel_images/bedroom1_desk@1x.jpg">
+          <img class="swiper-slide" src="./images/hotel_images/bedroom2_desk@1x.jpg">
+          <img class="swiper-slide" src="./images/hotel_images/bedroom3_desk@1x.jpg">
+          <img class="swiper-slide" src="./images/hotel_images/bedroom6_mob@1x.jpg">
         </div>
       </div>
-
       <ul class="luxe__flipper-btn">
-        <li class="luxe__link">
-          <a href="#" class="luxe__slider-button slider-prev">
-            <svg class="restaurant__icon" width="32" height="32">
-              <use href="/src/images/icons.svg#icon-arrow-left"></use>
-            </svg>
-          </a>
+        <li class="swiper-button-prev-r2l">
+          <svg class="restaurant__icon" width="32" height="32">
+            <use href="/src/images/icons.svg#icon-arrow-left"></use>
+          </svg>
         </li>
-        <li class="luxe__link">
-          <a href="#" class="luxe__slider-button slider-next">
-            <svg class="restaurant__icon" width="32" height="32">
-              <use href="/src/images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </a>
+        <li class="swiper-button-next-r2l">
+          <svg class="restaurant__icon" width="32" height="32">
+            <use href="/src/images/icons.svg#icon-arrow-right"></use>
+          </svg>
         </li>
       </ul>
-
       <ul class="buttons-room">
         <li class="buttons-room__item">
-          <a href="./room.html" class="buttons-room__details--luxe">Детальніше</a>
+          <a href="./room.html" class="button-a buttons-room__details">Детальніше</a>
         </li>
         <li class="buttons-room__item">
-          <button type="button" data-id="data-modal-price" class="open buttons-room__price--luxe" data-modal-price-open>
+          <button type="button" data-id="data-modal-price" class="open button-a buttons-room__details">
             Переглянути ціни
           </button>
         </li>
       </ul>
     </div>
+  </div>
+  </div>
   </div>
 
   <!-- <script src="/src/slider_luxe.js"></script> -->

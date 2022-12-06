@@ -256,3 +256,31 @@ var swiperRoom2 = new Swiper('.swiper-container-room2', {
     },
   },
 });
+
+var swiperRoom2l = new Swiper('.swiper-container-room2l', {
+  slidesPerView: 1.47,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r2l',
+    prevEl: '.swiper-button-next-r2l',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
