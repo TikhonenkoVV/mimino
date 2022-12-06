@@ -1,7 +1,10 @@
+.about-hotel
+{
+  position: relative;
+}
+
 .about-hotel__container {
-  @media screen and (min-width: 414px) {
     padding-bottom: 28px;
-  }
 
   @media screen and (min-width: 1024px) {
     position: relative;
@@ -10,76 +13,219 @@
 }
 
 .about-hotel__title {
+  margin: 0;
+  font-family: $fontFamilyTNRoman;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: right;
+  color: $colorTextLightGray;
+
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+  padding-top: 18px;
+
+  @include for-size(tablet) {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 4px;
+}
+}
+
+.about-hotel__logo
+{
+  font-family: $fontFamilyLogo;
+  text-transform: uppercase;
   font-size: 40px;
-  line-height: calc(43 / 40);
+  text-align: right;
   letter-spacing: 0.3em;
-  font-weight: 700;
   color: $colorDarkGray;
-  font-family: Film P3, sans-serif;
 
-  text-align: end;
-  margin-top: 47px;
-  margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 12px;
 
-  @media screen and (min-width: 1024px) {
-    font-size: 64px;
-    line-height: calc(69 / 64);
-    margin-bottom: 24px;
-    margin-top: 160px;
+  @include for-size(tablet) {
+      font-size: 64px;
+      margin-bottom: 24px;
+  }
+
+  @include for-size(desktop) {
+      color: $colorLightGray;
   }
 }
 
-.about-hotel__text1 {
+.about-hotel__text {
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15 / 12);
+  line-height: 1.25;
+  text-align: left;
   letter-spacing: 0.02em;
-  width: 242px;
-  margin-bottom: 28px;
-  margin-left: auto;
   color: $colorTextPrimary;
 
-  @media screen and (min-width: 1024px) {
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    width: 419px;
+  width: 242px;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 28px;
+
+  @include for-size(tablet) {
+      margin: 0;
+      display: flex;
+      margin-left: auto;
+      width: 419px;
+      font-size: 16px;
+  }
+
+  @include for-size(desktop) {
+      margin: 0;
+            display: flex;
+              margin-left: auto;
+      width: 488px;
   }
 }
 
-.about-hotel__box1 {
-  margin-bottom: 32px;
+.about-hotel__picture
+{
+  @include for-size(tablet) {
+      position: absolute;
+      left: 112px;
+      top: -24px;
+      margin: 0;
+  }
+
+  @include for-size(desktop) {
+      left: 180px;
+      top: -24px;
+      margin: 0;
+  }
 }
 
-.about-hotel__picture {
-  @media screen and (min-width: 1024px) {
-    position: absolute;
-    top: -24px;
-    left: 112;
-  }
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    top: -24px;
-    left: 180;
+.hotel__img-left,
+.hotel__img-right
+{
+  box-shadow: 2px 2px 60px $colorBoxShadow;
+}
+
+.hotel__post
+{
+  margin: 32px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+
+  @include for-size(tablet) {
+      margin-top: 120px;
   }
 }
 
-.about-hotel__text2 {
+.hotel__post-text
+{
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15 / 12);
+  line-height: 1.25;
+  text-align: left;
   letter-spacing: 0.02em;
-  width: 163px;
-  color: $colorAccentBrown;
-  margin: auto;
-  padding-right: 24px;
+  color: #5F5F5F;
 
-  @media screen and (min-width: 1024px) {
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    width: 312px;
+  width: 163px;
+  margin-right: 20px;
+
+  @include for-size(tablet) {
+      font-size: 16px;
+      width: 312px;
+      margin-right: 48px;
   }
 }
 
-.about-hotel__box2 {
-  display: flex;
+.hotel__post-color
+{
+  color: $colorAccentBrown;
+}
+
+// SLIDER
+
+.hotel-line__container
+{
+    height: 245px;
+    margin-right: -15px;
+    margin-right: auto;
+
+    @include for-size (tablet) {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+}
+
+
+.slider
+{
+    overflow: hidden;
+    display: flex;  
+    position: relative; 
+    background-color: $colorBackgroundPrimary;
+    box-shadow: 2px 2px 60px $colorBoxShadow;
+
+    // @include for-size(tablet) {
+    //     width: 428px;
+
+    //     position: relative;
+    //     left: 50%;
+    //     bottom: 96px;
+    //     }
+
+    // @include for-size(desktop) {
+    //     width: 548px;
+
+    //     position: relative;
+    //     left: 50%;
+    //     bottom: 118px;
+    // }
+    
+}
+
+
+.hotel-slider__box {
+    width: 1024px;
+    display: flex;
+    position: relative;
+    right: 0;
+    transition: all ease 1s;
+    background-color: $colorBackgroundPrimary;
+}
+
+.hotel__flipper-box {
+    padding: 0;
+    max-width: 96px;
+    position: relative;
+    right: 0;    
+    top: 50px;
+    padding-bottom: 28px;
+
+    // @include for-size(tablet) {
+    //     left: 91%;
+    //     top: -40px;
+    //     padding: 0;
+    // }
+
+    // @include for-size(desktop) {
+    //     left: 86%;
+    //     top: -58px;
+    //     padding: 0;
+    // }
+}
+
+.hotel__flipper-btn
+{
+    display: flex;
+    gap: 24px;
+}
+
+.hotel__picture 
+{
+  background-color: transparent;
+  box-shadow: 2px 2px 60px $colorBoxShadow;
 }

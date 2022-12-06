@@ -1,79 +1,162 @@
 <section class="about-hotel">
+  <span class="decor"></span>
   <div class="container about-hotel__container">
-    <h3 class="about-hotel__title">Mimiho</h3>
-    <ul class="about-hotel1">
-      <div class="about-hotel__box1">
-        <p class="about-hotel__text1">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <li class="about-hotel__item">
-          <picture class="about-hotel__picture">
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                /src/images/hotel_images/hotel-desktop-1@3x.jpg 2x,
-                /src/images/hotel_images/hotel-desktop-1.jpg    1x
-              "
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcset="
-                /src/images/hotel_images/hotel-tablet-1@2x.jpg 2x,
-                /src/images/hotel_images/hotel-tablet-1.jpg    1x
-              "
-            />
-            <source
-              media="(min-width: 414px)"
-              srcset="
-                /src/images/hotel_images/hotel-mobile-1@2x.jpg 2x,
-                /src/images/hotel_images/hotel-mobile-1.jpg    1x
-              "
-            />
-            <img
-              src="/src/images/hotel_images/hotel-desktop-1@2x.jpg"
-              alt="Двохмісний номер"
-            />
-          </picture>
-        </li>
+    <h2 class="visually-hidden">About our hotel</h2>
+
+    <span class="about-hotel__title">Amet minim mollit non</span>
+
+    <h3 class="about-hotel__logo">Mimiho</h3>
+
+    <span class="about-hotel__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </span>
+
+    <picture class="about-hotel__picture">
+      <source
+        srcset="
+          /src/images/hotel_images/hotel-desktop-1.jpg    1x,
+          /src/images/hotel_images/hotel-desktop-1@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          /src/images/hotel_images/hotel-tablet-1.jpg    1x,
+          /src/images/hotel_images/hotel-tablet-1@2x.jpg 2x
+        "
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          /src/images/hotel_images/hotel-mobile-1.jpg    1x,
+          /src/images/hotel_images/hotel-mobile-1@2x.jpg 2x
+        "
+        media="(min-width: 414px)"
+      />
+      <img
+        class="hotel__img-left"
+        src="/src/images/hotel_images/hotel-mobile-1.jpg "
+        alt="Двохмісний номер"
+      />
+    </picture>
+
+    <figure class="hotel__post">
+      <picture>
+      <source
+        srcset="
+          /src/images/hotel_images/hotel-desktop-2.jpg    1x,
+          /src/images/hotel_images/hotel-desktop-2@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          /src/images/hotel_images/hotel-tablet-2.jpg    1x,
+          /src/images/hotel_images/hotel-tablet-2@2x.jpg 2x
+        "
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          /src/images/hotel_images/hotel-mobile-2.jpg    1x,
+          /src/images/hotel_images/hotel-mobile-2@2x.jpg 2x
+        "
+        media="(min-width: 414px)"
+      />
+      <img
+        class="hotel__img-left"
+        src="/src/images/hotel_images/hotel-mobile-2.jpg"
+        alt="Двохмісний номер"
+      />
+    </picture>
+
+      <figcaption class="hotel__post-text hotel__post-color">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </figcaption>
+    </figure>
+
+    <!-- <div class="hotel-line__container">
+        <div class="hotel__slider">
+          <div class="hotel-slider__box">
+            <picture class="hotel__picture">
+              <source
+                srcset="
+                  /src/images/about-restaurant/restaurant_flipper_desktop1.jpg    1x,
+                  /src/images/about-restaurant/restaurant_flipper_desktop1@2x.jpg 2x
+                "
+              />
+              <img
+                class="hotel__line-img"
+                src="/src/images/about-restaurant/restaurant_flipper_desktop1.jpg"
+                alt="Можливості накриття столу"
+              />
+            </picture>
+
+            <picture class="hotel__picture">
+              <source
+                srcset="
+                  /src/images/about-restaurant/restaurant_flipper_desktop2.jpg    1x,
+                  /src/images/about-restaurant/restaurant_flipper_desktop2@2x.jpg 2x
+                "
+              />
+              <img
+                class="hotel__line-img"
+                src="/src/images/about-restaurant/restaurant_flipper_desktop2.jpg"
+                alt="Можливості накриття столу"
+              />
+            </picture>
+            <picture class="hotel__picture">
+              <source
+                srcset="
+                  /src/images/about-restaurant/restaurant_flipper_desktop1.jpg    1x,
+                  /src/images/about-restaurant/restaurant_flipper_desktop1@2x.jpg 2x
+                "
+              />
+              <img
+                class="hotel__line-img"
+                src="/src/images/about-restaurant/restaurant_flipper_desktop1.jpg"
+                alt="Можливості накриття столу"
+              />
+            </picture>
+            <picture class="hotel__picture">
+              <source
+                srcset="
+                  /src/images/about-restaurant/restaurant_flipper_desktop2.jpg    1x,
+                  /src/images/about-restaurant/restaurant_flipper_desktop2@2x.jpg 2x
+                "
+              />
+              <img
+                class="hotel__line-img"
+                src="/src/images/about-restaurant/restaurant_flipper_desktop2.jpg"
+                alt="Можливості накриття столу"
+              />
+            </picture>
+          </div>
+        </div>
       </div>
-      <div class="about-hotel__box2">
-        <p class="about-hotel__text2">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <li class="about-hotel__item">
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                /src/images/hotel_images/hotel-desktop-2@2x.jpg 2x,
-                /src/images/hotel_images/hotel-desktop-2.jpg    1x
-              "
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcset="
-                /src/images/hotel_images/hotel-tablet-2@2x.jpg 2x,
-                /src/images/hotel_images/hotel-tablet-2.jpg    1x
-              "
-            />
-            <source
-              media="(min-width: 414px)"
-              srcset="
-                /src/images/hotel_images/hotel-mobile-2@2x.jpg 2x,
-                /src/images/hotel_images/hotel-mobile-2.jpg    1x
-              "
-            />
-            <img
-              src="/src/images/hotel_images/hotel-desktop-2@2x.jpg"
-              alt="Хол з каміном"
-            />
-          </picture>
-        </li>
-      </div>
-    </ul>
+
+      <div class="hotel__flipper-box">
+        <ul class="hotel__flipper-btn">
+          <li class="hotel-slider__button">
+            <a href="" class="slider__link slider-prev">
+              <svg class="slider__icon" width="32" height="32">
+                <use href="/src/images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="slider__button">
+            <a href="" class="slider__link slider-next">
+              <svg class="slider__icon" width="32" height="32">
+                <use href="/src/images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div> -->
+    </div>
   </div>
 </section>
