@@ -68,8 +68,7 @@
       left: 512px;
     }
 
-    @include for-size(tablet) {
-      top: -152px;
+    @include for-size(desktop) {
       left: 640px;
     }
   }
