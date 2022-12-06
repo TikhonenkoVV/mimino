@@ -6,13 +6,12 @@
 
 .about__container
 {
-    @include for-size(mobile)
-    {
-        padding-bottom: 28px;
-    }
+    padding-bottom: 28px;
+
     @include for-size(tablet) {
         position: relative;
         padding-top: 120px;
+        padding-bottom: 0;
     }
 }
 
@@ -27,7 +26,7 @@
     color: $colorTextLightGray;
 
     margin-bottom: 12px;
-    margin-top: 16px;
+    padding-top: 16px;
 
     @include for-size(tablet) {
         font-size: 32px;
@@ -148,10 +147,18 @@
 
 // SLIDER
 
-.slider__container
+.slider-line__container
 {
-    width: auto;
-    height: auto;
+    height: 245px;
+    margin-right: -15px;
+    margin-left: auto;
+
+    @include for-size (tablet) {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
 }
 
 
@@ -183,7 +190,7 @@
 }
 
 
-.slider__line {
+.slider__box {
     width: 1024px;
     display: flex;
     position: relative;
@@ -192,36 +199,36 @@
     background-color: $colorBackgroundPrimary;
 }
 
-.slider__line-img
-{
-    box-shadow: 2px 2px 60px $colorBoxShadow;
-        background-color: transparent;
-}
-
 .restaurant__flipper-img {
     padding: 0;
 }
 
-.slider__flipper-btn {
+.slider__flipper-box {
     padding: 0;
-    display: flex;
-    gap: 24px;
     max-width: 96px;
     position: relative;
     left: 74%;
-    top: 28px;
+    top: 50px;
+    padding-bottom: 28px;
 
     @include for-size(tablet) {
         left: 91%;
         top: -40px;
+        padding: 0;
     }
 
     @include for-size(desktop) {
         left: 86%;
         top: -58px;
+        padding: 0;
     }
 }
 
+.slider__flipper-btn
+{
+    display: flex;
+    gap: 24px;
+}
 // .slider__button
 // {
 //     color: $colorBlack;
