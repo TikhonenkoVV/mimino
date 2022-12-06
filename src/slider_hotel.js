@@ -1,26 +1,28 @@
-const images = document.querySelectorAll('.slider .hotel-slider__box img');
-const sliderLine = document.querySelector('.slider .hotel-slider__box');
+const images = document.querySelectorAll(
+  '.hotel__slider .hotel-slider__box img'
+);
+const sliderLine = document.querySelector('.hotel__slider .hotel-slider__box');
 let count = 0;
 let width;
 
 function init() {
   console.log('resize');
-  width = document.querySelector('.slider').offsetWidth;
+  width = document.querySelector('.hotel__slider').offsetWidth;
 
   images.forEach(item => {
-    width = document.querySelector('.slider').offsetWidth;
+    width = document.querySelector('.hotel__slider').offsetWidth;
 
     if (width < 547 && width > 427) {
-      item.style.marginRight = '40' + 'px';
+      item.style.marginLeft = '40' + 'px';
       item.style.width = '194' + 'px';
       item.style.boxShadow = `2px 2px 60px rgba(0, 0, 0, 0.25)`;
     } else if (width < 427) {
-      item.style.marginRight = '25' + 'px';
+      item.style.marginLeft = '25' + 'px';
       item.style.width = '245' + 'px';
       item.style.boxShadow = `2px 2px 60px rgba(0, 0, 0, 0.25)`;
     } else if (width > 547) {
       item.style.width = '254' + 'px';
-      item.style.marginRight = '40' + 'px';
+      item.style.marginLeft = '40' + 'px';
       item.style.boxShadow = `2px 2px 60px rgba(0, 0, 0, 0.25)`;
     }
   });
