@@ -62,19 +62,41 @@
       Переглянути ціни
     </button>
   </div>
-  <!-- <div class="hero__swiper-container">
-    <div class=".swiper-container-room-hero">
-      <div class="swiper-wrapper-room-hero">
-        <img class="swiper-slide" src="./images/hero_images/hotel@1x.jpg">
-        <img class="swiper-slide" src="./images/hero_images/hotel@1x.jpg">
-      </div>
-    </div>
-  </div> -->
   <div class="swiper-container-room">
     <div class="swiper-wrapper swiper-wrapper-room">
-      <img class="swiper-slide" src="./images/hero_images/hotel@1x.jpg">
-      <img class="swiper-slide" src="./images/hero_images/hotel@1x.jpg">
+      <div class="hero-slider__slide swiper-slide">
+        <div class="hero-slider__image">
+          <picture>
+            <source media="(min-width: 1280px)"
+              srcset="./images/hero_images/hotel@1x.jpg    1x, ./images/hero_images/hotel@2x.jpg 2x" type="image/jpg">
+            <source media="(min-width: 1024px)"
+              srcset="./images/hero_images/hotel-ipad@1x.jpg    1x, ./images/hero_images/hotel-ipad@2x.jpg 2x"
+              type="image/jpg">
+            <img srcset="./images/hero_images/hotel-iphone@1x.jpg    1x, ./images/hero_images/hotel-iphone@2x.jpg 2x"
+              src="./images/hero_images/hotel-iphone@1x.jpg" alt="двомісний номер">
+          </picture>
+        </div>
+      </div>
+      <div class="hero-slider__slide swiper-slide">
+        <div class="hero-slider__image">
+          <picture>
+            <source media="(min-width: 1280px)"
+              srcset="./images/hero_images/hotel3-ipad@1x.jpg    1x, ./images/hero_images/hotel3-ipad@2x.jpg 2x"
+              type="image/jpg">
+            <source media="(min-width: 1024px)"
+              srcset="./images/hero_images/hotel2-ipad@1x.jpg    1x, ./images/hero_images/hotel2-ipad@2x.jpg 2x"
+              type="image/jpg">
+            <img srcset="./images/hero_images/hotel2-iphone@1x.jpg    1x, ./images/hero_images/hotel2-iphone@2x.jpg 2x"
+              src="./images/hero_images/hotel2-iphone@1x.jpg" alt="двомісний номер">
+          </picture>
+        </div>
+      </div>
     </div>
+    <!-- <img class="swiper-slide slide-a" src="./images/hero_images/hotel-iphone@1x.jpg">
+      <img class="swiper-slide slide-b" src="./images/hero_images/hotel2-iphone@1x.jpg">
+      <img style="display: none;" class="slide" src="./images/hero_images/hotel-ipad@1x.jpg">
+      <img style="display: none;" class="slide" src="./images/hero_images/hotel2-ipad@1x.jpg"> -->
+  </div>
   </div>
 
 </section>

@@ -122,6 +122,7 @@
 
 .swiper-wrapper-room {
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -171,6 +172,33 @@
   width: 40px;
   height: 40px;
   background-color: $colorBackgroundGradient;
+}
+.swwiper-icon {
+  fill: $colorWhite;
+  transition: fill $baseTransition;
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev-k,
+.swiper-button-next-k,
+.swiper-button-prev-r,
+.swiper-button-next-r,
+.swiper-button-prev-r2l,
+.swiper-button-next-r2l,
+.swiper-button-prev-r3,
+.swiper-button-next-r3,
+.swiper-button-prev-r2,
+.swiper-button-next-r2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 .swwiper-icon {
   fill: $colorWhite;

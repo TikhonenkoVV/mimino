@@ -145,6 +145,7 @@ $('.custom-select__option').on('click', function () {
     .find('.custom-select__trigger')
     .text($(this).text());
 });
+
 var swiper = new Swiper('.swiper-container-hotel', {
   slidesPerView: 1.35,
   leftSlides: true,
@@ -202,11 +203,15 @@ var swiperRest = new Swiper('.swiper-container-restaurant', {
 });
 
 var swiperRoom = new Swiper('.swiper-container-room', {
-  slidesPerView: 0.5,
+  slidesPerView: 1,
   // leftSlides: true,
   slideToClickedSlide: true,
-  spaceBetween: 10,
+  // spaceBetween: 10,
   loop: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-prev-rh',
@@ -215,14 +220,14 @@ var swiperRoom = new Swiper('.swiper-container-room', {
   breakpoints: {
     // when window width is >= 320px
     1024: {
-      slidesPerView: 2.16,
-      spaceBetween: 34,
+      slidesPerView: 1,
+      // spaceBetween: 34,
       // slideToClickedSlide: true,
     },
     // when window width is >= 480px
     1280: {
-      slidesPerView: 2.46,
-      spaceBetween: 86,
+      slidesPerView: 1,
+      // spaceBetween: 86,
       slideToClickedSlide: false,
       // slideToClickedSlide: true,
     },
