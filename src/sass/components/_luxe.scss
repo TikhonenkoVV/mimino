@@ -12,7 +12,6 @@
 }
 
 .luxe__container {
-  background-color: $colorBackgroundPrimary;
   position: relative;
 }
 
@@ -116,70 +115,25 @@
 
   @media screen and (min-width: 1024px) {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
     margin-bottom: 40px;
   }
 }
 
 // Buttons
-.buttons-room {
-  @media (min-width: 1024px) {
-    margin-top: 89px;
-  }
-}
-
 .buttons-room__item {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  justify-content: center;
 }
 
-.buttons-room__details--luxe {
-  padding: 14px 65px 14px 64px;
-  background-color: $colorBlack;
-  color: $colorAccentYellow;
-  display: inline-block;
-  border-radius: 25px;
-  border: 2px solid $colorWhite;
-  font-family: $fontFamilyMain;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+.buttons-room__item:not(:last-child) {
   margin-bottom: 16px;
-  // width: 100%;
-  transition: border $baseTransition, background-color $baseTransition;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
-    background-color: $colorWhite;
-    border: 2px solid $colorAccentYellow;
-  }
 }
 
-.buttons-room__price--luxe {
-  padding: 14px 65px 14px 64px;
-  background-color: $colorBlack;
-  color: $colorAccentYellow;
-  display: inline-block;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  padding: 14px 37px;
-  // width: 100%;
-  transition: border $baseTransition, background-color $baseTransition;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
-    background-color: $colorWhite;
-    border: 2px solid $colorAccentYellow;
-  }
+.buttons-room__details {
+  margin: 0 auto;
+  background: $colorBlack;
 }
 
 // Picture

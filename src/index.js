@@ -230,7 +230,7 @@ var swiperRoom = new Swiper('.swiper-container-room', {
 });
 
 var swiperRoom2 = new Swiper('.swiper-container-room2', {
-  slidesPerView: 1.7,
+  slidesPerView: 1.47,
   // leftSlides: true,
   slideToClickedSlide: true,
   spaceBetween: 10,
@@ -243,14 +243,14 @@ var swiperRoom2 = new Swiper('.swiper-container-room2', {
   breakpoints: {
     // when window width is >= 320px
     1024: {
-      slidesPerView: 2.16,
-      spaceBetween: 34,
+      slidesPerView: 2,
+      spaceBetween: 40,
       // slideToClickedSlide: true,
     },
     // when window width is >= 480px
     1280: {
-      slidesPerView: 2.46,
-      spaceBetween: 86,
+      slidesPerView: 2,
+      spaceBetween: 40,
       slideToClickedSlide: false,
       // slideToClickedSlide: true,
     },
