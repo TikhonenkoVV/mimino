@@ -215,7 +215,7 @@
 // Slider
 .slider__container {
   width: auto;
-  height: auto;
+  // height: auto;
 }
 
 .slider__luxe {
@@ -273,9 +273,7 @@
   }
 
   @media (min-width: 1280px) {
-
     left: 542px;
-
   }
 }
 

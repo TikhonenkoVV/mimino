@@ -228,3 +228,31 @@ var swiperRoom = new Swiper('.swiper-container-room', {
     },
   },
 });
+
+var swiperRoom2 = new Swiper('.swiper-container-room2', {
+  slidesPerView: 1.7,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r2',
+    prevEl: '.swiper-button-next-r2',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
