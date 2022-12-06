@@ -145,20 +145,12 @@ $('.custom-select__option').on('click', function () {
     .find('.custom-select__trigger')
     .text($(this).text());
 });
-
-const windowInnerWidth = window.innerWidth;
-
-const swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container-hotel', {
   slidesPerView: 1.35,
-
   leftSlides: true,
-
   slideToClickedSlide: true,
-
   spaceBetween: 20,
-
   loop: true,
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-prev',
@@ -175,6 +167,118 @@ const swiper = new Swiper('.swiper-container', {
     1280: {
       slidesPerView: 2.46,
       spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperRest = new Swiper('.swiper-container-restaurant', {
+  slidesPerView: 1.35,
+  leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 20,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r',
+    prevEl: '.swiper-button-next-r',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperRoom = new Swiper('.swiper-container-room', {
+  slidesPerView: 0.5,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-rh',
+    prevEl: '.swiper-button-next-rh',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperRoom2 = new Swiper('.swiper-container-room2', {
+  slidesPerView: 1.47,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r2',
+    prevEl: '.swiper-button-next-r2',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperRoom2l = new Swiper('.swiper-container-room2l', {
+  slidesPerView: 1.47,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r2l',
+    prevEl: '.swiper-button-next-r2l',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
       slideToClickedSlide: false,
       // slideToClickedSlide: true,
     },

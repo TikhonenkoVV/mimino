@@ -7,6 +7,8 @@
     background-color: $colorBackgroundSecondary;
   }
   @include for-size(desktop) {
+    width: 1280px;
+    margin: 0 auto;
     padding: 58px 0 60px 0;
   }
 }
@@ -24,6 +26,7 @@
     margin-bottom: 40px;
   }
 }
+
 .menu__container {
   @include for-size(tablet) {
     display: flex;
@@ -46,6 +49,7 @@
     flex-basis: calc((100% - 140px) / 2);
   }
 }
+
 .dishes {
   width: 100%;
   text-align: left;
@@ -160,4 +164,7 @@
 .menu__button {
   background-color: $colorBlack;
   margin: 0 auto;
+  @include for-size(tablet) {
+    margin: 0 0 0 auto;
+  }
 }

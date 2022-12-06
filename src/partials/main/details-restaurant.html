@@ -1,76 +1,45 @@
-<section class="restaurant-details">
+<section class="details details--restaurant-bgr">
+  <span class="decor"></span>
   <div class="container">
-    <div class="restaurant-details__container">
-      <h1 class="restaurant-details__title">Mimiho</h1>
-      <h2 class="restaurant-details__subtitle">Ресторан</h2>
-      <p class="restaurant-details__text">
+    <div class="details__container details__container--rest">
+      <span class="details__logo">Mimiho</span>
+      <h2 class="details__title">Ресторан</h2>
+      <p class="details__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit.
       </p>
     </div>
-
-    <ul class="restaurant-details__list order">
-      <li class="order__item">
-        <button type="button" class="order__button" data-modal-table-open>Забронювати столик</button>
-      </li>
-      <li>
-        <button type="button" class="order__button" onClick='window.location.href="../restaurant/menu.html"'>Переглянути меню</button>
-      </li>
-    </ul>
-
-    <ul class="restaurant-details__list thumb">
-      <li>
-        <div class="thumb__left">
-          <img
-          srcset="
-            ./images/restaurant-details/image1@1x.jpg 1x,
-            ./images/restaurant-details/image1@2x.jpg 2x"
-          src="./images/restaurant-details/image1@1x.jpg"
-          alt="М'ясо"
-          width="370"
-          height="270"
-        />
+    <div class="details__content-box details__content-box--rest">
+      <div class="details__swiper--rest">
+        <div class="swiper-container-restaurant">
+          <div class="swiper-wrapper swiper-wrapper--r">
+            <img class="swiper-slide" src="./images/restaurant-details/image1@1x.jpg" alt="" />
+            <img class="swiper-slide" src="./images/restaurant-details/image2@1x.jpg" alt="" />
+            <img class="swiper-slide" src="./images/restaurant-details/image3@1x.jpg" alt="" />
+          </div>
         </div>
-      </li>
-      <li>
-        <div class="thumb__center">
-        <img
-          srcset="
-            ./images/restaurant-details/image2@1x.jpg 1x,
-            ./images/restaurant-details/image2@2x.jpg 2x"
-          src="./images/restaurant-details/image2@1x.jpg"
-          alt="М'ясо"
-          width="182"
-          height="270"
-        />
+        <div class="swiper-button-wrapper--rest">
+          <div class="swiper-button-prev-r">
+            <svg class="swwiper-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next-r">
+            <svg class="swwiper-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
       </div>
-      </li>
-      <li>
-        <div class="thumb__right">
-        <img
-          srcset="
-            ./images/restaurant-details/image3@1x.jpg 1x,
-            ./images/restaurant-details/image3@2x.jpg 2x"
-          src="./images/restaurant-details/image3@1x.jpg"
-          alt="М'ясо"
-          width="476"
-          height="270"
-        />
-      </div>
-      </li>
-    </ul>
-
-    <ul class="restaurant-details__list navigation">
-      <li>
-        <svg class="navigation__icon" width="32" height="32">
-        <use href="./images/icons.svg#icon-arrow-left"></use>
-      </svg>
-      </li>
-      <li>
-        <svg class="navigation__icon" width="32" height="32">
-          <use href="./images/icons.svg#icon-arrow-right"></use>
-        </svg>
-      </li>
-    </ul>
+      <ul class="details__button-box details__button-box--rest">
+        <li class="details__button-item">
+          <button data-id="data-modal-table" type="button" class="open button-a details__button-a">Забронювати
+            столик</button>
+        </li>
+        <li>
+          <a class="open button-a details__button-a" href="./restaurant.html#menu">Переглянути меню</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
