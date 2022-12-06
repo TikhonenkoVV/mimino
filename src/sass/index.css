@@ -38,7 +38,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -205,6 +204,8 @@ textarea {
 }
 
 .container {
+  position: relative;
+  z-index: 1;
   padding: 0 15px;
 }
 @media screen and (min-width: 414px) {
@@ -227,14 +228,14 @@ textarea {
 }
 
 .decor {
-  padding-top: 50px;
-  height: 600px;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent 0 calc((100% - 3px) / 4),
-    rgba(186, 186, 186, 0.4) 0 calc((100% - 3px) / 4 + 1px)
-  );
-  filter: blur(0.5px);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 50%;
+  width: 0;
+  background-color: rgba(186, 186, 186, 0.4);
+  filter: blur(0.5);
+  pointer-events: all;
 }
 
 @media screen and (min-width: 414px) {
@@ -268,7 +269,7 @@ textarea {
   }
 }
 
-.about-hotel1__text {
+.about-hotel__text1 {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -279,14 +280,14 @@ textarea {
   color: #5f5f5f;
 }
 @media screen and (min-width: 1024px) {
-  .about-hotel1__text {
+  .about-hotel__text1 {
     font-size: 16px;
     line-height: 1.25;
     width: 419px;
   }
 }
 
-.about-hotel1__box {
+.about-hotel__box1 {
   margin-bottom: 32px;
 }
 
@@ -305,7 +306,7 @@ textarea {
   }
 }
 
-.about-hotel2__text {
+.about-hotel__text2 {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -316,14 +317,14 @@ textarea {
   padding-right: 24px;
 }
 @media screen and (min-width: 1024px) {
-  .about-hotel2__text {
+  .about-hotel__text2 {
     font-size: 16px;
     line-height: 1.25;
     width: 312px;
   }
 }
 
-.about-hotel2__box {
+.about-hotel__box2 {
   display: flex;
 }
 
@@ -364,6 +365,11 @@ textarea {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__container {
+    margin-bottom: 23px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -520,31 +526,26 @@ textarea {
 }
 
 .menu__button {
-  display: block;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: #f3c653;
   background-color: #000000;
-  border: 2px solid #f0ecd6;
-  border-radius: 25px;
-  padding: 15px 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
+
+.contacts-section {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 36px;
+}
 @media screen and (min-width: 1024px) {
-  .menu__button {
-    margin: 0 0 0 auto;
+  .contacts-section {
+    padding-top: 69px;
+    padding-bottom: 40px;
   }
 }
 .menu__button:hover,
 .menu__button:focus {
   background-color: #ffffff;
-  border: 2px solid #f3c653;
-  border-radius: 25px;
+  outline: 0.5px solid #f3c653;
+  border-radius: 2px;
 }
 
 .header {
@@ -600,6 +601,16 @@ textarea {
   display: flex;
   gap: 20px;
   font-size: 15px;
+}
+@media screen and (max-width: 345px) {
+  .header__navigation-list {
+    gap: 6px;
+  }
+}
+@media screen and (min-width: 346px) and (max-width: 375px) {
+  .header__navigation-list {
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 345px) {
   .header__navigation-list {
