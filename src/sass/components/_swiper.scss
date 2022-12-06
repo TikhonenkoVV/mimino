@@ -49,6 +49,28 @@
   }
 }
 
+.swiper-container-kitchen {
+  height: 254px;
+  width: 329px;
+  margin-right: -15;
+  margin-left: auto;
+  overflow: hidden;
+  @include for-size(tablet) {
+    width: 428px;
+    margin-right: 0px;
+  }
+  @include for-size(desktop) {
+    width: 548px;
+    height: 254px;
+  }
+}
+
+.swiper-wrapper-k {
+  height: 254px;
+  @include for-size(desktop) {
+    height: 254px;
+  }
+}
 .swiper-wrapper-r2 {
   height: 194px;
   padding-left: 94px;

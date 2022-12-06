@@ -312,3 +312,31 @@ var swiperRoom3 = new Swiper('.swiper-container-room3', {
     },
   },
 });
+
+var swiperKitchen = new Swiper('.swiper-container-kitchen', {
+  slidesPerView: 1.47,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-k',
+    prevEl: '.swiper-button-next-k',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
