@@ -1,10 +1,10 @@
 .room-x3-adult {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 50px;
   background-color: #f0ecd6;
 
   @media (min-width: 1024px) {
-    padding-bottom: 0;
+    padding-bottom: 50px;
     padding-top: 66px;
   }
 
@@ -40,7 +40,6 @@
   @media screen and (min-width: 1024px) {
     margin-top: 89px;
     margin-bottom: 145px;
-    
   }
 }
 

@@ -1,7 +1,7 @@
 .room--luxe {
   position: relative;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
   @media (min-width: 1024px) {
     padding-top: 62px;
   }
@@ -122,6 +122,14 @@
 }
 
 // Buttons
+
+.buttons-room3 {
+  display: flex;
+  flex-direction: column;
+  @include for-size(tablet) {
+    order: -1;
+  }
+}
 .buttons-room__item {
   margin-left: auto;
   margin-right: auto;
@@ -212,10 +220,9 @@
 }
 
 .luxe__flipper-btn {
-  padding: 0;
+  padding: 20px 0;
   display: flex;
   gap: 24px;
-  margin-bottom: 20px;
   max-width: 96px;
 
   @media (min-width: 1024px) {
@@ -228,6 +235,22 @@
 
   @media (min-width: 1280px) {
     left: 542px;
+  }
+}
+
+.luxe__flipper-btn3 {
+  padding: 20px 0;
+  margin-left: auto;
+  @media (min-width: 1024px) {
+    position: absolute;
+    right: 378px;
+    bottom: 0;
+    margin-bottom: 0;
+    top: 100%;
+  }
+
+  @media (min-width: 1280px) {
+    right: 542px;
   }
 }
 

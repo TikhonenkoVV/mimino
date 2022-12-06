@@ -15,6 +15,7 @@
 }
 // Hotel room 2
 .swiper-container-room2,
+.swiper-container-room3,
 .swiper-container-room2l {
   //   outline: 1px solid red;
   height: 194px;
@@ -32,13 +33,35 @@
   }
 }
 
+.swiper-container-room3 {
+  height: 194px;
+  width: 284px;
+  margin-right: -15;
+  margin-left: auto;
+  overflow: hidden;
+  @include for-size(tablet) {
+    width: 428px;
+    margin-right: 0px;
+  }
+  @include for-size(desktop) {
+    width: 548px;
+    height: 254px;
+  }
+}
+
 .swiper-wrapper-r2 {
-  //   width: 284px;
   height: 194px;
   padding-left: 94px;
   @include for-size(tablet) {
     padding-left: 0;
   }
+  @include for-size(desktop) {
+    height: 254px;
+  }
+}
+
+.swiper-wrapper-r3 {
+  height: 194px;
   @include for-size(desktop) {
     height: 254px;
   }
