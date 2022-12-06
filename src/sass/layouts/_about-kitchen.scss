@@ -8,7 +8,10 @@
 
   @include for-size(tablet) {
     padding-top: 120px;
-    padding-bottom: 32px;
+    padding-bottom: 262px;
+  }
+  @include for-size(desktop) {
+    padding-bottom: 207px;
   }
 
   &__title {
@@ -83,9 +86,13 @@
 
   &__img-left {
     margin-bottom: 32px;
+    @include for-size(tablet) {
+      margin-bottom: 0;
+    }
   }
 
   &__holder {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -117,17 +124,15 @@
     overflow: hidden;
 
     @include for-size(tablet) {
-      position: relative;
-      left: 50%;
-      bottom: 96px;
+      position: absolute;
+      right: 47px;
+      bottom: -230px;
       max-width: 428px;
       margin-left: 0;
     }
     @include for-size(desktop) {
-      position: relative;
-      left: 52%;
-
-      bottom: 104px;
+      right: 85px;
+      bottom: -175px;
       max-width: 530px;
     }
   }
@@ -140,15 +145,47 @@
       gap: 40px;
       margin-bottom: 32px;
     }
+
+    @include for-size(desktop) {
+      gap: 40px;
+      margin-bottom: 39px;
+    }
   }
+
+  &__item {
+    width: 245px;
+    height: 245px;
+
+    @include for-size(tablet) {
+      width: 194px;
+      height: 194px;
+    }
+
+    @include for-size(desktop) {
+      width: 245px;
+      height: 245px;
+    }
+  }
+
   &__slide {
+    position: relative;
     border-radius: 2px;
     box-shadow: 2px 2px 60px 2px $colorBoxShadow;
+    z-index: 1000;
   }
 
   &__buttons {
     display: flex;
     gap: 32px;
     justify-content: flex-end;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: currentColor;
+    transition: fill $baseTransition;
+    &:hover,
+    &:focus {
+      fill: $colorAccentYellow;
+    }
   }
 }
