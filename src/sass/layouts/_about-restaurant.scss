@@ -27,7 +27,7 @@
     color: $colorTextLightGray;
 
     margin-bottom: 12px;
-    margin-top: 16px;
+    padding-top: 16px;
 
     @include for-size(tablet) {
         font-size: 32px;
