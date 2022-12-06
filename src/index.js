@@ -145,8 +145,7 @@ $('.custom-select__option').on('click', function () {
     .find('.custom-select__trigger')
     .text($(this).text());
 });
-
-var swiperH = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container-hotel', {
   slidesPerView: 1.35,
   leftSlides: true,
   slideToClickedSlide: true,
@@ -174,7 +173,7 @@ var swiperH = new Swiper('.swiper-container', {
   },
 });
 
-var swiperR = new Swiper('.swiper-container-restaurant', {
+var swiperRest = new Swiper('.swiper-container-restaurant', {
   slidesPerView: 1.35,
   leftSlides: true,
   slideToClickedSlide: true,
@@ -184,6 +183,62 @@ var swiperR = new Swiper('.swiper-container-restaurant', {
   navigation: {
     nextEl: '.swiper-button-prev-r',
     prevEl: '.swiper-button-next-r',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperRoom = new Swiper('.swiper-container-room', {
+  slidesPerView: 0.5,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-rh',
+    prevEl: '.swiper-button-next-rh',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2.16,
+      spaceBetween: 34,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2.46,
+      spaceBetween: 86,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperRoom2 = new Swiper('.swiper-container-room2', {
+  slidesPerView: 1.7,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 10,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-r2',
+    prevEl: '.swiper-button-next-r2',
   },
   breakpoints: {
     // when window width is >= 320px

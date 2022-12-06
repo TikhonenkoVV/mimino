@@ -184,45 +184,38 @@
 
 // Picture
 .luxe__box {
-  display: block;
+  width: 244px;
+  margin-bottom: 32px;
   margin-left: auto;
-  min-width: 244px;
-  padding-left: 140px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  overflow: hidden;
 
-  @media (min-width: 1024px) {
-    padding-left: 0;
+  @include for-size(tablet) {
+    width: 400px;
+    position: absolute;
+    right: 112px;
+    top: -100px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+  }
+
+  @include for-size(desktop) {
+    width: 460px;
+    position: absolute;
+    right: 180px;
   }
 }
 
 .luxe__picture {
   display: block;
-  margin-bottom: 32px;
-  width: 244px;
-  margin-right: 15px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-
-  @media (min-width: 1024px) {
-    position: absolute;
-    top: -94px;
-    right: 150px;
-    margin-left: 26px;
-    margin-right: 100px;
-  }
-
-  @media (min-width: 1280px) {
-    position: absolute;
-    top: -94px;
-    right: 275px;
-    margin-left: 26px;
-    margin-right: 100px;
-  }
+  width: 100%;
 }
 
 // Slider
 .slider__container {
   width: auto;
-  height: auto;
+  // height: auto;
 }
 
 .slider__luxe {
@@ -273,7 +266,14 @@
 
   @media (min-width: 1024px) {
     position: absolute;
+    left: 378px;
+    bottom: 0;
+    margin-bottom: 0;
     top: 100%;
+  }
+
+  @media (min-width: 1280px) {
+    left: 542px;
   }
 }
 
