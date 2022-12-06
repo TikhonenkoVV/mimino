@@ -314,10 +314,10 @@ var swiperRoom3 = new Swiper('.swiper-container-room3', {
 });
 
 var swiperKitchen = new Swiper('.swiper-container-kitchen', {
-  slidesPerView: 1.47,
+  slidesPerView: 1.32,
   // leftSlides: true,
   slideToClickedSlide: true,
-  spaceBetween: 10,
+  spaceBetween: 24,
   loop: true,
   // Navigation arrows
   navigation: {
