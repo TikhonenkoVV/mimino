@@ -69,6 +69,7 @@
   margin-left: -15px;
   overflow: hidden;
   @include for-size(tablet) {
+    margin-top: -70px;
     width: 428px;
     height: 194;
     margin-left: 0px;
