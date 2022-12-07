@@ -276,6 +276,7 @@
 .swwiper-icon {
   fill: $colorWhite;
   transition: fill $baseTransition;
+  cursor: pointer;
   &:hover,
   &:focus {
     fill: $colorAccentYellow;
@@ -299,12 +300,4 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-}
-.swwiper-icon {
-  fill: $colorWhite;
-  transition: fill $baseTransition;
-  &:hover,
-  &:focus {
-    fill: $colorAccentYellow;
-  }
 }
