@@ -8,25 +8,24 @@
     <form>
       <div class="modal__box">
         <div class="modal__field">
-          <div class="custom-select-wrapper">
-            <select class="custom-select" id="number-clients" name="number-clients" placeholder="1">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-            </select>
-          </div>
+          <select id="number-clients">
+            <option value="hide">2</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
           <label class="modal__label modal__label--biggerfont" for="number-clients">
             Кількість ночей
           </label>
         </div>
         <div class="modal__field">
           <input class="modal__input" type="number" name="total-price" id="total-price" placeholder="1000" readonly
-            value="()" />
+          />
           <label class="modal__label modal__label--bigmargin modal__label--biggerfont" for="total-price">
             грн
           </label>
