@@ -1,11 +1,26 @@
+.swiper-button {
+  display: flex;
+  gap: 32px;
+  &--l {
+    justify-content: flex-start;
+  }
+  &--r {
+    justify-content: flex-end;
+  }
+}
+
+.swiper-button div {
+  cursor: pointer;
+}
+
 .swiper-container-restaurant,
 .swiper-container-hotel {
-  height: 270px;
-  width: 374px;
+  height: 194px;
+  width: 270px;
   overflow: hidden;
-  @media (max-width: 350px) {
-    height: 194px;
-    width: 300px;
+  @include for-size(mobile) {
+    height: 270px;
+    width: 374px;
   }
   @include for-size(tablet) {
     width: 662px;
@@ -29,6 +44,10 @@
 
 .swiper-wrapper-hotel {
   padding-left: 106px;
+  @media (max-width: 390px) {
+    height: 194px;
+    width: 270px;
+  }
   @include for-size(tablet) {
     padding-left: 52px;
   }
@@ -62,12 +81,16 @@
 
 // about-hotel
 .swiper-container-about-hotel {
-  // outline: 1px solid red;
   height: 245px;
   width: 330px;
   margin-right: auto;
   margin-left: -15px;
+  margin-bottom: 32px;
   overflow: hidden;
+  @media (max-width: 360px) {
+    height: 194px;
+    width: 254px;
+  }
   @include for-size(tablet) {
     margin-top: -70px;
     width: 428px;
@@ -76,7 +99,7 @@
   }
   @include for-size(desktop) {
     width: 548px;
-    height: 254px;
+    height: 245px;
   }
 }
 .swiper-wrapper-about-hotel {
@@ -115,6 +138,40 @@
 }
 
 .swiper-wrapper-k {
+  height: 254px;
+  @include for-size(tablet) {
+    height: 194px;
+  }
+  @include for-size(desktop) {
+    height: 245px;
+  }
+}
+
+// about restaurant
+.swiper-container-about-rest {
+  height: 254px;
+  width: 330px;
+  margin-right: -15;
+  margin-left: auto;
+  margin-bottom: 32px;
+  overflow: hidden;
+  @media (max-width: 360px) {
+    height: 194px;
+    width: 254px;
+  }
+  @include for-size(tablet) {
+    margin-top: -70px;
+    height: 194px;
+    width: 428px;
+    margin-right: 0px;
+  }
+  @include for-size(desktop) {
+    width: 530px;
+    height: 245px;
+  }
+}
+
+.swiper-wrapper-ar {
   height: 254px;
   @include for-size(tablet) {
     height: 194px;

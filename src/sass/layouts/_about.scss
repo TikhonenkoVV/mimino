@@ -1,10 +1,9 @@
 .about-hotel {
   position: relative;
+  padding-bottom: 28px;
 }
 
 .about-hotel__container {
-  padding-bottom: 28px;
-
   @media screen and (min-width: 1024px) {
     position: relative;
     padding-top: 120px;
