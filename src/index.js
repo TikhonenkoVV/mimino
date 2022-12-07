@@ -137,7 +137,7 @@ $('select').each(function(){
 });
 
 var swiper = new Swiper('.swiper-container-hotel', {
-  slidesPerView: 1.35,
+  slidesPerView: 1.2,
   leftSlides: true,
   slideToClickedSlide: true,
   spaceBetween: 20,
@@ -148,6 +148,9 @@ var swiper = new Swiper('.swiper-container-hotel', {
     prevEl: '.swiper-button-next',
   },
   breakpoints: {
+    414: {
+      slidesPerView: 1.34,
+    },
     // when window width is >= 320px
     1024: {
       slidesPerView: 2.16,
@@ -346,6 +349,34 @@ var swiperH = new Swiper('.swiper-container-about-hotel', {
   navigation: {
     nextEl: '.swiper-button-prev-ah',
     prevEl: '.swiper-button-next-ah',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
+
+var swiperAboutRest = new Swiper('.swiper-container-about-rest', {
+  slidesPerView: 1.32,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 24,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-ar',
+    prevEl: '.swiper-button-next-ar',
   },
   breakpoints: {
     // when window width is >= 320px
