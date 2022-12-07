@@ -150,6 +150,7 @@
 
 .amenities__link{
     display:flex;
+    justify-content: space-around;
     align-items: center;
     text-decoration: none;
 
@@ -181,7 +182,7 @@
 }
 
 .amenities__icon{
-    margin-left: 12px;
+    // margin-left: 12px;
 
     @include for-size(tablet) {
         margin-left: 16px;
