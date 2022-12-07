@@ -1,10 +1,9 @@
-.about-hotel
-{
+.about-hotel {
   position: relative;
 }
 
 .about-hotel__container {
-    padding-bottom: 28px;
+  padding-bottom: 28px;
 
   @media screen and (min-width: 1024px) {
     position: relative;
@@ -30,11 +29,11 @@
     font-size: 32px;
     line-height: 1.16;
     margin-bottom: 4px;
-}
+  }
 }
 
-.about-hotel__logo
-{
+.about-hotel__logo {
+  display: block;
   font-family: $fontFamilyLogo;
   text-transform: uppercase;
   font-size: 40px;
@@ -42,16 +41,17 @@
   letter-spacing: 0.3em;
   color: $colorDarkGray;
 
-  margin: 0;
   margin-bottom: 12px;
+  margin-right: -0.3em;
+  margin-left: auto;
 
   @include for-size(tablet) {
-      font-size: 64px;
-      margin-bottom: 24px;
+    font-size: 64px;
+    margin-bottom: 24px;
   }
 
   @include for-size(desktop) {
-      color: $colorLightGray;
+    color: $colorLightGray;
   }
 }
 
@@ -69,45 +69,42 @@
   margin-bottom: 28px;
 
   @include for-size(tablet) {
-      margin: 0;
-      display: flex;
-      margin-left: auto;
-      width: 419px;
-      font-size: 16px;
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+    width: 419px;
+    font-size: 16px;
   }
 
   @include for-size(desktop) {
-      margin: 0;
-            display: flex;
-              margin-left: auto;
-      width: 488px;
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+    width: 488px;
   }
 }
 
-.about-hotel__picture
-{
+.about-hotel__picture {
   @include for-size(tablet) {
-      position: absolute;
-      left: 112px;
-      top: -24px;
-      margin: 0;
+    position: absolute;
+    left: 112px;
+    top: -24px;
+    margin: 0;
   }
 
   @include for-size(desktop) {
-      left: 180px;
-      top: -24px;
-      margin: 0;
+    left: 180px;
+    top: -24px;
+    margin: 0;
   }
 }
 
 .hotel__img-left,
-.hotel__img-right
-{
+.hotel__img-right {
   box-shadow: 2px 2px 60px $colorBoxShadow;
 }
 
-.hotel__post
-{
+.hotel__post {
   margin: 32px 0;
   padding: 0;
   display: flex;
@@ -116,116 +113,48 @@
   position: relative;
 
   @include for-size(tablet) {
-      margin-top: 120px;
+    margin-top: 120px;
   }
 }
 
-.hotel__post-text
-{
+.hotel__post-text {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   text-align: left;
   letter-spacing: 0.02em;
-  color: #5F5F5F;
+  color: #5f5f5f;
 
   width: 163px;
   margin-right: 20px;
 
   @include for-size(tablet) {
-      font-size: 16px;
-      width: 312px;
-      margin-right: 48px;
+    font-size: 16px;
+    width: 312px;
+    margin-right: 48px;
   }
 }
 
-.hotel__post-color
-{
+.hotel__post-color {
   color: $colorAccentBrown;
 }
 
 // SLIDER
 
-.hotel-line__container
-{
-    height: 245px;
-    margin-right: -15px;
-    margin-right: auto;
-
-    @include for-size (tablet) {
-        width: auto;
-        height: auto;
-        margin: 0;
-    }
-
-}
-
-
-.slider
-{
-    overflow: hidden;
-    display: flex;  
-    position: relative; 
-    background-color: $colorBackgroundPrimary;
-    box-shadow: 2px 2px 60px $colorBoxShadow;
-
-    // @include for-size(tablet) {
-    //     width: 428px;
-
-    //     position: relative;
-    //     left: 50%;
-    //     bottom: 96px;
-    //     }
-
-    // @include for-size(desktop) {
-    //     width: 548px;
-
-    //     position: relative;
-    //     left: 50%;
-    //     bottom: 118px;
-    // }
-    
-}
-
-
-.hotel-slider__box {
-    width: 1024px;
-    display: flex;
-    position: relative;
-    right: 0;
-    transition: all ease 1s;
-    background-color: $colorBackgroundPrimary;
-}
-
-.hotel__flipper-box {
-    padding: 0;
-    max-width: 96px;
-    position: relative;
-    right: 0;    
-    top: 50px;
-    padding-bottom: 28px;
-
-    // @include for-size(tablet) {
-    //     left: 91%;
-    //     top: -40px;
-    //     padding: 0;
-    // }
-
-    // @include for-size(desktop) {
-    //     left: 86%;
-    //     top: -58px;
-    //     padding: 0;
-    // }
-}
-
-.hotel__flipper-btn
-{
-    display: flex;
-    gap: 24px;
-}
-
-.hotel__picture 
-{
+.hotel__picture {
   background-color: transparent;
   box-shadow: 2px 2px 60px $colorBoxShadow;
+}
+
+.about-hotel__flipper-btn {
+  display: flex;
+  height: 32px;
+  gap: 24px;
+  padding: 20px 0;
+  @include for-size(tablet) {
+    padding: 32px 0;
+  }
+  @include for-size(desktop) {
+    padding: 40px 0;
+  }
 }

@@ -1,10 +1,11 @@
-.swiper-container-hotel,
-.swiper-container-restaurant {
+.swiper-container-restaurant,
+.swiper-container-hotel {
   height: 270px;
+  width: 374px;
   overflow: hidden;
-  margin-bottom: 16px;
-  @include for-size(mobile-only) {
-    max-width: 384px;
+  @media (max-width: 350px) {
+    height: 194px;
+    width: 300px;
   }
   @include for-size(tablet) {
     width: 662px;
@@ -13,9 +14,35 @@
     width: 874px;
   }
 }
+
+.swiper-container-hotel {
+  margin-bottom: 16px;
+  margin-left: -15px;
+  margin-right: auto;
+}
+
+.swiper-container-restaurant {
+  margin-bottom: 16px;
+  margin-right: -15px;
+  margin-left: auto;
+}
+
+.swiper-wrapper-hotel {
+  padding-left: 106px;
+  @include for-size(tablet) {
+    padding-left: 52px;
+  }
+  @include for-size(desktop) {
+    padding-left: 180px;
+  }
+}
+
+.swiper-wrapper--r {
+  padding: 0;
+}
+
 // Hotel room 2
 .swiper-container-room2,
-.swiper-container-room3,
 .swiper-container-room2l {
   //   outline: 1px solid red;
   height: 194px;
@@ -33,22 +60,37 @@
   }
 }
 
-.swiper-container-room3 {
-  height: 194px;
-  width: 284px;
-  margin-right: -15;
-  margin-left: auto;
+// about-hotel
+.swiper-container-about-hotel {
+  // outline: 1px solid red;
+  height: 245px;
+  width: 330px;
+  margin-right: auto;
+  margin-left: -15px;
   overflow: hidden;
   @include for-size(tablet) {
     width: 428px;
-    margin-right: 0px;
+    height: 194;
+    margin-left: 0px;
   }
   @include for-size(desktop) {
     width: 548px;
     height: 254px;
   }
 }
+.swiper-wrapper-about-hotel {
+  height: 245px;
+  padding-left: 70px;
+  @include for-size(tablet) {
+    padding: 0;
+    height: 194px;
+  }
+  @include for-size(desktop) {
+    height: 245px;
+  }
+}
 
+// about kitchen
 .swiper-container-kitchen {
   height: 254px;
   width: 329px;
@@ -80,13 +122,20 @@
     height: 245px;
   }
 }
-.swiper-wrapper-r2 {
+
+// room adult 3
+.swiper-container-room3 {
   height: 194px;
-  padding-left: 94px;
+  width: 284px;
+  margin-right: -15;
+  margin-left: auto;
+  overflow: hidden;
   @include for-size(tablet) {
-    padding-left: 0;
+    width: 428px;
+    margin-right: 0px;
   }
   @include for-size(desktop) {
+    width: 548px;
     height: 254px;
   }
 }
@@ -98,6 +147,18 @@
   }
 }
 
+.swiper-wrapper-r2 {
+  height: 194px;
+  padding-left: 94px;
+  @include for-size(tablet) {
+    padding-left: 0;
+  }
+  @include for-size(desktop) {
+    height: 254px;
+  }
+}
+
+// details room hero
 .swiper-container-Room {
   position: absolute;
   top: 0;
@@ -107,19 +168,6 @@
   z-index: -999;
   overflow: hidden;
 }
-.swiper-wrapper-hotel {
-  padding-left: 106px;
-  @include for-size(tablet) {
-    padding-left: 52px;
-  }
-  @include for-size(desktop) {
-    padding-left: 180px;
-  }
-  &--r {
-    padding-left: 0;
-  }
-}
-
 .swiper-wrapper-room {
   position: absolute;
   overflow: hidden;
@@ -131,16 +179,10 @@
 }
 
 .swiper-button-wrapper {
-  display: flex;
   justify-content: flex-end;
-  gap: 32px;
-  margin-bottom: 32px;
-  padding-right: 15px;
-  @include for-size(tablet) {
-    margin-bottom: 0;
-  }
 }
 
+.swiper-button-wrapper,
 .swiper-button-wrapper--rest {
   display: flex;
   gap: 32px;

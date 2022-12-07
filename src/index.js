@@ -345,3 +345,31 @@ var swiperKitchen = new Swiper('.swiper-container-kitchen', {
     },
   },
 });
+
+var swiperH = new Swiper('.swiper-container-about-hotel', {
+  slidesPerView: 1.25,
+  // leftSlides: true,
+  slideToClickedSlide: true,
+  spaceBetween: 20,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-prev-ah',
+    prevEl: '.swiper-button-next-ah',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      // slideToClickedSlide: true,
+    },
+    // when window width is >= 480px
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      slideToClickedSlide: false,
+      // slideToClickedSlide: true,
+    },
+  },
+});
