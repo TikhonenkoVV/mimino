@@ -124,6 +124,42 @@
   }
 }
 
+// about restaurant
+
+.swiper-container-restaurant {
+  height: 254px;
+  width: 329px;
+  margin-right: -15;
+  margin-left: auto;
+  margin-bottom: 32px;
+  overflow: hidden;
+  @media (max-width: 360px) {
+    height: 194px;
+    width: 254px;
+  }
+  @include for-size(tablet) {
+    height: 194px;
+    width: 428px;
+    margin-right: 0px;
+  }
+  @include for-size(desktop) {
+    width: 530px;
+    height: 245px;
+    margin-right: 0px;
+  }
+}
+
+.swiper-wrapper-r {
+  height: 254px;
+  @include for-size(tablet) {
+    height: 194px;
+  }
+  @include for-size(desktop) {
+    width: 245px;
+    height: 245px;
+  }
+}
+
 // room adult 3
 .swiper-container-room3 {
   height: 194px;

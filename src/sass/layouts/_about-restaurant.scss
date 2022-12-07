@@ -133,86 +133,14 @@
   color: $colorAccentBrown;
 }
 
-// SLIDER
-
-.slider-line__container {
-  height: 245px;
-  margin-right: -15px;
-  margin-left: auto;
-
-  @include for-size(tablet) {
-    width: auto;
-    height: auto;
-    margin: 0;
-  }
-}
-
-.slider {
-  overflow: hidden;
-  display: flex;
-  position: relative;
-  left: 20%;
-  background-color: $colorBackgroundPrimary;
+.about__picture {
+  background-color: transparent;
   box-shadow: 2px 2px 60px $colorBoxShadow;
-
-  @include for-size(tablet) {
-    width: 428px;
-
-    position: relative;
-    left: 50%;
-    bottom: 96px;
-  }
-
-  @include for-size(desktop) {
-    width: 548px;
-
-    position: relative;
-    left: 50%;
-    bottom: 118px;
-  }
-}
-
-.slider__box {
-  width: 1024px;
-  display: flex;
-  position: relative;
-  right: 0;
-  transition: all ease 1s;
-  background-color: $colorBackgroundPrimary;
-}
-
-.restaurant__flipper-img {
-  padding: 0;
-}
-
-.slider__flipper-box {
-  padding: 0;
-  max-width: 96px;
-  position: relative;
-  left: 74%;
-  top: 50px;
-  padding-bottom: 28px;
-
-  @include for-size(tablet) {
-    left: 91%;
-    top: -40px;
-    padding: 0;
-  }
-
-  @include for-size(desktop) {
-    left: 86%;
-    top: -58px;
-    padding: 0;
-  }
 }
 
 .slider__flipper-btn {
-  display: flex;
-  gap: 24px;
-}
-
-.about__picture,
-.slider__picture {
-  background-color: transparent;
-  box-shadow: 2px 2px 60px $colorBoxShadow;
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-bottom: 20px;
 }
