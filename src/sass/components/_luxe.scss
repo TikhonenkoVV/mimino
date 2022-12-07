@@ -16,6 +16,18 @@
 }
 
 // Label
+.luxe__label-box {
+  margin-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 72px;
+  }
+}
+
 .luxe__label-text {
   font-family: $fontFamilyTNRoman;
   font-style: normal;
@@ -41,20 +53,26 @@
   letter-spacing: 0.3em;
   color: $colorDarkGray;
   text-transform: uppercase;
-  margin-bottom: 32px;
 
   @media (min-width: 1024px) {
-    margin-bottom: 62px;
     font-size: 64px;
     line-height: 1.08;
-  }
-
-  @media (min-width: 1280px) {
-    margin-bottom: 72px;
   }
 }
 
 // Room-name
+.luxe__room {
+  margin-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 176px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 188px;
+  }
+}
+
 .luxe__room-title {
   font-family: $fontFamilyTNRoman;
   font-style: normal;
@@ -91,7 +109,6 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $colorTextPrimary;
-  margin-bottom: 32px;
   width: 258px;
 
   @media (min-width: 1024px) {
@@ -99,11 +116,9 @@
     line-height: 1.25;
     height: 80px;
     width: 439px;
-    margin-bottom: 176px;
   }
 
   @media (min-width: 1280px) {
-    margin-bottom: 188px;
     width: 400px;
   }
 }
@@ -261,4 +276,14 @@
 .slider__picture {
   background-color: transparent;
   box-shadow: 2px 2px 60px $colorBoxShadow;
+}
+
+.luxe__icon {
+  cursor: pointer;
+  fill: $colorBlack;
+
+  &:hover,
+  &:focus {
+    fill: $colorAccentYellow;
+  }
 }
