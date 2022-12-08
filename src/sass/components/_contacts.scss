@@ -90,6 +90,21 @@
     opacity: 0;
   }
 
+  &__link {
+    color: $colorDarkGray;
+
+    &--center {
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      color: $colorAccentBrown;
+      transition: color $baseTransition;
+    }
+  }
+
   &__text {
     display: flex;
     align-items: center;
@@ -112,6 +127,7 @@
 
   &__address {
     padding: 8px 33px 8px 16px;
+
     @include font(400, 16px, calc(20 / 16), 0.01em);
 
     @include for-size(tablet) {
@@ -133,6 +149,11 @@
   }
 
   &__hotel {
+    max-width: 145px;
+
+    @include for-size(mobile) {
+      max-width: 100%;
+    }
     @include for-size(tablet) {
       margin-bottom: 16px;
     }
@@ -147,7 +168,16 @@
   }
 
   &__phone {
-    margin-right: 12px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    @include for-size(mobile) {
+      margin-bottom: 0;
+      margin-right: 8px;
+    }
+  }
+  &__secondary-phone {
+    white-space: nowrap;
   }
 
   &__map-container {
