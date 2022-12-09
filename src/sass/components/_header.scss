@@ -79,6 +79,11 @@
 
   &__navigation-link {
     color: $colorAccentYellow;
+    transition: color $baseTransition;
+    &:hover,
+    &:focus {
+      color: $colorWhite;
+    }
     @include font(
       $weight: 500,
       $size: 16px,
@@ -117,6 +122,10 @@
   &__phone-link {
     display: flex;
     align-items: center;
+    &:hover > span,
+    &:focus > span {
+      color: $colorAccentYellow;
+    }
   }
 
   &__phone-icon {
@@ -127,6 +136,7 @@
   }
 
   &__phone-text {
+    transition: color $baseTransition;
     @include for-size(mobile-only) {
       display: none;
     }
@@ -139,18 +149,11 @@
     );
   }
 
-  &__network {
+  &__social {
     display: none;
     @include for-size(desktop) {
+      display: block;
       margin-left: auto;
-      display: flex;
-      gap: 20px;
-    }
-  }
-
-  &__network-icon {
-    @include for-size(desktop) {
-      fill: $colorBorderAdress;
     }
   }
 }

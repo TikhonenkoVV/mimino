@@ -81,6 +81,11 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  transition: color $baseTransition;
+  &:hover,
+  &:focus {
+    color: $colorWhite;
+  }
 }
 
 .footer__social-list {
@@ -94,12 +99,17 @@
 }
 
 .footer__social-link {
+  color: $colorAccentYellow;
+  transition: border-color $baseTransition;
+  &:hover,
+  &:focus {
+    border-color: $colorWhite;
+  }
   @include for-size(tablet) {
     display: flex;
     align-items: center;
     width: 143px;
     justify-content: space-between;
-    color: $colorAccentYellow;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -111,6 +121,12 @@
   }
 }
 .footer__social-text {
+  transition: color $baseTransition;
+  .footer__social-link:hover &,
+  .footer__social-link:focus & {
+    color: $colorWhite;
+  }
+
   @include for-size(mobile-only) {
     display: none;
   }
@@ -118,8 +134,17 @@
 
 .footer__social-icon {
   fill: $colorBorderAdress;
+  transition: fill $baseTransition;
 
   @include for-size(tablet) {
     fill: $colorAccentYellow;
+  }
+  .footer__social-link:hover &,
+  .footer__social-link:focus & {
+    fill: $colorWhite;
+    animation-name: rotate-icon;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-duration: alternate;
   }
 }
