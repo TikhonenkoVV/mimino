@@ -12,7 +12,9 @@
 .swiper-button div {
   cursor: pointer;
 }
-
+.swiper-button.swiper-button--r {
+  padding-bottom: 25px;
+}
 .swiper-container-restaurant,
 .swiper-container-hotel {
   height: 194px;
